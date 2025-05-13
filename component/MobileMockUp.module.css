@@ -1,0 +1,131 @@
+.wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    padding: 2rem;
+    
+    color: white;
+    width: 1400px;
+    margin: 0 auto;
+    margin-top: 80px;
+    flex-direction: row; /* Ensures image left, text right */
+  flex-wrap: wrap;
+  }
+  
+  .mockupContainer {
+    flex: 0 0 auto;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+  }
+  
+  .phoneImage {
+    width: 100%;
+    max-width: 300px;
+    height: 620px;
+  }
+  
+  .icon{
+    width: 115px;
+    height: 50px;
+  }
+
+  .infoContainer {
+    flex: 1 1 auto;
+    width: 401px;
+    
+  }
+  
+  .infoList {
+    list-style: none;
+    counter-reset: step;
+    padding: 5px;
+    margin: 0;
+    font-size: 20px;
+  }
+  
+  .infoList li {
+    display: flex;
+    align-items: center; /* Vertically center number with text */
+    gap: 4.5rem;         /* Reduce gap to bring number closer */
+    margin-bottom: 1.2rem; /* Slightly tighter vertical spacing */
+  }
+  
+  .number {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 45px;   /* Slightly smaller circle */
+    height: 45px;
+    border-radius: 50%;
+    background: white;
+    color: #ff5f5f;
+    font-weight: bold;
+    font-size: 1.5rem;
+    flex-shrink: 0;
+  }
+  
+  @media (max-width: 768px) {
+    .wrapper {
+        gap: 1rem;
+        padding: 0.4rem;
+        width: 100%;
+        margin: 0;
+        margin-top: 30px;
+    
+      }
+      
+      .mockupContainer {
+        flex: 0 0 auto;
+        display: flex;
+        justify-content:flex-start;
+        gap: 1rem;
+      }
+      
+      .phoneImage {
+        width: 100%;
+        max-width: 180px;
+        height: 265px;
+      }
+      
+      .icon{
+        display: none;
+      }
+    
+      .infoContainer {
+        flex: 1 1 auto;
+        width: 201px;
+        
+      }
+      
+      .infoList {
+        list-style: none;
+        counter-reset: step;
+        padding: 5px;
+        margin: 0;
+        font-size: 12px;
+      }
+      
+      .infoList li {
+        display: flex;
+        align-items: center; /* Vertically center number with text */
+        gap: 0.5rem;         /* Reduce gap to bring number closer */
+        margin-bottom: 1.2rem; /* Slightly tighter vertical spacing */
+      }
+      
+      .number {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: 20px;   /* Slightly smaller circle */
+        height: 20px;
+        border-radius: 50%;
+        background: white;
+        color: #ff5f5f;
+        font-weight: bold;
+        font-size: 0.7rem;
+        flex-shrink: 0;
+      }
+}

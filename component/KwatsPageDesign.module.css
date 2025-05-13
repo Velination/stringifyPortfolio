@@ -1,0 +1,148 @@
+.wrapper {
+    background-color: #000;
+  }
+  
+  .container {
+    position: relative;
+    padding: 10px;
+    color: #fff;
+  }
+  
+  .rowContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+  }
+
+  .leftspace {
+    width: 250px; 
+   }
+   
+   .centerToggle {
+     display: flex;
+     justify-content: center;
+     flex-grow: 1;
+   }
+   
+   
+   .logoContainer {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     margin-top: 48px;
+     padding-top: 48px;
+   }
+
+   .projectYear {
+    text-align: center;
+    font-size: 18px;
+    color: #a4a4a4;
+    margin: 25px 0 35px;
+  }
+  
+  .mainHeading {
+    font-size: 80px;
+    font-weight: 700;
+    text-align: center;
+    line-height: 100px;
+  }
+  
+  .subHeading {
+    font-style: italic;
+    font-size: 80px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    line-height: 100px;
+  }
+  
+  .sectionTitle {
+    font-size: 110px;
+    font-weight: 900;
+    text-align: center;
+    margin: 50px 0 15px;
+  }
+
+  .imageContainer{
+    display: flex;
+     justify-content: center;
+     align-items: center;
+     margin-left: 35rem;
+  }
+
+  @media (max-width: 768px) {
+    .container{
+      padding: 0px;
+    }
+  
+    .rowContainer {
+      margin-bottom: 5px;
+    }
+  
+    .leftspace {
+      width: 50px; 
+    }
+  
+    .centerToggle {
+     margin-right: 3px;
+    }
+  
+    .rightButton {
+      justify-content: flex-end;
+      
+    }
+    .logoContainer {
+      margin-top: 2px ;
+      padding-top: 2px;
+    }
+
+    .logo{
+      width: 126px;
+    }
+  
+    .mainHeading {
+      font-size: 24px;
+      line-height: 48px;
+      padding: 0 10px;
+    }
+    .subHeading {
+      font-size: 21px;
+      line-height: 48px;
+      padding: 0 10px;
+      font-weight: 400;
+    }
+  
+    .sectionTitle {
+      font-size: 40px;
+      line-height: 100%;
+      padding: 0 5px;
+      margin-top: 0px;
+    }
+  
+    .sliderContainer {
+      margin: 30px auto 50px;
+    }
+  
+    .projectYear {
+      font-size: 14px;
+      margin: 15px 75px;
+      width: 60%;
+    
+    }
+  
+    .logoContainer {
+      margin: 30px 0;
+    }
+  
+    .projectCardContainer {
+      margin-top: 50px;
+    }
+
+    .imageContainer{
+      width: 61px;
+      margin-left: 210px;
+    }
+  
+   
+  }

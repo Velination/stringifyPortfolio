@@ -1,0 +1,77 @@
+.container {
+  background-color: #1a1a1a;
+  color: white;
+ padding: 15px;
+  border-radius: 20px;
+  width: 530px;
+  height: auto;
+  border: 1px solid #9E9E9E;
+}
+
+.h2 {
+  font-size: 24px;
+  
+  margin-bottom: 10px;
+  
+}
+
+.tools {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  max-width: calc((70px + 10px) * 6); /* 6 items max + 10px gap */
+  margin-right: 20px;
+  
+  align-items: center;
+  
+  margin-bottom: 5px;
+}
+
+.toolItem {
+  width: 65px;
+  height: 65px;
+  margin-top: 10px;
+  margin-right: 10px;
+}
+
+.icon {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+@media (max-width: 768px) {
+  .container {
+    width: 100%;
+    padding: 10px;
+    border-radius: 15px;
+  
+  }
+
+  .h2 {
+    font-size: 16px;
+    margin: 10px 0;
+    padding-left: 0;
+  }
+
+  .tools {
+    justify-content: center;
+    margin-left: 0;
+    margin-right: 0;
+    gap: 12px;
+    padding: 0;
+  }
+
+  .toolItem {
+    width: 40px;
+    height: 40px;
+    margin-top: 10px;
+    
+  }
+
+  .icon {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+}

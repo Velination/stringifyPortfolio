@@ -1,0 +1,51 @@
+.homePageWrapper {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 50px;
+    padding: 50px 30px;
+    flex-wrap: wrap;
+  }
+  
+  .pageContainer {
+    border-radius: 20px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    width: 600px;   /* Increased width */
+    height: auto;
+  }
+  
+  .pageContainer:hover {
+    transform: scale(1.02);
+  }
+  
+  .pageImage {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    border-radius: 5px;
+  }
+  
+  /* ✅ Mobile responsiveness */
+  @media (max-width: 768px) {
+    .homePageWrapper {
+      flex-direction: column;
+      align-items: center;
+      padding-top: 20px;
+      padding-bottom: 20px;
+      padding-left: 10px;
+      padding-right: 10px;
+      margin-bottom: 40px;
+    }
+  
+    .pageContainer {
+      width: 95%;
+      height: 420px;
+    }
+
+    .pageImage{
+      height: 500;
+    }
+  }
+  

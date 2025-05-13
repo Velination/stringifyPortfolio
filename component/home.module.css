@@ -1,0 +1,89 @@
+
+
+
+.background {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  background-color: black;
+ 
+}
+
+.backgrounds {
+  background-color: black;
+  width: 100%;
+  max-width: 100vw;
+  box-sizing: border-box
+}
+
+
+
+.rowContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.leftspace {
+ width: 250px; 
+}
+
+.centerToggle {
+  display: flex;
+  justify-content: center;
+  flex-grow: 1;
+}
+
+.logoContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 48px;
+  padding-top: 48px;
+}
+
+.projectYear {
+  text-align: center;
+  font-size: 18px;
+  color: #a4a4a4;
+  /* margin: 25px 0 35px; */
+}
+
+.mainHeading {
+  font-size: 80px;
+  font-weight: 700;
+  text-align: center;
+  line-height: 100px;
+}
+
+.subHeading {
+  font-style: italic;
+  font-size: 80px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  line-height: 100px;
+}
+
+.projectCardContainer {
+  margin-top: 100px;
+}
+
+
+
+
+@media (max-width: 768px) {
+  .backgrounds {
+  
+    width: 100%;
+  }
+
+  .projectCardContainer {
+    margin-top: 50px;
+  }
+  
+
+
+}

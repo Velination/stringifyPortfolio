@@ -1,0 +1,78 @@
+.container {
+    background-color: black;
+    color: white;
+    padding: 2rem 1rem;
+    text-align: center;
+    border: 2px solid red;
+  }
+  
+  .titleRow {
+    display: flex;
+    justify-content: center;
+    height: 15vh;
+    
+  }
+  
+  .recent {
+    font-weight: 800;
+    font-size: 141px;
+  }
+  
+  .projects {
+    font-weight: 400;
+    font-style: italic;
+    font-size: 141px;
+  }
+  
+  .subLinks {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    margin-top: 10px;
+    font-size: 24px;
+    letter-spacing: 1px;
+  }
+  
+  .subLinks span {
+    white-space: nowrap;
+  }
+  
+  .line {
+    height: 1px;
+    width: 180px;
+    background-color: gray;
+  }
+
+ 
+  
+  @media (max-width: 768px) {
+    .container {
+     border: 2px red solid;
+    
+    }
+
+    .titleRow {
+       
+        height: 7vh;
+        
+      }
+
+    .recent{
+        font-size: 38px;
+    }
+
+    .projects{
+        font-size: 38px;
+    }
+
+    .subLinks {
+        gap: 10px;
+        font-size: 6px;
+      }
+
+      .line {
+        height: 1px;
+        width: 40px;
+      }
+  }

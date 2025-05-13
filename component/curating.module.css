@@ -1,0 +1,52 @@
+/* DigitalExperience.module.css */
+.container {
+    color: white;
+    padding: 2rem;
+    max-width: 1400px;
+    margin: 0 auto;
+
+  }
+  
+  .heading {
+    font-size: 80px;
+    font-weight: 900;
+    margin-bottom: 2rem;
+    line-height: 100%;
+    text-transform: uppercase;
+  }
+  
+  .paragraph {
+    font-size: 32px;
+    line-height: 1.8;
+    margin-bottom: 1.5rem;
+    color: #bdbdbd;
+    font-weight: 400;
+    width: 1100px;
+  }
+  
+  .paragraph strong {
+    color: #fff;
+    font-size: 32px;
+    font-weight: 500;
+  }
+  
+  @media (max-width: 600px) {
+    .container {
+      padding: 1.5rem 1rem;
+    }
+  
+    .heading {
+      font-size: 40px;
+      
+    }
+  
+    .paragraph {
+      text-align: left;
+      width: 100%;
+      font-size: 14px;
+    }
+
+    .paragraph strong {
+      font-size: 14px;
+    }
+  }

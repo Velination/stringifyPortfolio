@@ -1,0 +1,22 @@
+.background {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    background-color: black;
+  }
+  
+  .overlay {
+    width: 100%;
+    height: auto;
+  }
+
+  .space{
+    margin-bottom: 600px;
+  }
+
+  @media (max-width: 768px) {
+.space {
+  margin-bottom: 50px;
+}
+  }

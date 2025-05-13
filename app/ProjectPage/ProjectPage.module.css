@@ -1,0 +1,12 @@
+.background {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    background-color: black;
+  }
+  
+  .overlay {
+    width: 100%;
+    height: auto;
+  }

@@ -1,0 +1,109 @@
+.buttonContainer {
+    color: #ffffff;
+    font-size: 18px;
+    text-decoration: none;
+    padding: 12px 24px;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: auto;
+    position: relative;
+    z-index: 1;
+    box-sizing: border-box;
+    text-align: center;
+    cursor: pointer;
+    background-color: #000000; /* Solid black background */
+    overflow: hidden;
+    transition: transform 0.3s ease, filter 0.3s ease;
+  }
+  
+  /* Hover Effect */
+  .buttonContainer:hover {
+    transform: scale(1.05);
+    filter: brightness(1.2);
+  }
+  
+  /* Gradient ring */
+  .buttonContainer::before {
+    content: "";
+    position: absolute;
+    top: -4px;
+    left: -4px;
+    right: -4px;
+    bottom: -4px;
+    border-radius: 40px;
+    background: conic-gradient(
+        rgba(232, 172, 49, 1),
+        rgba(232, 172, 49, 1),
+        rgba(232, 172, 49, 1),
+        rgba(232, 172, 49, 1),
+      rgba(232, 172, 49, 1)
+    );
+    animation: rotateGradient 4s linear infinite;
+    z-index: -2;
+  }
+  
+  /* Black solid background inside */
+  .buttonContainer::after {
+    content: "";
+    position: absolute;
+    top: 3px;
+    left: 3px;
+    right: 3px;
+    bottom: 3px;
+    border-radius: 27px;
+    background-color: #000000;
+    z-index: -1;
+  }
+  
+  /* Rotate the conic gradient */
+  @keyframes rotateGradient {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
+  .copyIcon {
+    cursor: pointer;
+    font-size: 20px;
+    color: #ffffff;
+  }
+  
+  .copiedText {
+    color: #ffffff;
+    font-size: 14px;
+    margin-left: 10px;
+  }
+  
+  /* ✅ Mobile responsiveness */
+  @media (max-width: 500px) {
+    .buttonContainer {
+      padding: 10px 16px;
+      font-size: 16px;
+      border-radius: 20px;
+      gap: 8px;
+    }
+  
+    .buttonContainer::before {
+      border-radius: 24px;
+    }
+  
+    .buttonContainer::after {
+      border-radius: 18px;
+    }
+  
+    .copyIcon {
+      font-size: 18px;
+    }
+  
+    .copiedText {
+      font-size: 12px;
+      margin-left: 8px;
+    }
+  }
+  

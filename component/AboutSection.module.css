@@ -1,0 +1,121 @@
+.aboutContainer {
+    position: relative;
+    width: 100%;
+    min-height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    margin-top: 30px;
+  }
+  
+  /* Image wrapper */
+  .aboutBackground {
+    position: absolute;
+    width: 1440px; /* 👈 Fixed width */
+   max-width: 100%; /* 👈 Responsive on smaller screens */
+    height: 100%;
+    background-image: url('/images/headerhero.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%); /* 👈 Center horizontally */
+    z-index: 1;
+  }
+  
+  /* Dark overlay */
+  .overlay {
+    position: absolute;
+    width: 1440px;
+    max-width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.6);
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 2;
+  }
+  
+  /* Content */
+  .aboutContent {
+    z-index: 3;
+    display: flex;
+    flex-direction: column; /* 👈 Stack vertically */
+    align-items: center; /* 👈 Center horizontally */
+    justify-content: center;
+    text-align: center;
+    gap: 1rem; /* 👈 space between texts */
+    margin-top: 130px;
+  }
+  
+  .aboutTitle {
+    font-size: 250px;
+    color: #fff;
+    z-index: 2;
+    text-align: center;
+    font-weight: 800;
+    height: 290px;
+  }
+  
+  .aboutDescription {
+    font-size: 80px;
+    font-weight: 900;
+    color: #444343;
+    text-align: center;
+    text-transform: uppercase;
+    width: 1200px;
+    height: 248px;
+    text-align: left;
+    margin-top: 1px;
+  }
+  
+  .highlight {
+    color: white;
+  }
+  
+  /* 📱 MOBILE RESPONSIVE */
+  @media (max-width: 600px) {
+    .aboutContainer {
+        background-color: black; /* fallback color */
+      }
+
+    .aboutBackground {
+        transform: scale(0.8) translateX(-30%); /* 👈 ZOOM IN */
+        transform-origin: center; /* 👈 Zoom from center */
+        transition: transform 0.5s ease-in-out;
+        background-color: black;
+    }
+
+    .overlay {
+        background: rgba(0, 0, 0, 0.6);
+    }
+
+    .aboutContent {
+        align-items: center; /* Align text to the left */
+        padding-left: 10px;
+        padding-right: 10px;
+        margin-top: 100px; /* Adjust for better spacing on mobile */
+        gap: 0.5rem; /* Less gap between elements */
+        width: 100%;
+    }
+
+    .aboutTitle {
+        font-size: 64px; /* Smaller title for mobile */
+        color: #fff; /* Change text color to black */
+        margin-bottom: 10px;
+        margin-right: 100px;
+        padding-top: 10px;
+        height: 15vh;
+    }
+
+    .aboutDescription {
+        font-size: 32px; /* Smaller description for mobile */
+        width: 100%;
+        line-height: 1.1; /* Adjust line height for better readability */
+        height: 136px;
+        width: 320px;
+    }
+}
+  

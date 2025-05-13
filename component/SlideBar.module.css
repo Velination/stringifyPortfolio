@@ -1,0 +1,77 @@
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  top: 32px;
+  left: 8px;
+  height: 990px;
+  width: 40px;
+  z-index: 1;
+  background-color: transparent;
+
+}
+
+/* Vertical Line */
+.line {
+  position: absolute;
+  top: 0;
+  right: -1px;
+  width: 1px;
+  height: 93%;
+  background-color: rgba(155, 155, 155, 1);
+}
+
+/* Logo */
+.logo {
+  margin-bottom: 300px;
+  text-align: center;
+  left: 7px;
+}
+
+.mobileMenuItem{
+  margin-top: 400px;
+}
+
+/* Icons Container */
+.icons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Each Icon */
+.icon {
+  color: white;
+  font-size: 24px;
+  margin-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 24px;
+}
+
+/* Last Icon (Copy) positioning */
+.copyIcon {
+  margin-top: 370px;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  .sidebar {
+    border: none;
+    padding-top: 5px;
+  }
+
+  .line {
+    display: none;
+  }
+
+  .icons {
+    display: none;
+  }
+
+  .logo {
+    display: block;
+    margin-bottom: 0;
+  }
+}

@@ -1,0 +1,149 @@
+/* components/TargetAudience/TargetAudience.module.css */
+
+.container {
+    background-color: #111;
+    color: white;
+    padding: 2rem;
+    font-family: Arial, sans-serif;
+    max-width: 1280px;
+    margin: 0 auto;
+  }
+  
+  .headerSection {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    margin-bottom: 2rem;
+  }
+  
+  .title {
+    font-size: 60px;
+    font-weight: 900;
+    white-space: pre-line;
+    line-height: 1.2;
+    width: 50px;
+  }
+  
+  .description {
+    max-width: 500px;
+    font-size: 21px;
+    line-height: 1.6;
+    color: #AAAAAA;
+    font-weight: 400;
+  }
+  
+  .content {
+    display: flex;
+    background-color: #222;
+    border-radius: 1rem;
+    overflow: hidden;
+    flex-wrap: wrap;
+  }
+  
+  .imageWrapper {
+    flex: 1 1 300px;
+    max-width: 400px;
+    max-height: 460px;
+    overflow: hidden;
+  }
+  
+  .image {
+    width: 100%;
+    height: auto;
+    max-height: 460px;
+    object-fit: fill;
+  }
+  
+  .profile {
+    flex: 2;
+    padding: 2rem;
+  }
+  
+  .name {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    font-weight: 700;
+  }
+  
+  .role {
+    font-size: 20px;
+    color: #A2A2A2;
+    margin-bottom: 1rem;
+    font-weight: 400;
+  }
+  
+  .bio {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #A2A2A2;
+    margin-bottom: 1.5rem;
+    font-weight: 400;
+  }
+  
+  .boxes {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+  
+  .box {
+    background-color: #333;
+    padding: 20px;
+    border-radius: 0.5rem;
+    flex: 1 1 250px;
+  }
+  
+  .box h4 {
+    margin-bottom: 0.5rem;
+    font-size: 16px;
+    font-weight: 700;
+    color: #ffffff;
+  }
+  
+  .box ul {
+    padding-left: 1.2rem;
+    color: #bbb;
+  }
+  
+  .box li {
+    margin-bottom: 0.5rem;
+    font-size: 0.95rem;
+    color: #A2A2A2;
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    .headerSection {
+      flex-direction: column;
+    }
+  
+    .title{
+        font-size: 32px;
+        width: 100%;
+    }
+
+    .description{
+        font-size: 14px;
+    }
+    .content {
+      flex-direction: column;
+    }
+  
+    .imageWrapper {
+      max-width: 100%;
+    }
+    .image {
+      max-height: 300px;
+    }
+  
+    .profile {
+      padding: 1.5rem 1rem;
+    }
+  
+    .boxes {
+      flex-direction: column;
+    }
+  }
+  

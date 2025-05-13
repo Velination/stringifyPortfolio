@@ -1,0 +1,68 @@
+.dividerContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 0;
+    position: relative;
+  }
+  
+  .line {
+    width: 1000px;
+    height: 1px;
+    background-color: #666;
+    opacity: 0.8;
+    margin-left: 80px;
+    margin-right: 80px;
+  }
+  
+  .centerIcon {
+    position: relative;
+    width: 50px;
+    height: 50px;
+    margin: 0 20px;
+  }
+  
+  .rotatingArc {
+    width: 50px;
+    height: 50px;
+    border: 2px solid #666;
+    border-radius: 50%;
+    border-top-color: transparent;
+    border-left-color: transparent;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  
+  .arrowDown {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 12px;
+    height: 12px;
+    border-left: 2px solid #666;
+    border-bottom: 2px solid #666;
+    transform: translate(-50%, -50%) rotate(-45deg);
+  }
+  
+  
+  /* 👇 Mobile View (responsive changes) */
+  @media (max-width: 600px) {
+    .line {
+      width: 100px; /* smaller line on mobile */
+      margin-left: 20px;
+      margin-right: 20px;
+    }
+  
+    .centerIcon{
+      width: 50px;
+      height: 50px;
+      margin: 0 0;
+    }
+
+    .rotatingArc{
+      
+    }
+  
+  }
+  
