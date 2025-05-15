@@ -42,6 +42,10 @@
     width: 380px;
     background-color: gray;
   }
+
+.gridWrapper{
+    width: 1400px;
+}
   
   @media (max-width: 768px) {
     .container {
@@ -71,4 +75,8 @@
         height: 1px;
         width: 40px;
       }
+
+      .gridWrapper{
+    width: 100%;
+}
   }
