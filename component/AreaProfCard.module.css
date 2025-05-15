@@ -7,8 +7,8 @@
   .titleRow {
     display: flex;
     justify-content: center;
-    height: 15vh;
-    
+    height: 99px;
+    margin-bottom: 20px;
   }
   
   .recent {
@@ -28,7 +28,7 @@
     justify-content: center;
     align-items: center;
     gap: 2rem;
-    margin-top: 50px;
+    margin-top: 10px;
     font-size: 24px;
     letter-spacing: 1px;
   }
