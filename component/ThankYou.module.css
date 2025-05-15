@@ -42,7 +42,7 @@
   }
   
   .horizontalLine {
-    width: 30%;
+    width: 20%;
     height: 1px;
     background-color: rgba(255, 255, 255, 0.3);
     margin-top: 10px;
