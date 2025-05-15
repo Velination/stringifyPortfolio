@@ -4,12 +4,13 @@
     padding: 2rem 1rem;
     text-align: center;
     border: 2px solid red;
+    width: 1400px;
   }
   
   .titleRow {
     display: flex;
     justify-content: center;
-    height: 15vh;
+    height: 99px;
     
   }
   
@@ -44,12 +45,15 @@
     background-color: gray;
   }
 
+.projectGrid{
+    width: 100%;
+}
  
   
   @media (max-width: 768px) {
     .container {
      border: 2px red solid;
-    
+    width: 100;
     }
 
     .titleRow {
