@@ -3,7 +3,8 @@
     justify-content: center;
     align-items: center;
     margin-top: 20px;
-}
+    padding: 10px;
+ }
 
 .section {
     display: flex;
@@ -13,6 +14,7 @@
     height: 900px;
     position: relative;
     width: 1400px;
+    margin: 0 auto;
   }
   
   .leftText {
@@ -50,7 +52,7 @@
         height: auto;
         padding: 0;
         position: relative;
-        width: 100%;
+        width: 95%;
       }
     
       .leftText {
@@ -68,5 +70,7 @@
         align-self: flex-end; /* move to bottom right */
         margin-top: 50px; /* push it down */
         margin-right: 0px;
+        width: 311px;
+        border: 2px solid red;
       }
   }
