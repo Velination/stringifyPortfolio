@@ -2,6 +2,7 @@
     color: white;
     padding: 2rem 1rem;
     text-align: center;
+    width: 1400px;
   }
   
   .titleRow {
@@ -50,6 +51,7 @@
   @media (max-width: 768px) {
     .container {
       padding: 0 0;
+        width: 100%;
     }
 
     .titleRow {
