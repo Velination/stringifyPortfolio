@@ -29,7 +29,7 @@ const Home = () => {
        
         <NextProjectButton />
 
-<div style={{marginBottom: '50px'}}>
+<div style={{marginBottom: '150px'}}>
 <Hero  />
 </div>
 
