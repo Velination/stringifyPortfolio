@@ -28,7 +28,7 @@ const Sidebar: React.FC = () => {
       {/* Vertical Line */}
       <div className={styles.line}></div>
 
-      {/* Logo */}
+      <Link href="/">
       <div className={styles.logo}>
         <Image
           src="/images/LAJ Logo 3.png"
@@ -37,7 +37,9 @@ const Sidebar: React.FC = () => {
           height={24}
         />
       </div>
-
+ 
+      </Link>
+      
       {/* Sidebar Icons */}
       <div className={styles.icons}>
         <Link href='/'><RxHome className={styles.icon} /></Link>
