@@ -11,18 +11,17 @@ margin: 0 auto;
   display: flex;
   justify-content: center;
   height: 15vh;
-  
 }
 
 .recent {
   font-weight: 800;
-  font-size: 141px;
+  font-size: 131px;
 }
 
 .projects {
   font-weight: 400;
   font-style: italic;
-  font-size: 141px;
+  font-size: 131px;
 }
 
 .subLinks {
@@ -31,7 +30,7 @@ margin: 0 auto;
   align-items: center;
   gap: 2rem;
   margin-top: 10px;
-  font-size: 24px;
+  font-size: 22px;
   letter-spacing: 1px;
 }
 
@@ -50,9 +49,10 @@ margin: 0 auto;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive magic */
   gap: 1.5rem;
   padding: 1rem;
-  max-width: 1200px;
+  max-width: 1400px;
   margin: 0 auto;
-  margin-top: 50px;
+  margin-top: 30px;
+  
 }
 
   .card {
@@ -107,7 +107,7 @@ margin: 0 auto;
     border-radius: 8px;
     overflow: hidden;
     width: 100%;
-    height: 513px;
+    height: 500px;
     padding-top: 66.67%;
     border: 2px solid #2C2C2C;
   }
@@ -153,7 +153,9 @@ margin: 0 auto;
   @media (max-width: 768px) {
     .projectGrid{
       padding: 0;
-      width: 100%;
+      width: 300px;
+      
+      margin:0 auto;
       margin-top: 15px;
     }
 
@@ -164,14 +166,15 @@ margin: 0 auto;
     .container {
       background-color: black;
       color: white;
-      padding: 0.5rem 0rem;
+      padding: 1rem 0.5rem;
       text-align: center;
-       width: 100px;
+       width: 345px;
        margin: 0;
+      
     }
 
     .imageWrapper {
-      height: 420px;
+      height: 320px;
      
     }
 
@@ -182,11 +185,11 @@ margin: 0 auto;
       }
 
     .recent{
-        font-size: 38px;
+        font-size: 35px;
     }
 
     .projects{
-        font-size: 38px;
+        font-size: 35px;
     }
 
     .subLinks {
