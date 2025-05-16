@@ -5,7 +5,8 @@
     background-color: black;
     padding: 20px 0;
     position: relative;
-    width: 2000px;
+    width: 1600px;
+    margin: 0 auto;
   }
   
   .line {
@@ -49,10 +50,17 @@
   
   
   /* 👇 Mobile View (responsive changes) */
-  @media (max-width: 768px) {
+  @media (max-width: 600px) {
     .line {
       margin-left: 10px;
     margin-right: 10px;
+    }
+
+    .dividerContainer {
+     
+      padding: 10px 0;
+      width: 310px;
+      margin: 0;
     }
   
     .icon-wrapper {
@@ -60,10 +68,6 @@
       height: 30px;
       margin: 0 10px;
     }
-    .dividerContainer {
-   
-    width: 100%;
-  }
   
     .check {
       font-size: 16px;
