@@ -31,7 +31,7 @@ const Sidebar: React.FC = () => {
       <Link href="/">
       <div className={styles.logo}>
         <Image
-          src="/images/LAJ Logo 3.png"
+          src="/images/LAJLogo3.png"
           alt="Logo"
           width={24}
           height={24}
