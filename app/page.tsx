@@ -10,7 +10,7 @@ import AreaProfCard from '@/component/AreaProfCard';
 import ThankYouFooter from '@/component/ThankYouCard';
 import RecentProjects from '@/component/WriteHeader';
 import AnimatedButton from '@/component/AnimatedButton';
-import NextProjectButton from '@/component/MobileButton';
+
 
 
 const Home = () => {
@@ -27,7 +27,7 @@ const Home = () => {
         {/* SideBar */}
         <Sidebar />
        
-        <NextProjectButton />
+       
 
 <div style={{marginBottom: '50px'}}>
 <Hero  />
