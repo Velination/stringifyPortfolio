@@ -29,11 +29,11 @@ const Home = () => {
        
         <NextProjectButton />
 
-<div style={{marginBottom: '150px'}}>
+<div style={{marginBottom: '50px'}}>
 <Hero  />
 </div>
 
-<div style={{marginBottom: '150px'}}>
+<div >
 <AnimatedDivider  />
 </div>
 
