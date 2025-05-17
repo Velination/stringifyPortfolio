@@ -25,7 +25,7 @@ const TargetAudience: React.FC = () => {
         
         <div className={styles.imageWrapper}>
           <Image 
-          src="/images/rectangle 27.png" 
+          src="/images/Rectangle 27.png" 
           width={400} // replace with your actual dimensions
           height={300}
           alt="Oluwatobi" className={styles.image} />
