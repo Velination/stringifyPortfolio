@@ -1,7 +1,6 @@
 'use client';
 
 import React from 'react';
-import Image from 'next/image';
 import styles from './MyCareAssistants.module.css';
 
 
@@ -43,7 +42,7 @@ const FullView: React.FC = () => {
        
        {/* Logo */}
        <div className={styles.logoContainer}>
-          <Image src="/images/MCA LOGO SVG.png" alt="Logo" width={96} height={96} />
+          <img src="/images/MCA LOGO SVG.png" alt="Logo" width={96} height={96} /> 
         </div>
 
         {/* Project Year */}
