@@ -10,7 +10,6 @@ margin: 0 auto;
 .titleRow {
   display: flex;
   justify-content: center;
-  height: 15vh;
 }
 
 .recent {
