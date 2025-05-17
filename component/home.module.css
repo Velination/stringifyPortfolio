@@ -20,10 +20,9 @@
 .backgroundss {
   background-color: black;
   width: 100%;
-  max-width: 120vw;
+  max-width: 90vw;
   box-sizing: border-box;
   height: 95vh;
-  margin: 20px; 
 }
 
 
