@@ -2,7 +2,6 @@
 
 import React, { useState } from "react";
 import Link from "next/link";
-import Image from "next/image";
 import { RxPerson, RxHome, RxDesktop } from "react-icons/rx";
 import { RiFileCopyLine, RiFileCopyFill } from "react-icons/ri";
 import styles from "./SlideBar.module.css";
@@ -30,7 +29,7 @@ const Sidebar: React.FC = () => {
 
       <Link href="/">
       <div className={styles.logo}>
-        <Image
+        <img
           src="/images/LAJLogo3.png"
           alt="Logo"
           width={24}
