@@ -31,7 +31,7 @@ const Sidebar: React.FC = () => {
       <div>
         <img
           className={styles.logo}
-          src="/images/LAJLogo3.png"
+          src="/images/LAJlogo3.png" 
           alt="Logo"
           width={24}
           height={24}
