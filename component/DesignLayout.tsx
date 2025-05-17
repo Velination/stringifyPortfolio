@@ -60,7 +60,7 @@ const DesignsView: React.FC = () => {
 
         {/* MYQURA CLIENT Section */}
         <h2 className={`${figtree.className} ${styles.sectionTitle}`}>MYQURA CLIENT</h2>
-        <ImageCardComponent src="/images/shot(second image).png" alt="Scene 2" width={1272} height={705} />
+        <ImageCardComponent src="/images/Shot(second image).png" alt="Scene 2" width={1272} height={705} />
         <ImageCardComponent src="/images/Slider(third image).png" alt="Scene 3" width={1272} height={705} />
 
         {/* MYQURA CARE PROFESSIONAL */}
