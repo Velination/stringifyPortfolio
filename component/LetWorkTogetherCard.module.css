@@ -69,56 +69,8 @@
     margin-left: 50px;
     border-radius: 70px;
   }
-  
-  /* ✅ Mobile Responsive */
-  @media (max-width: 768px) {
-    .container {
-      width: 100%;
-      height: auto;
-      flex-direction: column;
-      padding: 15px;
-      padding-bottom: 0;
-      margin-top: 30px;
-      margin-bottom: 0;
-    }
-        .containers {
-      width: 100%;
-      
-    }
-  
-    .imageSection {
-        padding-top: 20px;
-      width: 100%;
-      height: 70px;
-      margin-bottom: 20px;
-    }
 
-    .profileImage {
-        width: 160px;
-      }
-  
-    .textSection {
-      padding-left: 0;
-      text-align: center;
-    }
-  
-    .mainText {
-      font-size: 16px;
-      margin-left: 0;
-    }
-  
-    .subText {
-      font-size: 16px;
-      margin-left: 0;
-    }
-  
-    .buttonContainer {
-      margin: 20px auto 0 auto;
-    }
-  }
-  
-
-  .projectGrid {
+.projectGrid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive magic */
     gap: 1.5rem;
@@ -219,6 +171,56 @@
     .card:hover .subtitle {
       color: var(--hover-color);
     }
+  
+  /* ✅ Mobile Responsive */
+  @media (max-width: 768px) {
+    .container {
+      width: 100%;
+      height: auto;
+      flex-direction: column;
+      padding: 15px;
+      padding-bottom: 0;
+      margin-top: 30px;
+      margin-bottom: 0;
+    }
+        .containers {
+      width: 100%;
+      
+    }
+  
+    .imageSection {
+        padding-top: 20px;
+      width: 100%;
+      height: 70px;
+      margin-bottom: 20px;
+    }
+
+    .profileImage {
+        width: 160px;
+      }
+  
+    .textSection {
+      padding-left: 0;
+      text-align: center;
+    }
+  
+    .mainText {
+      font-size: 16px;
+      margin-left: 0;
+    }
+  
+    .subText {
+      font-size: 16px;
+      margin-left: 0;
+    }
+  
+    .buttonContainer {
+      margin: 20px auto 0 auto;
+    }
+  }
+  
+
+  
     
     @media (max-width: 480px) {
       .imageWrapper{
@@ -253,8 +255,6 @@
     .titleRow {
       display: flex;
       justify-content: center;
-      height: 15vh;
-      ;
     }
     
     .recent {
@@ -275,7 +275,6 @@
       justify-content: center;
       align-items: center;
       gap: 2rem;
-      margin-top: 20px;
       font-size: 24px;
       letter-spacing: 1px;
     }
