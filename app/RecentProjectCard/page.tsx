@@ -12,7 +12,7 @@ export default function Home() {
         <title>Home Page</title>
       </Head>
 
-      <div className={styless.background}>
+      <div className={styless.backgroundss}>
         <div className={styless.overlay}>
           {/* SideBar */}
           <Sidebar />
