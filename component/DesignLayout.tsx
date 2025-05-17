@@ -54,7 +54,7 @@ const DesignsView: React.FC = () => {
 
         {/* Image Cards */}
         <div>
-        <ImageCardComponent src="/images/scene 18(first image).png" alt="Scene 1" width={1272} height={705} />
+        <ImageCardComponent src="/images/Scene 18(first image).png" alt="Scene 1" width={1272} height={705} />
         </div>
         
 
