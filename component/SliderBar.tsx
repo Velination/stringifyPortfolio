@@ -28,8 +28,9 @@ const Sidebar: React.FC = () => {
       <div className={styles.line}></div>
 
       <Link href="/">
-      <div className={styles.logo}>
+      <div>
         <img
+          className={styles.logo}
           src="/images/LAJLogo3.png"
           alt="Logo"
           width={24}
