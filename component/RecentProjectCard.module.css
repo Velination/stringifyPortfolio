@@ -257,7 +257,7 @@ margin: 0 auto;
       @media (min-width: 1024px) and (max-width: 1366px) { 
        .projectGrid{
       padding: 0;
-      width: 300px; 
+      width: 800px; 
       margin:0 auto;
       margin-top: 15px;
     }
@@ -271,7 +271,7 @@ margin: 0 auto;
       color: white;
       padding: 1rem 0.5rem;
       text-align: center;
-       width: 345px;
+       width: 800px;
        margin: 0;
       
     }
@@ -283,21 +283,20 @@ margin: 0 auto;
 
     .titleRow {
        
-        height: 7vh;
-        
+        height: 8vh;
       }
 
     .recent{
-        font-size: 35px;
+        font-size: 85px;
     }
 
     .projects{
-        font-size: 35px;
+        font-size: 85px;
     }
 
     .subLinks {
         gap: 10px;
-        font-size: 6px;
+        font-size: 21px;
       }
 
       .line {
