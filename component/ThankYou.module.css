@@ -156,3 +156,66 @@
       
     }
   }
+
+  
+  @media (min-width: 1024px) and (max-width: 1366px) { 
+   .thankYouMessage {
+      font-size: 40px;
+    }
+
+    .container{
+      width: 100%;
+    }
+  
+    .highlight {
+      font-size: 40px;
+    }
+
+    .topSection {
+      max-width: 100%;
+      padding-bottom: 5px;
+      display: block;
+    align-items: center;
+    justify-content: center;
+    }
+
+    .leftText{
+       height: auto;
+       width: auto;
+       font-size: 15px;
+       margin-top: 10px;
+    }
+
+    .designerText,
+    .developerText,
+    .developerName {
+      font-size: 12px;
+    margin-top: 15px;
+    }
+
+    .horizontalLine {
+      display: none;
+    }
+  
+    .socialIcons {
+      gap: 8px;
+      padding-top: 10px;
+    }
+
+    .logoContainer {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-left: 0px;
+    }
+  
+    .iconContainer {
+      width: 28px;
+      height: 28px;
+    }
+  
+    .logo {
+      width: 40px;
+      
+    }
+    }
