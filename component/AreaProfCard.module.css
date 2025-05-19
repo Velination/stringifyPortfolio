@@ -3,12 +3,13 @@
     padding: 2rem 1rem;
     text-align: center;
     width: 1400px;
+    margin: 0 auto;
   }
   
   .titleRow {
     display: flex;
     justify-content: center;
-    height: 99px;
+    height: 15vh;
     margin-bottom: 20px;
   }
   
@@ -44,28 +45,30 @@
     background-color: gray;
   }
 
-.gridWrapper{
+  .gridWrapper{
     width: 1400px;
-}
+    margin: 0 auto;
+  }
   
-  @media (max-width: 768px) {
+   @media (max-width: 786px) and (max-width: 834px)  {
     .container {
-      padding: 0 0;
-        width: 100%;
+      padding: 10px 10px;
+      margin: 0;
+      width: 340px;
     }
 
     .titleRow {
        
         height: 7vh;
-        
+  
       }
 
     .recent{
-        font-size: 38px;
+        font-size: 14px;
     }
 
     .projects{
-        font-size: 38px;
+        font-size: 34px;
     }
 
     .subLinks {
@@ -79,6 +82,81 @@
       }
 
       .gridWrapper{
-    width: 100%;
-}
+        width: 100%;
+      }
   }
+
+
+@media (max-width: 486px) {
+ .container {
+      padding: 10px 10px;
+      margin: 0;
+      width: 340px;
+    }
+
+    .titleRow {
+       
+        height: 2vh;
+      
+      }
+
+    .recent{
+        font-size: 14px;
+    }
+
+    .projects{
+        font-size: 34px;
+    }
+
+    .subLinks {
+        gap: 10px;
+        font-size: 6px;
+      }
+
+      .line {
+        height: 1px;
+        width: 40px;
+      }
+
+      .gridWrapper{
+        width: 100%;
+      }
+      }
+
+      @media (min-width: 1024px) and (max-width: 1366px) { 
+        .container {
+      padding: 10px 10px;
+      margin: 0;
+      width: 340px;
+    }
+
+    .titleRow {
+       
+        height: 7vh;
+  
+      }
+
+    .recent{
+        font-size: 14px;
+    }
+
+    .projects{
+        font-size: 34px;
+    }
+
+    .subLinks {
+        gap: 10px;
+        font-size: 6px;
+      }
+
+      .line {
+        height: 1px;
+        width: 40px;
+      }
+
+      .gridWrapper{
+        width: 100%;
+      }
+      }
+    
+
