@@ -113,20 +113,20 @@
       }
     
       .leftText {
-        font-size: 40px;
+        font-size: 50px;
         text-align: left;
         align-self: flex-start; /* move to top left */
         margin-left: 0px;
-        max-width: 220px;
+        max-width: 420px;
         margin-bottom: 40px;
       }
     
       .rightText {
-        font-size: 24px;
+        font-size: 35px;
         text-align: right;
         align-self: flex-end; /* move to bottom right */
         margin-top: 50px; /* push it down */
         margin-right: 0px;
-        width: 311px;
+        width: 511px;
       }
       }
