@@ -100,7 +100,7 @@
   @media (max-width: 768px) and (max-width: 834px) {
 
      .heroContainer {
-    height: 40vh;
+    height: 60vh;
   }
 
     .hola {
@@ -160,7 +160,7 @@
 
 @media (max-width: 480px) {
   .heroContainer {
-    height: 40vh;
+    height: 60vh;
   }
 
  .hola {
