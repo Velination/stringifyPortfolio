@@ -31,3 +31,16 @@
     }
   }
   
+  @media (min-width: 780px) and (max-width: 1023px) { 
+    .imageCardContainer {
+      margin: 40px 5px;
+      border-radius: 16px;
+      height: auto;
+      width: 900px;
+      margin: 0 auto;
+    }
+  
+    .imageCardContainer img {
+      border-radius: 12px;
+    }
+    }
