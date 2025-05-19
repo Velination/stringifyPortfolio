@@ -72,7 +72,7 @@
       margin-top: 10px;
       height: auto;
       gap: 20px;
-     margin-left:0px;
+     margin-left:20px;
     }
   
     .textContainer {
@@ -107,9 +107,6 @@
     
     }
      
-    
-    
-
       .arrow {
         margin-left: 6px;
         font-size: 12px;
@@ -128,4 +125,69 @@
         border-radius: 10px;
       }
   }
+
+  
+@media (min-width: 1024px) and (max-width: 1366px) { 
+     .container {
+      margin-top: 10px;
+      height: 700px;
+      gap: 20px;
+     margin-left:20px;
+     width: 900px;
+     margin-bottom: 30px;
+     margin: 0 auto;
+    }
+  
+    .textContainer {
+      width: 95%;
+      height: auto;
+      
+    }
+
+
+    .title{
+        font-size: 26px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-bottom: 4px;
+    }
+  
+    .projectTitle {
+      font-size: 26px;
+      line-height: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: 8px;
+    }
+  
+    .description {
+      font-size: 30px;
+      line-height: 32px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: 8px;
+    
+    }
+     
+      .arrow {
+        margin-left: 6px;
+        font-size: 12px;
+      }
+      
+  
+    .imageContainer {
+      width: 95%;
+      
+    }
+
+    .image {
+        width: 100%;
+        height: 350px;
+        object-fit: cover;
+        border-radius: 10px;
+      }
+    }
   
