@@ -1,8 +1,12 @@
+.containers{
+  width: 1400px;
+  margin: 0 auto;
+}
 .container {
     background-color: rgba(174, 174, 174, 0.2);
     padding: 20px;
     margin: 100px auto;
-    width: 1400px;
+    width: 1272px;
     height: 479px;
     border-radius: 40px;
     display: flex;
@@ -13,11 +17,7 @@
     position: relative;
   }
 
-.containers {
-    
-    width: 1400px;
-   
-  }
+ 
   
   .imageSection {
     z-index: 1;
@@ -70,7 +70,7 @@
     border-radius: 70px;
   }
 
-.projectGrid {
+    .projectGrid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive magic */
     gap: 1.5rem;
@@ -171,9 +171,60 @@
     .card:hover .subtitle {
       color: var(--hover-color);
     }
+    
+
+  
+    .containers {
+      background-color: black;
+      color: white;
+      padding: 2rem 1rem;
+      text-align: center;
+      width: 100%;
+    }
+    
+    .titleRow {
+      display: flex;
+      justify-content: center;
+      height: 15vh;
+      ;
+    }
+    
+    .recent {
+      
+      font-weight: 400;
+      font-style: italic;
+      font-size: 151px;
+    }
+    
+    .projects {
+      font-weight: 800;
+      font-size: 151px;
+      letter-spacing: 6%;
+    }
+    
+    .subLinks {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 2rem;
+      margin-top: 20px;
+      font-size: 24px;
+      letter-spacing: 1px;
+    }
+    
+    .subLinks span {
+      white-space: nowrap;
+    }
+    
+    .line {
+      height: 1px;
+      width: 260px;
+      background-color: gray;
+    }
+
   
   /* ✅ Mobile Responsive */
-  @media (max-width: 768px) {
+  @media (max-width: 768px) and (max-width: 834px) {
     .container {
       width: 100%;
       height: auto;
@@ -182,10 +233,6 @@
       padding-bottom: 0;
       margin-top: 30px;
       margin-bottom: 0;
-    }
-        .containers {
-      width: 100%;
-      
     }
   
     .imageSection {
@@ -217,81 +264,10 @@
     .buttonContainer {
       margin: 20px auto 0 auto;
     }
-  }
-  
 
-  
-    
-    @media (max-width: 480px) {
-      .imageWrapper{
-        height: 220px;
-      }
-  
-      .projectName .year{
-        font-size: 0.8rem;
-      }
-  
-      .textOverlay {
-        padding: 0.5rem;
-      }
-    
-      .title {
-        font-size: 0.8rem;
-      }
-    
-      .subtitle {
-        font-size: 0.65rem;
-      }
-    }
-  
-    .containers {
-      background-color: black;
-      color: white;
-      padding: 2rem 1rem;
-      text-align: center;
-      width: 100%;
-    }
-    
-    .titleRow {
-      display: flex;
-      justify-content: center;
-    }
-    
-    .recent {
-      
-      font-weight: 400;
-      font-style: italic;
-      font-size: 151px;
-    }
-    
-    .projects {
-      font-weight: 800;
-      font-size: 151px;
-      letter-spacing: 6%;
-    }
-    
-    .subLinks {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      gap: 2rem;
-      font-size: 24px;
-      letter-spacing: 1px;
-    }
-    
-    .subLinks span {
-      white-space: nowrap;
-    }
-    
-    .line {
-      height: 1px;
-      width: 260px;
-      background-color: gray;
-    }
-    
-    @media (max-width: 768px) {
       .containers {
         padding: 0;
+        width: 100%;
     
       }
       .titleRow {
@@ -319,6 +295,150 @@
           width: 40px;
         }
     }
+
+
+@media (max-width: 480px) {
+ .container {
+      width: 100%;
+      height: auto;
+      flex-direction: column;
+      padding: 15px;
+      padding-bottom: 0;
+      margin-top: 30px;
+      margin-bottom: 0;
+    }
+  
+    .imageSection {
+        padding-top: 20px;
+      width: 100%;
+      height: 70px;
+      margin-bottom: 20px;
+    }
+
+    .profileImage {
+        width: 160px;
+      }
+  
+    .textSection {
+      padding-left: 0;
+      text-align: center;
+    }
+  
+    .mainText {
+      font-size: 16px;
+      margin-left: 0;
+    }
+  
+    .subText {
+      font-size: 16px;
+      margin-left: 0;
+    }
+  
+    .buttonContainer {
+      margin: 20px auto 0 auto;
+    }
+
+      .containers {
+        padding: 0;
+        width: 100%;
     
+      }
+      .titleRow {
+         
+          height: 7vh;
+          
+        }
+  
+      .recent{
+          font-size: 38px;
+      }
+  
+      .projects{
+          font-size: 38px;
+      }
+  
+      .subLinks {
+          gap: 10px;
+          font-size: 8px;
+          margin-top: 10px;
+        }
+  
+        .line {
+          height: 1px;
+          width: 40px;
+        }
+      }
+
+      @media (min-width: 1024px) and (max-width: 1366px) { 
+         .container {
+      width: 100%;
+      height: auto;
+      flex-direction: column;
+      padding: 15px;
+      padding-bottom: 0;
+      margin-top: 30px;
+      margin-bottom: 0;
+    }
+  
+    .imageSection {
+        padding-top: 20px;
+      width: 100%;
+      height: 70px;
+      margin-bottom: 20px;
+    }
+
+    .profileImage {
+        width: 160px;
+      }
+  
+    .textSection {
+      padding-left: 0;
+      text-align: center;
+    }
+  
+    .mainText {
+      font-size: 16px;
+      margin-left: 0;
+    }
+  
+    .subText {
+      font-size: 16px;
+      margin-left: 0;
+    }
+  
+    .buttonContainer {
+      margin: 20px auto 0 auto;
+    }
+
+      .containers {
+        padding: 0;
+        width: 100%;
     
+      }
+      .titleRow {
+         
+          height: 7vh;
+          
+        }
+  
+      .recent{
+          font-size: 38px;
+      }
+  
+      .projects{
+          font-size: 38px;
+      }
+  
+      .subLinks {
+          gap: 10px;
+          font-size: 8px;
+          margin-top: 10px;
+        }
+  
+        .line {
+          height: 1px;
+          width: 40px;
+        }
+      }
     
+
