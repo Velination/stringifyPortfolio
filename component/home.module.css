@@ -1,13 +1,9 @@
-
-
-
 .background {
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 2rem;
   background-color: black;
- 
 }
 
 .backgrounds {
@@ -22,7 +18,8 @@
   width: 100%;
   max-width: 100vw;
   box-sizing: border-box;
-  height: 97vh;
+  height: 95vh;
+  margin: 20px; 
 }
 
 
@@ -92,6 +89,67 @@
     margin-top: 50px;
   }
   
+  .backgroundss {
+  
+  height: auto;
+
+}
 
 
 }
+
+
+ @media (max-width: 768px) and (max-width: 834px) {
+    .backgrounds {
+  
+    width: 100%;
+  }
+
+  .projectCardContainer {
+    margin-top: 50px;
+  }
+
+    .backgroundss {
+  
+  height: auto;
+
+}
+  
+    }
+
+
+@media (max-width: 480px) {
+  .backgrounds {
+  
+    width: 100%;
+  }
+
+  .projectCardContainer {
+    margin-top: 50px;
+  }
+
+    .backgroundss {
+  
+  height: auto;
+
+}
+  
+      }
+
+      @media (min-width: 1024px) and (max-width: 1366px) { 
+        .backgrounds {
+  
+    width: 100%;
+  }
+
+  .projectCardContainer {
+    margin-top: 50px;
+  }
+  
+    .backgroundss {
+  
+  height: auto;
+
+}
+      }
+    
