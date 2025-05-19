@@ -5,6 +5,7 @@
   width: 1400px;
   margin: 0 auto;
   margin-top: 70px;
+  border-radius: 24px;
 }
 
 .heading {
@@ -104,3 +105,42 @@
     font-size: 12px;
   }
 }
+
+@media (min-width: 1023px) and (max-width: 1366px) { 
+      .container {
+    
+    padding: 1.5rem 1rem;
+    width: 850px;
+  
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+  }
+  .heading {
+    font-size: 30px;
+    margin-bottom: 0.2rem;
+    width: 455px ;
+  }
+  
+  .subheading {
+    font-size: 20px;
+    margin-bottom: 1rem;
+    width: 600px;
+  }
+
+  .cardId {
+    font-size: 21px;
+    margin-bottom: 0.2rem;
+  }
+  
+  .cardTitle {
+    font-size: 21px;
+    margin-bottom: 0.2rem;
+  }
+  
+  .cardDescription {
+    font-size: 19px;
+  }
+
+    }
