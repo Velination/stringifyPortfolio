@@ -42,7 +42,6 @@
   
   .mainText {
     color: black;
-    font-family: 'Poppins', sans-serif;
     font-size: 52px;
     font-weight: 500;
     line-height: 100%;
@@ -186,7 +185,7 @@
       display: flex;
       justify-content: center;
       height: 15vh;
-      ;
+      
     }
     
     .recent {
@@ -371,7 +370,7 @@
 
       @media (min-width: 1024px) and (max-width: 1366px) { 
          .container {
-      width: 100%;
+      width: 600px;
       height: auto;
       flex-direction: column;
       padding: 15px;
@@ -397,12 +396,12 @@
     }
   
     .mainText {
-      font-size: 16px;
+      font-size: 30px;
       margin-left: 0;
     }
   
     .subText {
-      font-size: 16px;
+      font-size: 30px;
       margin-left: 0;
     }
   
@@ -413,25 +412,27 @@
       .containers {
         padding: 0;
         width: 100%;
+        margin: 0;
+        margin-right: 50px;
     
       }
       .titleRow {
          
-          height: 7vh;
+          height: 6vh;
           
         }
   
       .recent{
-          font-size: 38px;
+          font-size: 63px;
       }
   
       .projects{
-          font-size: 38px;
+          font-size: 63px;
       }
   
       .subLinks {
           gap: 10px;
-          font-size: 8px;
+          font-size: 15px;
           margin-top: 10px;
         }
   
