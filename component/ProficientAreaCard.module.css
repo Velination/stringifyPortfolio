@@ -30,7 +30,7 @@
   justify-content: center;
   align-items: center;
   gap: 2rem;
- 
+  
   font-size: 24px;
   letter-spacing: 1px;
 }
@@ -193,4 +193,79 @@
 
 }
 
+@media (min-width: 1024px) and (max-width: 1366px) { 
+     .container{
+    width: 810px;
+  }
 
+  .gridWrapper {
+    width: 100%;
+    padding: 0;
+   margin-top: 10px;
+  }
+
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 22px; /* Space between cards */
+    padding: 0px; /* Padding at the top and bottom */
+    margin:  2px; /* <-- New: Margin on left and right */
+    justify-items: stretch;
+    
+  }
+
+  .card {
+    height: 320px;
+    width: 100%;
+    padding: 2rem;
+  }
+
+
+  .titleRow {
+     
+    height: 7vh;
+    
+  }
+
+.recent{
+    font-size: 80px;
+}
+
+.projects{
+    font-size: 80px;
+}
+
+.subLinks {
+    gap: 30px;
+    font-size: 25px;
+    margin-top: 10px;
+  }
+
+  .line {
+    height: 1px;
+    width: 80px;
+  }
+
+  .icon {
+    margin-top: 10px;
+    width: 50px;
+    height: 50px;
+  }
+
+  .cardTitle {
+    margin-top: 0px;
+    font-size: 30px;
+    font-weight: 700;
+    text-align: left;
+  }
+  
+  .cardDescription {
+    margin: 0;
+    font-size: 24px;
+    line-height: 30px;
+    font-weight: 400;
+    color: #A4A4A4;
+    text-align: left;
+  }
+
+    }
