@@ -19,7 +19,7 @@
   max-width: 100vw;
   box-sizing: border-box;
   height: 95vh;
-  margin: 20px; 
+padding: 65px;
 }
 
 
@@ -78,27 +78,6 @@
 
 
 
-
-@media (max-width: 768px) {
-  .backgrounds {
-  
-    width: 100%;
-  }
-
-  .projectCardContainer {
-    margin-top: 50px;
-  }
-  
-  .backgroundss {
-  
-  height: auto;
-
-}
-
-
-}
-
-
  @media (max-width: 768px) and (max-width: 834px) {
     .backgrounds {
   
@@ -110,7 +89,7 @@
   }
 
     .backgroundss {
-  
+  padding: 10px;
   height: auto;
 
 }
@@ -130,6 +109,7 @@
 
     .backgroundss {
   
+  padding: 10px;
   height: auto;
 
 }
@@ -147,7 +127,7 @@
   }
   
     .backgroundss {
-  
+ padding: 10px;
   height: auto;
 
 }
