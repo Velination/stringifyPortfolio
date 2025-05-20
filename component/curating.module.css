@@ -29,8 +29,30 @@
     font-size: 32px;
     font-weight: 500;
   }
+
+  @media (max-width: 480px) {
+    .container {
+      padding: 1.5rem 1rem;
+      width: 470px;
+    }
   
-  @media (max-width: 600px) {
+    .heading {
+      font-size: 40px;
+      
+    }
+  
+    .paragraph {
+      text-align: left;
+      width: 100%;
+      font-size: 14px;
+    }
+
+    .paragraph strong {
+      font-size: 14px;
+    }
+  }
+  
+  @media (max-width: 768px) {
     .container {
       padding: 1.5rem 1rem;
     }
@@ -50,3 +72,26 @@
       font-size: 14px;
     }
   }
+
+   @media (min-width: 780px) and (max-width: 1023px) { 
+     .container {
+      padding: 1.5rem 1rem;
+      width: 900px;
+    }
+  
+    .heading {
+      font-size: 40px;
+      
+    }
+  
+    .paragraph {
+      text-align: left;
+      width: 100%;
+      font-size: 20px;
+    }
+
+    .paragraph strong {
+      font-size: 20px;
+    }
+    
+    }
