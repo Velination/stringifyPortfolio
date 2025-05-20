@@ -69,3 +69,34 @@
   
     
   }
+
+   @media (min-width: 780px) and (max-width: 1023px) { 
+      .container{
+       padding: 0;
+       max-width: 900px;
+       margin: 0;
+       margin-top: 30px;
+       margin: 0 auto;
+    }
+
+    .header {
+      flex-direction: row;
+      align-items: flex-start;
+    }
+  
+    .title {
+      font-size: 60px;
+      width: 320px;
+      font-weight: 700;
+     
+    }
+  
+    .description {
+      font-size: 20px;
+      max-width: 450px;
+      font-weight: 400;
+      line-height: 30px;
+      padding: 1rem;
+      
+    }
+    }
