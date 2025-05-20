@@ -1,6 +1,7 @@
 'use client';
 
 import React from 'react';
+import Image from 'next/image';
 import styles from './MyCareAssistants.module.css';
 
 
@@ -42,7 +43,7 @@ const FullView: React.FC = () => {
        
        {/* Logo */}
        <div className={styles.logoContainer}>
-          <img src="/images/MCA LOGO SVG.png" alt="Logo" width={96} height={96} /> 
+          <img src="/images/MCA LOGO SVG.png" alt="Logo" width={96} height={96} />
         </div>
 
         {/* Project Year */}
@@ -58,7 +59,7 @@ const FullView: React.FC = () => {
 
         {/* Image Cards */}
         <div>
-        <ImageCardComponent src="/images/Scene 18(first image).png" alt="Scene 1" width={1272} height={705} />
+        <ImageCardComponent src="/images/scene 18(first image).png" alt="Scene 1" width={1272} height={705} />
         </div>
 
         <CaseStudyOverview
@@ -94,7 +95,7 @@ const FullView: React.FC = () => {
       <CaseStudySection
         title="The Problem"
         content={[
-            <>
+            <div className={stylesss.section}>
           The relative of the founder of MyCare Assistant suffered a major health challenge, 
           and the inadequate and costly support services led to her death. 
           This led to the birth of MyCare Assistant, 
@@ -104,7 +105,7 @@ const FullView: React.FC = () => {
             MyCare Assistant recognised the necessity of transitioning from manual 
             operations to a digital platform.</strong>
           ,
-          </>
+          </div>
         ]}
 
       />
@@ -112,7 +113,7 @@ const FullView: React.FC = () => {
       <CaseStudySection
         title="The Solution"
         content={[
-            <>
+            <div className={stylesss.section}>
           After thoroughly understanding MyCare Assistant’s business processes, 
           we determined that a mobile application for both clients and care 
           professionals was the ideal solution.&nbsp;
@@ -125,7 +126,7 @@ const FullView: React.FC = () => {
                 preferences.Furthermore, the Care Professional app provides access
                  to affordable courses designed to enhance their skill sets and 
                  professional development. </strong>
-          </>,
+          </div>,
           
         ]}
       />
