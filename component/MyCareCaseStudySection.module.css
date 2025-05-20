@@ -43,13 +43,13 @@
      }
 
      .section {
-      
+      width: 740px;
       padding-top: 0px;
     }
 
      .wrapper {
       margin: 1rem auto;
-      width: 100%;
+      width: 750px;
       margin: 0.2rem auto;
       margin-top: 50px;
       height: auto;
@@ -79,7 +79,38 @@
 
      .wrapper {
       margin: 1rem auto;
-      width: 920px;
+      width: 900px;
+      margin: 0.2rem auto;
+      margin-top: 50px;
+      height: auto;
+      padding: 2rem 1rem;
+      margin-bottom: 30px;
+    }
+
+     .paragraph {
+        font-size: 12px;
+        line-height : 24px;
+        width: 900px;
+        padding: 1rem 0.5rem;
+     }
+    }
+
+     @media  (max-width: 480px) { 
+     .title{
+        font-size: 24px;
+        margin-bottom: 0.2rem;
+     }
+
+     .section {
+      padding-top: 0px;
+      width: 450px;
+      padding: 10px;
+      padding-bottom: 0;
+    }
+
+     .wrapper {
+      margin: 1rem auto;
+      width: 470px;
       margin: 0.2rem auto;
       margin-top: 50px;
       height: auto;
