@@ -68,3 +68,37 @@
     font-size: 14px;
   }
 }
+
+@media (min-width: 780px) and (max-width: 1023px) { 
+    .container{
+      margin: 0;
+  margin: 0 auto;
+  padding: 1.5rem;
+  max-width: 900px;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+    
+  }
+
+  .image {
+    height: auto;
+  }
+
+  .card{
+    padding: 0;
+    padding-top: 1rem;
+  }
+
+  .text{
+    font-size: 20px;
+    
+    width: 400px;
+    padding-left: 27px;
+
+  }
+    }
+  
