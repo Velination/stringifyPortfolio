@@ -114,10 +114,7 @@ const TantalizerFullLayout: React.FC = () => {
       <CaseStudySection
         title="The Problem"
         content={[
-            <>
-     
-
-
+            <div className={stylesss.section}>
          <ul className={`${styles.list} ${poppins.className}`}>
                   <li><strong className={styles.pan}>Increased Competition: </strong>Tantalizers faces stiff competition from international chains like KFC and Domino's, 
                   as well as local competitors such as Chicken Republic.</li>
@@ -129,14 +126,14 @@ const TantalizerFullLayout: React.FC = () => {
                   Digital Strategy:</strong> Tantalizers needs to adopt new digital strategies to appeal to Nigeria's increasingly tech-savvy 
                   consumer base.</li>
                 </ul>
-          </>
+          </div>
         ]}
 
       />
       <CaseStudySection
         title="The Solution"
         content={[
-            <>
+            <div className={stylesss.section}>
           After thoroughly understanding MyCare Assistant’s business processes, 
           we determined that a mobile application for both clients and care 
           professionals was the ideal solution.&nbsp;
@@ -149,7 +146,7 @@ const TantalizerFullLayout: React.FC = () => {
                 preferences.Furthermore, the Care Professional app provides access
                  to affordable courses designed to enhance their skill sets and 
                  professional development. </strong>
-          </>,
+          </div>,
           
         ]}
       />
