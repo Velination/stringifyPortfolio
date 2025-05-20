@@ -63,6 +63,7 @@
     width: 80%;
     color: #A4A4A4;
     padding-left: 70px;
+    border: 2px solid red;
   }
   
   .iamContainer {
@@ -97,29 +98,30 @@
   
   
   /* ✅ Mobile Responsive */
-  @media (max-width: 768px) {
+  @media (max-width: 768px){
 
      .heroContainer {
-    height: 60vh;
+    height: 40vh;
+    
   }
 
     .hola {
       font-size: 80px;
       margin-top: 10px;
-      margin-bottom: 0; /* 👈 Remove bottom margin between HEY and IAM */
+      margin-bottom: 0; 
       letter-spacing: 5%;
       text-align: left;
       font-weight: 500;
       width: 50px;
     }
     .backgroundImage {
-      transform: scale(0.8) translateX(30%); /* 👈 ZOOM IN */
-      transform-origin: center; /* 👈 Zoom from center */
+      transform: scale(0.8) translateX(30%); 
+      transform-origin: center; 
       transition: transform 0.5s ease-in-out;
       height: 500px;
     }
     .mobileCardContent {
-      align-items: flex-start; /* Move everything left */
+      align-items: flex-start; 
       padding-left: 10px;
       padding-right: 10px;
       padding-top: 0;
@@ -160,7 +162,7 @@
 
 @media (max-width: 480px) {
   .heroContainer {
-    height: 60vh;
+    height: 40vh;
   }
 
  .hola {
@@ -170,13 +172,13 @@
       letter-spacing: 5%;
       text-align: left;
       font-weight: 500;
-      width: 50px;
+      width: 140px;
     }
     .backgroundImage {
       transform: scale(0.8) translateX(30%); /* 👈 ZOOM IN */
       transform-origin: center; /* 👈 Zoom from center */
       transition: transform 0.5s ease-in-out;
-      height: 500px;
+      height: 600px;
     }
     .mobileCardContent {
       align-items: flex-start; /* Move everything left */
@@ -217,4 +219,68 @@
     }
       }
 
-    
+@media (min-width: 780px) and (max-width: 1023px) { 
+    .heroContainer {
+    height: 60vh;
+    width: 1000px;
+    margin: 0 auto;
+  }
+
+ .hola {
+      font-size: 110px;
+      margin-top: 10px;
+      margin-bottom: 0; /* 👈 Remove bottom margin between HEY and IAM */
+      letter-spacing: 5%;
+      text-align: left;
+      font-weight: 500;
+      width: 740px;
+    }
+    .backgroundImage {
+      transform: scale(0.8) translateX(30%); /* 👈 ZOOM IN */
+      transform-origin: center; /* 👈 Zoom from center */
+      transition: transform 0.5s ease-in-out;
+      height: 900px;
+      width: 900px;
+    }
+    .mobileCardContent {
+      align-items: flex-start; /* Move everything left */
+      padding-left: 10px;
+      padding-right: 10px;
+      padding-top: 0;
+      margin-bottom: 60px;
+      
+    }
+  
+    .subTextContainer {
+      display: none; /* Remove Product Designer and Lawal Jimoh */
+    }
+  
+    .iamContainer {
+      flex-direction: column;
+      align-items: flex-start;
+      margin-top: 0; /* 👈 No top margin between HEY and IAM */
+      gap: 0; /* 👈 No gap between IAM and Logo */
+      width: 700px;
+    }
+  
+    .iamText {
+      font-size: 110px;
+      font-weight: 500;
+
+      text-align: left;
+      margin: 0; /* 👈 Remove any default margin */
+    }
+  
+    .logoContainer {
+      margin-top: 0; /* 👈 No extra margin */
+    }
+  
+    .fakeLogo {
+      width: 180px;
+      height: 100px;
+      margin-top: 0; /* 👈 Also no margin here */
+    }
+      }
+  
+  
+ 
