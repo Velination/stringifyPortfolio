@@ -109,8 +109,9 @@
     .dividerContainer {
      
       padding: 10px 0;
-      width: 810px;
+      width: 900px;
       margin: 0;
+        margin: 0 auto;
     }
   
     .icon-wrapper {
