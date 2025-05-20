@@ -129,3 +129,68 @@
         flex-shrink: 0;
       }
 }
+
+@media (min-width: 780px) and (max-width: 1023px) { 
+  .wrapper {
+        gap: 1rem;
+        padding: 0.4rem;
+        width: 900px;
+        margin: 0;
+        margin-top: 30px;
+        margin: 0 auto;
+        
+      }
+      
+      .mockupContainer {
+        flex: 0 0 auto;
+        display: flex;
+        justify-content:flex-start;
+        gap: 1rem;
+      }
+      
+      .phoneImage {
+        width: 100%;
+        max-width: 200px;
+        height: 365px;
+      }
+      
+      .icon{
+        display: none;
+      }
+    
+      .infoContainer {
+        flex: 1 1 auto;
+        width: 201px;
+        
+      }
+      
+      .infoList {
+        list-style: none;
+        counter-reset: step;
+        padding: 5px;
+        margin: 0;
+        font-size: 12px;
+      }
+      
+      .infoList li {
+        display: flex;
+        align-items: center; 
+        gap: 0.5rem;         
+        margin-bottom: 1.2rem; 
+        font-size: 20px;
+      }
+      
+      .number {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: 30px;   /* Slightly smaller circle */
+        height: 30px;
+        border-radius: 50%;
+        background: white;
+        color: #ff5f5f;
+        font-weight: bold;
+        font-size: 1.7rem;
+        flex-shrink: 0;
+      }
+    }
