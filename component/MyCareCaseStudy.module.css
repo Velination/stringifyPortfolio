@@ -70,6 +70,7 @@
         align-items: center;
         justify-content: center;
         gap: 10px;
+        padding: 0;
       }
 
       .leftColumn p,
@@ -96,4 +97,48 @@
   }
   }
   
+   @media (min-width: 780px) and (max-width: 1023px) { 
+     .container {
+      flex-direction:column;
+      padding: 20px;
+      margin: 10px;
+     width: 900px;
+     margin: 0 auto;
+    }
+  
+    .leftColumn
+      {
+        width: 900px;
+        font-size: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        border: 2px solid red;
+      }
+
+      .leftColumn p,
+      .leftColumn ul {
+        margin-bottom: 0rem;
+        margin-right: 30px;
+      }
+
+      .rightColumn {
+        flex: 1;
+        min-width: 200px;  
+      }
+
+      .rightColumn h3{
+        font-size: 20px;
+      }
+
+    .rightColumn p{
+      width: 100%;
+      font-size: 20px;
+    }
+
+  .space{
+    margin-top: 10px;
+  }
+    }
   
