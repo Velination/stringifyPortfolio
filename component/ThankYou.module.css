@@ -158,7 +158,7 @@
   }
 
   
-  @media (min-width: 1024px) and (max-width: 1366px) { 
+  @media (min-width: 780px) and (max-width: 1023px) { 
    .thankYouMessage {
       font-size: 40px;
     }
