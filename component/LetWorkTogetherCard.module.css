@@ -223,7 +223,7 @@
 
   
   /* ✅ Mobile Responsive */
-  @media (max-width: 768px) and (max-width: 834px) {
+  @media (max-width: 768px) {
     .container {
       width: 100%;
       height: auto;
@@ -368,7 +368,7 @@
         }
       }
 
-      @media (min-width: 1024px) and (max-width: 1366px) { 
+      @media (min-width: 780px) and (max-width: 1023px) { 
          .container {
       width: 600px;
       height: auto;
