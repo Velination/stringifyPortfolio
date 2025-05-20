@@ -3,6 +3,7 @@
     font-size: 32px;
     color: #ffffff;
     padding-top: 10px;
+    width: 1400px;
   }
   
   .title {
@@ -13,7 +14,7 @@
   }
   
   .paragraph {
-    font-size: 25px;
+    font-size: 5px;
     line-height:56px;
     margin-bottom: 0px;
     color: #A2A2A2;
@@ -62,3 +63,37 @@
         padding: 1rem 0.5rem;
      }
   }
+
+   @media (min-width: 780px) and (max-width: 1023px) { 
+     .title{
+        font-size: 24px;
+        margin-bottom: 0.2rem;
+     }
+
+     .section {
+      padding-top: 0px;
+      width: 900px;
+      padding: 10px;
+      padding-bottom: 0;
+    }
+
+     .wrapper {
+      margin: 1rem auto;
+      width: 920px;
+      margin: 0.2rem auto;
+      margin-top: 50px;
+      height: auto;
+      padding: 2rem 1rem;
+      margin-bottom: 30px;
+    }
+
+     .paragraph {
+        font-size: 12px;
+        line-height : 24px;
+        width: 900px;
+        padding: 1rem 0.5rem;
+     }
+    }
+
+  
+  
