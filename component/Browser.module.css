@@ -29,10 +29,51 @@
     font-weight: 600;
   }
   
-  @media (max-width: 600px) {
+  @media (max-width: 480px) {
     .container {
       padding: 1.5rem 1rem;
       margin-bottom: 10px;
+      width: 470px;
+    }
+  
+    .heading {
+      font-size: 40px;
+      margin-bottom: 2rem;
+    }
+  
+    .paragraph {
+      text-align: left;
+      width: 100%;
+      font-size: 14px;
+      line-height: 22px;
+    }
+  }
+
+   @media (max-width: 768px) {
+    .container {
+      padding: 1.5rem 1rem;
+      margin-bottom: 10px;
+      width: 758px;
+    }
+  
+    .heading {
+      font-size: 40px;
+      margin-bottom: 2rem;
+    }
+  
+    .paragraph {
+      text-align: left;
+      width: 100%;
+      font-size: 14px;
+      line-height: 22px;
+    }
+  }
+
+   @media (max-width: 780px) and (max-width: 1023px) {
+    .container {
+      padding: 1.5rem 1rem;
+      margin-bottom: 10px;
+      width: 900px;
     }
   
     .heading {
