@@ -48,7 +48,7 @@
   
   
    /* ✅ Mobile Responsive */
-  @media (max-width: 768px) and (max-width: 834px) {
+  @media (max-width: 768px) {
      .line {
       width: 100px; /* smaller line on mobile */
       margin-left: 20px;
@@ -77,7 +77,7 @@
     }
       }
 
-      @media (min-width: 1024px) and (max-width: 1366px) { 
+      @media (min-width: 780px) and (max-width: 1023px) { 
        .line {
       width: 350px; /* smaller line on mobile */
       margin-left: 20px;
