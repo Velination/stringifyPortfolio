@@ -1,52 +1,4 @@
-.container {
-  background-color: black;
-  color: white;
-  padding: 0 0;
-  text-align: center;
-  width: 1400px;
-  margin: 0 auto;
-  
-}
-
-.titleRow {
-  display: flex;
-  justify-content: center;
-  
-}
-
-.recent {
-  font-weight: 400;
-  font-style: italic;
-  font-size: 141px;
-}
-
-.projects {
-  font-weight: 800;
-  font-size: 141px;
-}
-
-.subLinks {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 2rem;
-  
-  font-size: 24px;
-  letter-spacing: 1px;
-}
-
-.subLinks span {
-  white-space: nowrap;
-}
-
-.line {
-  height: 1px;
-  width: 380px;
-  background-color: gray;
-}
-
 .gridWrapper {
-  width: 1400px;
   display: flex;
   justify-content: center;
   margin: 0 auto;
@@ -55,11 +7,11 @@
 .grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 25px; /* Space between cards */
-  padding: 20px; /* Padding at the top and bottom */
-  margin: 0 180px; /* <-- New: Margin on left and right */
-  justify-items: stretch;
-}
+  gap: 16px; 
+  padding: 20px; 
+  margin: 0 180px; 
+  justify-content: center;
+} 
 
 .card {
   background-color: #1a1a1a;
@@ -74,11 +26,11 @@
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.4);
   transition: transform 0.3s ease;
   border: 1px solid #9E9E9E;
-  width: 370px;
+  width: 400px;
 }
 
 .card:hover {
-  transform: translateY(-5px); /* Small hover lift */
+  transform: translateY(-5px); 
 }
 
 .icon {
@@ -101,34 +53,72 @@
   text-align: left;
 }
 
+.container {
+  color: white;
+  padding: 0 0;
+  text-align: center;
+  width: 1400px;
+}
 
-/* Small screens: 1 per row */
-@media (max-width: 768px) {
+.titleRow {
+  display: flex;
+  justify-content: center;
+  height: 15vh;
+  
+}
 
-  .container{
-    width: 310px;
-  }
+.recent {
+  font-weight: 400;
+  font-style: italic;
+  font-size: 141px;
+}
 
-  .gridWrapper {
-    width: 100%;
-    padding: 0;
-   margin-top: 10px;
+.projects {
+  font-weight: 800;
+  font-size: 141px;
+}
+
+.subLinks {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  margin-top: 10px;
+  font-size: 24px;
+  letter-spacing: 1px;
+}
+
+.subLinks span {
+  white-space: nowrap;
+}
+
+.line {
+  height: 1px;
+  width: 380px;
+  background-color: gray;
+}
+
+
+
+   @media screen and (max-width: 480px)  {
+    .gridWrapper {
+    margin: 0 20px;
+    
   }
 
   .grid {
     display: grid;
     grid-template-columns: 1fr;
-    gap: 12px; /* Space between cards */
-    padding: 0px; /* Padding at the top and bottom */
-    margin:  2px; /* <-- New: Margin on left and right */
-    justify-items: stretch;
+    gap: 12px; 
+     padding: 0;
+    margin:  0; 
     
   }
 
   .card {
-    height: 120px;
+    min-height: 150px;
     width: 100%;
-    padding: 1rem;
+   
   }
   .cardTitle {
     margin: 0;
@@ -146,126 +136,173 @@
 
   .titleRow {
      
-    height: 7vh;
+      height: 3vh;
+      
+    }
+
     
+  .recent{
+      font-size: 35px;
   }
 
-.recent{
-    font-size: 34px;
+  .projects{
+      font-size: 35px;
+  }
+
+  .subLinks {
+      gap: 8px;
+      font-size: 11px;
+    }
+
+    .line {
+      height: 1px;
+      width: 50px;
+    }
+
+    .container {
+  color: white;
+  padding: 0 0;
+  text-align: center;
+  width: 95%;
+  
 }
+   }
 
-.projects{
-    font-size: 34px;
-}
-
-.subLinks {
-    gap: 10px;
-    font-size: 8px;
-    margin-top: 0;
-  }
-
-  .line {
-    height: 1px;
-    width: 80px;
-  }
-
-  .icon {
-    margin-top: 10px;
-    width: 40px;
-    height: 40px;
-  }
-
-  .cardTitle {
-    margin-top: 0px;
-    font-size: 16px;
-    font-weight: 700;
-    text-align: left;
+   @media screen and (min-width: 768px)  and (max-width: 810px) {
+   .gridWrapper {
+      padding: 0px 0px;
+    margin: 10px 0px;
   }
   
-  .cardDescription {
-    margin: 0;
-    font-size: 14px;
-    line-height: 24px;
-    font-weight: 400;
-    color: #A4A4A4;
-    text-align: left;
-  }
-
-}
-
-@media (min-width: 780px) and (max-width: 1023px) { 
-     .container{
-    width: 900px;
-  }
-
-  .gridWrapper {
-    width: 100%;
-    padding: 0;
-   margin-top: 10px;
-  }
-
   .grid {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 22px; /* Space between cards */
-    padding: 0px; /* Padding at the top and bottom */
-    margin:  2px; /* <-- New: Margin on left and right */
-    justify-items: stretch;
+    grid-template-columns: repeat(1, 1fr);
+    margin: 0 ; 
+    margin-left: 20px;
+    gap: 14px;
+    padding: 0;
     
   }
 
   .card {
-    height: 320px;
+    min-height: 150px;
     width: 100%;
-    padding: 2rem;
-  }
-
-
-  .titleRow {
-     
-    height: 7vh;
-    
-  }
-
-.recent{
-    font-size: 80px;
-}
-
-.projects{
-    font-size: 80px;
-}
-
-.subLinks {
-    gap: 30px;
-    font-size: 25px;
-    margin-top: 10px;
-  }
-
-  .line {
-    height: 1px;
-    width: 80px;
-  }
-
-  .icon {
-    margin-top: 10px;
-    width: 50px;
-    height: 50px;
   }
 
   .cardTitle {
-    margin-top: 0px;
-    font-size: 30px;
+    margin: 0;
+    font-size: 25px;
     font-weight: 700;
-    text-align: left;
+    
   }
   
   .cardDescription {
     margin: 0;
-    font-size: 24px;
-    line-height: 30px;
+    font-size: 20px;
+    line-height: 24px;
     font-weight: 400;
-    color: #A4A4A4;
-    text-align: left;
   }
 
+  .titleRow {
+     
+      height: 6vh;
+      
     }
+
+   
+  .recent{
+      font-size: 70px;
+  }
+
+  .projects{
+      font-size: 70px;
+  }
+
+  .subLinks {
+      gap: 15px;
+      font-size: 25px;
+    }
+
+    .line {
+      height: 1px;
+      width: 80px;
+    }
+
+        .container {
+  color: white;
+  padding: 0 ;
+  text-align: center;
+  width: 95%;
+}
+   }
+
+
+
+     @media screen and (min-width: 820px) and (max-width: 1430px){
+
+      .gridWrapper {
+      padding: 0px 0px;
+    margin: 10px 40px;
+  }
+  
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+    margin: 0 ; 
+    gap: 14px;
+    padding: 0;
+    
+  }
+
+  .card {
+    min-height: 150px;
+    width: 100%;
+  }
+
+  .cardTitle {
+    margin: 0;
+    font-size: 30px;
+    font-weight: 700;
+    
+  }
+  
+  .cardDescription {
+    margin: 0;
+    font-size: 25px;
+    line-height: 24px;
+    font-weight: 400;
+  }
+
+  .titleRow {
+     
+      height: 6.5vh;
+      
+    }
+
+    .card{
+      width: 100%;
+    }
+  .recent{
+      font-size: 80px;
+  }
+
+  .projects{
+      font-size: 80px;
+  }
+
+  .subLinks {
+      gap: 20px;
+      font-size: 30px;
+    }
+
+    .line {
+      height: 1px;
+      width: 80px;
+    }
+
+        .container {
+  color: white;
+  padding: 0 ;
+  text-align: center;
+  width: 95%;
+  
+}
+     }
