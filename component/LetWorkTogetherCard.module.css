@@ -1,23 +1,16 @@
-.containers{
-  width: 1400px;
-  margin: 0 auto;
-}
 .container {
     background-color: rgba(174, 174, 174, 0.2);
     padding: 20px;
-    margin: 100px auto;
-    width: 1272px;
+   margin: 0 auto;
+    width: 1200px;
     height: 479px;
     border-radius: 40px;
     display: flex;
-    align-items: center;
-    justify-content: center;
+  
     flex-shrink: 0;
     z-index: 1;
     position: relative;
   }
-
- 
   
   .imageSection {
     z-index: 1;
@@ -29,6 +22,7 @@
     height: 439px;
     border-radius: 24px;
     background-color: rgba(30, 30, 30, 1.0);
+    
   }
   
   .profileImage {
@@ -38,6 +32,7 @@
   .textSection {
     flex: 0 0 60%;
     padding-left: 20px;
+    
   }
   
   .mainText {
@@ -45,8 +40,10 @@
     font-size: 52px;
     font-weight: 500;
     line-height: 100%;
-    margin-bottom: 10px;
+    
     margin-left: 50px;
+    margin: 100px auto;
+    margin-bottom: 10px;
   }
   
   .highlightText {
@@ -55,23 +52,22 @@
   
   .subText {
     color: #ffffff;
-    font-family: 'Poppins', sans-serif;
     font-size: 42px;
     font-weight: 500;
     line-height: normal;
-    margin-left: 50px;
+    margin-left: 10px;
   }
   
   .buttonContainer {
     padding: 15px 28px;
-    margin-right: 150px;
-    margin-left: 50px;
+   
+    margin-left: 10px;
     border-radius: 70px;
   }
 
-    .projectGrid {
+  .projectGrid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive magic */
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
     gap: 1.5rem;
     padding: 1rem;
     max-width: 1200px;
@@ -110,7 +106,6 @@
       background-color: #2C2C2C;
       padding: 0.5rem 1rem;
       border-radius: 8px;
-      font-family: 'Segoe UI', sans-serif;
       transition: background-color 0.3s ease;
     }
     
@@ -170,22 +165,21 @@
     .card:hover .subtitle {
       color: var(--hover-color);
     }
-    
 
-  
     .containers {
-      background-color: black;
       color: white;
       padding: 2rem 1rem;
       text-align: center;
-      width: 100%;
+      width: 1300px;
+      
+       margin: 100px auto;
     }
     
     .titleRow {
       display: flex;
       justify-content: center;
       height: 15vh;
-      
+      ;
     }
     
     .recent {
@@ -220,226 +214,257 @@
       width: 260px;
       background-color: gray;
     }
-
-  
-  /* ✅ Mobile Responsive */
-  @media (max-width: 768px) {
-    .container {
-      width: 100%;
-      height: auto;
-      flex-direction: column;
-      padding: 15px;
-      padding-bottom: 0;
-      margin-top: 30px;
-      margin-bottom: 0;
-    }
-  
-    .imageSection {
-        padding-top: 20px;
-      width: 100%;
-      height: 70px;
-      margin-bottom: 20px;
-    }
-
-    .profileImage {
-        width: 160px;
-      }
-  
-    .textSection {
-      padding-left: 0;
-      text-align: center;
-    }
-  
-    .mainText {
-      font-size: 16px;
-      margin-left: 0;
-    }
-  
-    .subText {
-      font-size: 16px;
-      margin-left: 0;
-    }
-  
-    .buttonContainer {
-      margin: 20px auto 0 auto;
-    }
-
-      .containers {
-        padding: 0;
-        width: 100%;
     
-      }
-      .titleRow {
-         
-          height: 7vh;
-          
-        }
-  
-      .recent{
-          font-size: 38px;
+    @media (max-width: 480px) {
+      .imageWrapper{
+        height: 220px;
       }
   
-      .projects{
-          font-size: 38px;
+      .projectName .year{
+        font-size: 0.8rem;
       }
   
-      .subLinks {
-          gap: 10px;
-          font-size: 8px;
-          margin-top: 10px;
-        }
-  
-        .line {
-          height: 1px;
-          width: 40px;
-        }
-    }
-
-
-@media (max-width: 480px) {
- .container {
-      width: 100%;
-      height: auto;
-      flex-direction: column;
-      padding: 15px;
-      padding-bottom: 0;
-      margin-top: 30px;
-      margin-bottom: 0;
-    }
-  
-    .imageSection {
-        padding-top: 20px;
-      width: 100%;
-      height: 70px;
-      margin-bottom: 20px;
-    }
-
-    .profileImage {
-        width: 160px;
+      .textOverlay {
+        padding: 0.5rem;
       }
-  
-    .textSection {
-      padding-left: 0;
-      text-align: center;
-    }
-  
-    .mainText {
-      font-size: 16px;
-      margin-left: 0;
-    }
-  
-    .subText {
-      font-size: 16px;
-      margin-left: 0;
-    }
-  
-    .buttonContainer {
-      margin: 20px auto 0 auto;
-    }
-
-      .containers {
-        padding: 0;
-        width: 100%;
     
+      .title {
+        font-size: 0.8rem;
       }
-      .titleRow {
-         
-          height: 7vh;
-          
-        }
-  
-      .recent{
-          font-size: 38px;
+    
+      .subtitle {
+        font-size: 0.65rem;
       }
-  
-      .projects{
-          font-size: 38px;
-      }
-  
-      .subLinks {
-          gap: 10px;
-          font-size: 8px;
-          margin-top: 10px;
-        }
-  
-        .line {
-          height: 1px;
-          width: 40px;
-        }
-      }
-
-      @media (min-width: 780px) and (max-width: 1023px) { 
-         .container {
-      width: 600px;
-      height: auto;
-      flex-direction: column;
-      padding: 15px;
-      padding-bottom: 0;
-      margin-top: 30px;
-      margin-bottom: 0;
-    }
-  
-    .imageSection {
-        padding-top: 20px;
-      width: 100%;
-      height: 70px;
-      margin-bottom: 20px;
-    }
-
-    .profileImage {
-        width: 160px;
-      }
-  
-    .textSection {
-      padding-left: 0;
-      text-align: center;
-    }
-  
-    .mainText {
-      font-size: 30px;
-      margin-left: 0;
-    }
-  
-    .subText {
-      font-size: 30px;
-      margin-left: 0;
-    }
-  
-    .buttonContainer {
-      margin: 20px auto 0 auto;
-    }
 
       .containers {
         padding: 0;
-        width: 100%;
+        width: 350px;
         margin: 0;
-        margin-right: 50px;
-    
       }
       .titleRow {
          
-          height: 6vh;
+          height: 3vh;
           
         }
   
       .recent{
-          font-size: 63px;
+          font-size: 38px;
       }
   
       .projects{
-          font-size: 63px;
+          font-size: 38px;
       }
   
       .subLinks {
-          gap: 10px;
+          gap: 8px;
+          font-size: 10px;
+          margin-top: 10px;
+        }
+  
+        .line {
+          height: 1px;
+          width: 30px;
+        }
+        .container {
+      width: 100%;
+      height: auto;
+      flex-direction: column;
+      padding: 15px;
+      padding-bottom: 0;
+      margin-top: 10px;
+      margin-bottom: 0;
+    }
+  
+    .imageSection {
+        padding-top: 20px;
+      width: 50%;
+      height: 60px;
+      margin-bottom: 20px;
+      
+      margin: 0 auto;
+    }
+
+    .profileImage {
+        width: 200px;
+      }
+  
+    .textSection {
+      padding-left: 0;
+      text-align: center;
+      margin-top: 10px;
+    }
+  
+    .mainText {
+      margin-top: 30px;
+      font-size: 28px;
+      margin-left: 0;
+    }
+  
+    .subText {
+      font-size: 28px;
+      margin-left: 0;
+    }
+  
+    .buttonContainer {
+      margin: 5px auto 0 auto;
+    }
+
+    }
+  
+    
+    
+     @media screen and (min-width: 768px)  and (max-width: 810px) {
+      .containers {
+        padding: 0;
+        width: 700px;
+        margin-bottom: 0;
+      }
+      .titleRow {
+         
+          height: 8vh;
+          
+        }
+  
+      .recent{
+          font-size: 68px;
+      }
+  
+      .projects{
+          font-size: 68px;
+      }
+  
+      .subLinks {
+          gap: 20px;
           font-size: 15px;
           margin-top: 10px;
         }
   
         .line {
           height: 1px;
+          width: 50px;
+        }
+        .container {
+      width: 95%;
+      height: auto;
+      flex-direction: column;
+      padding: 15px;
+      padding-bottom: 0;
+      margin-top: 10px;
+      margin-bottom: 0;
+    }
+  
+    .imageSection {
+        padding-top: 20px;
+      width: 50%;
+      height: 70px;
+      margin-bottom: 20px;
+      
+      margin: 0 auto;
+    }
+
+    .profileImage {
+        width: 260px;
+      }
+  
+    .textSection {
+      padding-left: 0;
+      text-align: center;
+      margin-top: 10px;
+    }
+  
+    .mainText {
+      margin: 30px;
+      font-size: 38px;
+      margin-left: 0;
+    }
+  
+    .subText {
+      font-size: 38px;
+      margin-left: 0;
+    }
+  
+    .buttonContainer {
+      margin: 20px auto 0 auto;
+    }
+  
+    }
+    
+     @media screen and (min-width: 820px) and (max-width: 1430px){
+
+      .containers {
+        padding: 0;
+        max-width: 800px;
+       
+      }
+      .titleRow {
+         
+          height: 7.5vh;
+          
+        }
+  
+      .recent{
+          font-size: 90px;
+      }
+  
+      .projects{
+          font-size: 90px;
+      }
+  
+      .subLinks {
+          gap: 15px;
+          font-size: 25px;
+          margin-top: 10px;
+        }
+  
+        .line {
+          height: 1px;
           width: 40px;
         }
-      }
-    
+        .container {
+      width: 93%;
+      height: auto;
+      flex-direction: column;
+      padding: 15px;
+      padding-bottom: 0;
+      margin-top: 30px;
+      margin-bottom: 0;
+    }
+  
+    .imageSection {
+        padding-top: 20px;
+      width: 50%;
+      height: 60px;
+      margin-bottom: 20px;
+      margin: 0 auto;
+    }
 
+    .profileImage {
+        width: 260px;
+      }
+  
+    .textSection {
+      padding-left: 0;
+      text-align: center;
+    }
+  
+    .mainText {
+      margin-top: 30px;
+      font-size: 30px;
+      margin-left: 0;
+    }
+  
+    .subText {
+      font-size: 30px;
+      margin-left: 0;
+    }
+  
+    .buttonContainer {
+      margin: 10px auto 0 auto;
+    }
+   
+     }
+
+     
+
+    
+    
