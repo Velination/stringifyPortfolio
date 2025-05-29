@@ -1,9 +1,14 @@
+
+
+
 .background {
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 2rem;
   background-color: black;
+  background-image: url("/images/shineBackground.png");
+ 
 }
 
 .backgrounds {
@@ -11,15 +16,6 @@
   width: 100%;
   max-width: 100vw;
   box-sizing: border-box
-}
-
-.backgroundss {
-  background-color: black;
-  width: 100%;
-  max-width: 100vw;
-  height: 100vh;
-  
-  padding: 65px;
 }
 
 
@@ -79,32 +75,7 @@
 
 
 
-
-
-
-
-
-
- @media (max-width: 768px) {
-    .backgrounds {
-  
-    width: 100%;
-  }
-
-  .projectCardContainer {
-    margin-top: 50px;
-  }
-
-    .backgroundss {
-  padding: 10px;
-  height: auto;
-
-}
-  
-    }
-
-
-@media (max-width: 480px) {
+@media screen and (min-width: 768px) and (max-width: 810px) {
   .backgrounds {
   
     width: 100%;
@@ -113,29 +84,7 @@
   .projectCardContainer {
     margin-top: 50px;
   }
+  
 
-    .backgroundss {
-  padding: 2px;
-  height: auto;
 
 }
-  
-      }
-
-      @media (min-width: 780px) and (max-width: 1024px) { 
-        .backgrounds {
-  
-    width: 100%;
-  }
-
-  .projectCardContainer {
-    margin-top: 30px;
-  }
-  
-    .backgroundss {
-  
-  height: auto;
-
-}
-      }
-    
