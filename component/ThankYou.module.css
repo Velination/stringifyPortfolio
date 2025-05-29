@@ -4,14 +4,13 @@
     height: auto;
     padding: 20px;
     width: 1400px;
-    margin: 0 auto;
   }
   
   .topSection {
     display: flex;
     align-items: center;
     justify-content: center;
-    max-width: 80%;
+    
     margin: 0 auto;
     padding-bottom: 10px;
   }
@@ -95,18 +94,28 @@
     letter-spacing: 6%;
   }
 
-  @media (max-width: 768px) {
+
+
+
+
+   @media screen and (max-width: 480px)  {
+     
     .thankYouMessage {
       font-size: 40px;
     }
-
-    .container{
-      width: 100%;
-    }
   
     .highlight {
       font-size: 40px;
     }
+
+      .container {
+    text-align: center;
+    position: relative;
+    height: auto;
+    padding: 20px;
+    width: 100%;
+    
+  }
 
     .topSection {
       max-width: 100%;
@@ -119,14 +128,14 @@
     .leftText{
        height: auto;
        width: auto;
-       font-size: 15px;
+       font-size: 18px;
        margin-top: 10px;
     }
 
     .designerText,
     .developerText,
     .developerName {
-      font-size: 12px;
+      font-size: 15px;
     margin-top: 15px;
     }
 
@@ -147,29 +156,48 @@
     }
   
     .iconContainer {
-      width: 28px;
-      height: 28px;
+      width: 25px;
+      height: 25px;
     }
   
     .logo {
       width: 40px;
       
     }
+
+         .thankYouMessage {
+    margin-top: 10px;
+    font-size: 40px;
+  }
+
+   .highlight {
+    font-size: 40px;
+    margin-left: 10px;
+    letter-spacing: 6%;
+  }
+    
   }
 
   
-  @media (min-width: 780px) and (max-width: 1023px) { 
-   .thankYouMessage {
+  
+  @media screen and (min-width: 768px)  and (max-width: 810px) {
+  
+    .thankYouMessage {
       font-size: 40px;
-    }
-
-    .container{
-      width: 100%;
     }
   
     .highlight {
       font-size: 40px;
     }
+
+      .container {
+    text-align: center;
+    position: relative;
+    height: auto;
+    padding: 20px;
+    width: 100%;
+    
+  }
 
     .topSection {
       max-width: 100%;
@@ -182,14 +210,14 @@
     .leftText{
        height: auto;
        width: auto;
-       font-size: 15px;
+       font-size: 20px;
        margin-top: 10px;
     }
 
     .designerText,
     .developerText,
     .developerName {
-      font-size: 12px;
+      font-size: 17px;
     margin-top: 15px;
     }
 
@@ -215,7 +243,188 @@
     }
   
     .logo {
+      width: 50px;
+      
+    }
+
+         .thankYouMessage {
+    margin-top: 10px;
+    font-size: 60px;
+  
+    line-height: 100%;
+  }
+
+   .highlight {
+   
+    font-size: 60px;
+   
+    margin-left: 10px;
+    letter-spacing: 6%;
+  }
+    
+  }
+
+   @media screen and (min-width: 850px){
+ .thankYouMessage {
+      font-size: 40px;
+    }
+
+    .container {
+    text-align: center;
+    position: relative;
+    height: auto;
+    padding: 20px;
+    width: 100%;
+  }
+  
+    .highlight {
+      font-size: 40px;
+    }
+
+    .topSection {
+
+      padding-bottom: 5px;
+      display: block;
+    align-items: center;
+    justify-content: center;
+    }
+
+    .leftText{
+       height: auto;
+       width: auto;
+       font-size: 30px;
+       margin-top: 10px;
+    }
+
+    .designerText,
+    .developerText,
+    .developerName {
+      font-size: 19px;
+    line-height: 35px;
+   
+    }
+
+    .horizontalLine {
+      display: none;
+    }
+  
+    .socialIcons {
+      gap: 8px;
+      padding-top: 10px;
+    }
+
+    .logoContainer {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-left: 0px;
+    }
+  
+    .iconContainer {
+      width: 28px;
+      height: 28px;
+    }
+  
+    .logo {
+      width: 60px;
+      
+    }
+
+     .thankYouMessage {
+    margin-top: 10px;
+    font-size: 80px;
+  
+    line-height: 100%;
+  }
+
+   .highlight {
+   
+    font-size: 80px;
+   
+    margin-left: 10px;
+    letter-spacing: 6%;
+  }
+    
+  }
+
+  
+  @media screen and (min-width: 1366px) and (max-width: 1440px){
+    .thankYouMessage {
+      font-size: 40px;
+    }
+  
+    .highlight {
+      font-size: 40px;
+    }
+
+      .container {
+    text-align: center;
+    position: relative;
+    height: auto;
+    padding: 20px;
+    width: 100%;
+    
+  }
+
+    .topSection {
+      max-width: 100%;
+      padding-bottom: 5px;
+      display: block;
+    align-items: center;
+    justify-content: center;
+    }
+
+    .leftText{
+       height: auto;
+       width: auto;
+       font-size: 18px;
+       margin-top: 10px;
+    }
+
+    .designerText,
+    .developerText,
+    .developerName {
+      font-size: 15px;
+    margin-top: 15px;
+    }
+
+    .horizontalLine {
+      display: none;
+    }
+  
+    .socialIcons {
+      gap: 8px;
+      padding-top: 10px;
+    }
+
+    .logoContainer {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-left: 0px;
+    }
+  
+    .iconContainer {
+      width: 25px;
+      height: 25px;
+    }
+  
+    .logo {
       width: 40px;
       
     }
-    }
+
+         .thankYouMessage {
+    margin-top: 10px;
+    font-size: 0px;
+  }
+
+   .highlight {
+    font-size: 40px;
+    margin-left: 10px;
+    letter-spacing: 6%;
+  }
+   
+  }
+  
+  
