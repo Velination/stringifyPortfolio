@@ -64,8 +64,9 @@
     border-radius: 24px;
     width: 30px;
   }
-  
-  @media (max-width: 768px) {
+
+  @media screen and (max-width: 480px)  {
+
     .container {
       width: 100%; /* smaller width */
       padding: 15px;
@@ -89,7 +90,7 @@
   
     .date {
       width: 100%;
-      font-size: 13px;
+      font-size: 17px;
       margin-bottom: 5px;
     }
   
@@ -99,21 +100,123 @@
     }
   
     .title {
-      font-size: 14px;
+      font-size: 17px;
       padding-bottom: 5px;
     }
   
     .company {
-      font-size: 14px;
+      font-size: 17px;
       margin-right: 0;
     }
   
     .remote {
       margin-left: 10px;
-      font-size: 13px;
+      font-size: 16px;
       padding: 1px 3px;
     }
   
   }
   
+   @media screen and (min-width: 768px)  and (max-width: 810px) {
+    .container {
+      width: 100%; /* smaller width */
+      padding: 15px;
+      border-radius: 15px;
+      margin-bottom: 0px;
+      height: auto;
+    }
+  
+    .h2 {
+      font-size: 26px;
+      text-align: center;
+      margin-bottom: 7px;
+    }
+  
+    .experienceItem {
+      flex-direction: column;
+      align-items: flex-start;
+      margin-bottom: 5px;
+      padding: 5px 0;
+    }
+  
+    .date {
+      width: 100%;
+      font-size: 23px;
+      margin-bottom: 5px;
+    }
+  
+    .details {
+      margin-left: 0;
+      width: 100%;
+    }
+  
+    .title {
+      font-size: 24px;
+      padding-bottom: 5px;
+    }
+  
+    .company {
+      font-size: 24px;
+      margin-right: 0;
+    }
+  
+    .remote {
+      margin-left: 10px;
+      font-size: 23px;
+      padding: 1px 3px;
+    }
+  
+  }
+  
+   @media screen and (min-width: 820px) and (max-width: 1430px){
+
+    .container {
+      width: 100%; 
+      padding: 15px;
+      border-radius: 15px;
+      margin-bottom: 0px;
+      height: auto;
+    }
+  
+    .h2 {
+      font-size: 34px;
+      text-align: center;
+      margin-bottom: 7px;
+    }
+  
+    .experienceItem {
+      flex-direction: column;
+      align-items: flex-start;
+      margin-bottom: 5px;
+      padding: 5px 0;
+    }
+  
+    .date {
+      width: 100%;
+      font-size: 29px;
+      margin-bottom: 5px;
+    }
+  
+    .details {
+      margin-left: 0;
+      width: 100%;
+    }
+  
+    .title {
+      font-size: 28px;
+      padding-bottom: 5px;
+    }
+  
+    .company {
+      font-size: 28px;
+      margin-right: 0;
+    }
+  
+    .remote {
+      margin-left: 10px;
+      font-size: 27px;
+      padding: 1px 3px;
+    }
+  
+   }
   
