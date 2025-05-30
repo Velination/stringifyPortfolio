@@ -69,8 +69,10 @@
   }
   
   /* ✅ Mobile Responsive */
-  @media (max-width: 780px) {
-    .container {
+
+
+ @media screen and (min-width: 768px)  and (max-width: 810px) {
+   .container {
       width: 100%;
       height: auto;
       padding: 20px;
@@ -82,7 +84,7 @@
       }
   
     .description {
-      font-size: 16px;
+      font-size: 26px;
       height: auto;
       line-height: 120%;
     }
@@ -95,23 +97,74 @@
     .iconBox {
        margin-top: '5px';
        margin-left: '5px';
-       width: 22px;
-       height: 22px;
+       width: 42px;
+       height: 42px;
       }
 
       .iconBox a {
         color: white;
-        font-size: 10px;
+        font-size: 30px;
       }
   
     .cvButton {
+      
       margin-left: 110px;
       margin-top: 10px;
       width: auto;
-      padding: 8px 10px;
+      padding: 38px 20px;
       height: 30px;
-      font-size: 12px;
-      margin-bottom: 10px;
-    }
-  }
+      font-size: 32px;
+      margin-bottom: 6px;
+      padding-top: 10px;
   
+    }
+ }
+
+@media screen and (min-width: 820px) and (max-width: 1430px){
+  .container {
+      width: 100%;
+      height: auto;
+      padding: 20px;
+      margin-bottom: 0px;
+    }
+
+    .textWrapper {
+        padding-top: 3px;
+      }
+  
+    .description {
+      font-size: 26px;
+      height: auto;
+      line-height: 120%;
+    }
+  
+    .iconsWrapper {
+        margin-top: 5px;
+      flex-wrap: wrap;
+      gap: 15px;
+    }
+    .iconBox {
+       margin-top: '5px';
+       margin-left: '5px';
+       width: 42px;
+       height: 42px;
+      }
+
+      .iconBox a {
+        color: white;
+        font-size: 30px;
+      }
+  
+    .cvButton {
+      
+      margin-left: 110px;
+      margin-top: 10px;
+      width: auto;
+      padding: 38px 20px;
+      height: 30px;
+      font-size: 32px;
+      margin-bottom: 6px;
+      padding-top: 10px;
+  
+    }
+}
