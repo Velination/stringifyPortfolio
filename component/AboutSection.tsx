@@ -14,7 +14,7 @@ const AboutSection: React.FC = () => {
   return (
     <div className={styles.aboutContainer}>
         <div className={styles.aboutBackground}></div>
-      <div className={styles.overlay}></div> {/* Optional dark overlay */}
+       
       
       <div className={styles.aboutContent}>
       {/* ABOUT TEXT (coming from top) */}
