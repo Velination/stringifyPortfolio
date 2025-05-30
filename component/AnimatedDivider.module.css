@@ -7,12 +7,10 @@
   }
   
   .line {
-    width: 600px;
+    width: 500px;
     height: 1px;
     background-color: #666;
     opacity: 0.8;
-    margin-left: 80px;
-    margin-right: 80px;
   }
   
   .centerIcon {
@@ -46,47 +44,32 @@
   }
   
   
+  /* 👇 Mobile View (responsive changes) */
   
-   /* ✅ Mobile Responsive */
-  @media (max-width: 768px) {
+   @media screen and (max-width: 480px)  {
+
      .line {
-      width: 100px; /* smaller line on mobile */
+      width: 100px; 
       margin-left: 20px;
       margin-right: 20px;
     }
   
-    .centerIcon{
-      width: 50px;
-      height: 50px;
-      margin: 0 0;
-    }
-    }
+    
 
+   }
 
-@media (max-width: 480px) {
-  .line {
-      width: 100px; /* smaller line on mobile */
-      margin-left: 20px;
-      margin-right: 20px;
-    }
-  
-    .centerIcon{
-      width: 50px;
-      height: 50px;
-      margin: 0 0;
-    }
-      }
-
-      @media (min-width: 780px) and (max-width: 1023px) { 
+  @media screen and (min-width: 768px)  and (max-width: 810px) {
        .line {
-      width: 350px; /* smaller line on mobile */
+      width: 270px; 
       margin-left: 20px;
       margin-right: 20px;
     }
-  
-    .centerIcon{
-      width: 50px;
-      height: 50px;
-      margin: 0 0;
+  }
+
+  @media screen and (min-width: 820px) and (max-width: 1430px){
+       .line {
+      width: 350px; 
+      margin-left: 20px;
+      margin-right: 20px;
     }
-      }
+  }
