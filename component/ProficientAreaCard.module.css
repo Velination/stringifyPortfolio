@@ -136,7 +136,7 @@
 
   .titleRow {
      
-      height: 3vh;
+      height: 5vh;
       
     }
 
@@ -204,7 +204,7 @@
 
   .titleRow {
      
-      height: 6vh;
+      height: 10vh;
       
     }
 
@@ -273,7 +273,7 @@
 
   .titleRow {
      
-      height: 6.5vh;
+      height: 12vh;
       
     }
 
@@ -290,7 +290,7 @@
 
   .subLinks {
       gap: 20px;
-      font-size: 30px;
+      font-size: 25px;
     }
 
     .line {
