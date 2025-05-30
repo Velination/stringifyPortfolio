@@ -1,10 +1,10 @@
 .card{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 20px;
-    padding: 10px;
- }
+   
+    
+   margin: 0 auto;
+   margin-top: 20px;
+    
+}
 
 .section {
     display: flex;
@@ -13,7 +13,8 @@
     color: #ffffff;
     height: 900px;
     position: relative;
-    width: 1400px;
+    width: 1200px;
+   
     margin: 0 auto;
   }
   
@@ -23,6 +24,7 @@
     text-align: left;
     max-width: 580px;
     margin-left: 60px;
+   
   }
   
   .leftText h1 {
@@ -40,6 +42,8 @@
     max-width: 580px;
     margin-right: 60px;
     color: #444343;
+    
+    
   }
   
   .rightText strong {
@@ -47,6 +51,7 @@
   }
   
   @media (max-width: 480px) {
+
     .section {
         flex-direction: column;
         height: auto;
@@ -58,75 +63,78 @@
       .leftText {
         font-size: 40px;
         text-align: left;
-        align-self: flex-start; /* move to top left */
+        align-self: flex-start; 
         margin-left: 0px;
-        max-width: 220px;
-        margin-bottom: 40px;
+        max-width: 200px;
+        margin-bottom: 20px;
+       
       }
     
       .rightText {
         font-size: 24px;
         text-align: right;
-        align-self: flex-end; /* move to bottom right */
-        margin-top: 50px; /* push it down */
+        align-self: flex-end; 
+        margin-top: 50px; 
         margin-right: 0px;
-        width: 311px;
       }
   }
 
-   /* ✅ Mobile Responsive */
-  @media (max-width: 768px) {
-    .section {
+  @media screen and (min-width: 768px)  and (max-width: 810px) {
+   
+      .section {
         flex-direction: column;
         height: auto;
-        padding: 0;
         position: relative;
         width: 95%;
+        margin-left: 0;
+        margin-right: 0;
+        margin: 0 auto;
       }
-    
       .leftText {
         font-size: 40px;
         text-align: left;
-        align-self: flex-start; /* move to top left */
+        align-self: flex-start; 
         margin-left: 0px;
         max-width: 220px;
-        margin-bottom: 40px;
+        margin-bottom: 20px;
       }
     
       .rightText {
-        font-size: 24px;
+        font-size: 30px;
         text-align: right;
-        align-self: flex-end; /* move to bottom right */
-        margin-top: 50px; /* push it down */
+        align-self: flex-end; 
+        margin-top: 50px; 
         margin-right: 0px;
-        width: 311px;
       }
-    }
+  }
 
-      @media (min-width: 780px) and (max-width: 1023px) { 
-         .section {
+  @media screen and (min-width: 820px) and (max-width: 1430px){
+    
+     .section {
         flex-direction: column;
         height: auto;
-        padding: 0;
         position: relative;
-        width: 900px;
+        width: 95%;
+        margin-left: 0;
+        margin-right: 0;
+        margin: 0 auto;
       }
     
       .leftText {
         font-size: 50px;
         text-align: left;
-        align-self: flex-start; /* move to top left */
-        margin-left: 0px;
-        max-width: 420px;
-        margin-bottom: 40px;
+        align-self: flex-start; 
+        margin-left: 20px;
+        max-width: 220px;
+        margin-bottom: 20px;
       }
     
       .rightText {
-        font-size: 35px;
+        font-size: 30px;
         text-align: right;
-        align-self: flex-end; /* move to bottom right */
-        margin-top: 50px; /* push it down */
-        margin-right: 0px;
-        width: 511px;
+        align-self: flex-end; 
+        margin-top: 50px; 
+        margin-right: 10px;
+       max-width: 500px;
       }
-      }
+  }
