@@ -1,11 +1,12 @@
 .projectGrid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive magic */
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
   gap: 1.5rem;
   padding: 1rem;
-  max-width: 1200px;
+  width: 1300px;
   margin: 0 auto;
   margin-top: 50px;
+  
 }
 
   .card {
@@ -99,34 +100,12 @@
   .card:hover .subtitle {
     color: var(--hover-color);
   }
-  
-  @media (max-width: 480px) {
-    .imageWrapper{
-      height: 220px;
-    }
-
-    .projectName .year{
-      font-size: 0.8rem;
-    }
-
-    .textOverlay {
-      padding: 0.5rem;
-    }
-  
-    .title {
-      font-size: 0.8rem;
-    }
-  
-    .subtitle {
-      font-size: 0.65rem;
-    }
-  }
 
   .container {
-    background-color: black;
     color: white;
     padding: 2rem 1rem;
     text-align: center;
+    width: 1400px;
 
   }
   
@@ -140,6 +119,7 @@
   .recent {
     font-weight: 800;
     font-size: 141px;
+    
   }
   
   .projects {
@@ -152,10 +132,12 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 2rem;
+    gap: 3rem;
     margin-top: 10px;
     font-size: 24px;
     letter-spacing: 1px;
+   
+    
   }
   
   .subLinks span {
@@ -168,15 +150,35 @@
     background-color: gray;
   }
   
-  @media (max-width: 768px) {
-    .projectGrid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive magic */
-      gap: 1.5rem;
+  @media screen and (max-width: 480px)  {
+    .imageWrapper{
+      height: 220px;
+    }
+
+    .projectName .year{
+      font-size: 0.8rem;
+    }
+
+    .card{
       padding: 0;
-      max-width: 100%;
-      margin: 0;
-      margin-top: 20px;
+    }
+
+    .textOverlay {
+      padding: 0.5rem;
+    }
+  
+    .title {
+      font-size: 0.8rem;
+    }
+  
+    .subtitle {
+      font-size: 0.65rem;
+    }
+     .projectGrid{
+      padding: 0;
+      width: 90%;
+      margin-top: 15px;
+      
     }
 
     .card{
@@ -184,27 +186,30 @@
     }
 
     .container {
+      width: 100%;
+      color: white;
+      padding: 0.5rem 0rem;
+      text-align: center;
       
-      padding: 0;
-      
-  
     }
-   
+
     .titleRow {
-        height: 7vh;
+       
+        height: 6vh;
+        
       }
 
     .recent{
-        font-size: 38px;
+        font-size: 40px;
     }
 
     .projects{
-        font-size: 38px;
+        font-size: 40px;
     }
 
     .subLinks {
-        gap: 10px;
-        font-size: 6px;
+        gap: 3px;
+        font-size: 11px;
       }
 
       .line {
@@ -212,6 +217,104 @@
         width: 40px;
       }
   }
+
   
   
+  @media screen and (min-width: 768px)  and (max-width: 810px) {
+    .projectGrid{
+      padding: 0;
+      width: 700px;
+      margin-top: 15px;
+    }
+
+    .card{
+      padding: 0;
+    }
+
+    .container {
+      width: 100%;
+      color: white;
+      padding: 0.5rem 0rem;
+      text-align: center;
+      
+    }
+
+    .titleRow {
+       
+        height: 9vh;
+        
+      }
+
+    .recent{
+        font-size: 58px;
+    }
+
+    .projects{
+        font-size: 58px;
+    }
+
+    .subLinks {
+        gap: 10px;
+        font-size: 17px;
+      }
+
+      .line {
+        height: 1px;
+        width: 40px;
+      }
+  }
+
+  
+ @media screen and (min-width: 820px) and (max-width: 1430px){
+
+     .projectGrid{
+      padding: 0;
+      width: 90%;
+      margin-top: 15px;
+    }
+
+    .card{
+      padding: 0;
+    }
+
+    .container {
+      width: 100%;
+      color: white;
+      padding: 0.5rem 0rem;
+      text-align: center;
+  margin: 0 auto;
+    }
+
+    .titleRow {
+       
+        height: 13vh;
+      }
+
+    .recent{
+        font-size: 88px;
+    }
+
+    .projects{
+        font-size: 88px;
+    }
+
+    .subLinks {
+        gap: 2rem;
+        font-size: 19px;
+      }
+
+      .line {
+        height: 1px;
+        width: 40px;
+      }
+
+   
+   
+
+    
+
+     
+  }
+
+
   
