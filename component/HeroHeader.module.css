@@ -1,12 +1,11 @@
 .heroContainer {
     position: relative;
-    width: 100%;
-    height: 120vh;
+    width: 1400px;
+   height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
     overflow: hidden;
-
   }
   
   .backgroundImage {
@@ -18,10 +17,10 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  
+  max-width: 1400px;
   border-radius: 1rem;
   overflow: hidden;
-    
+   
   }
   
   .cardContent {
@@ -63,7 +62,6 @@
     width: 80%;
     color: #A4A4A4;
     padding-left: 70px;
-    border: 2px solid red;
   }
   
   .iamContainer {
@@ -96,90 +94,39 @@
     margin-bottom: 20px;
   }
   
-  
-  /* ✅ Mobile Responsive */
-  @media (max-width: 768px){
 
-     .heroContainer {
-    height: 40vh;
+
+   @media screen and (max-width: 480px)  {
+
+    .heroContainer {
+    position: relative;
+    width: 97%;
+    height: 50vh;
+    padding-left: 10px;
     
   }
-
-    .hola {
-      font-size: 80px;
-      margin-top: 10px;
-      margin-bottom: 0; 
-      letter-spacing: 5%;
-      text-align: left;
-      font-weight: 500;
-      width: 50px;
-    }
-    .backgroundImage {
-      transform: scale(0.8) translateX(30%); 
-      transform-origin: center; 
-      transition: transform 0.5s ease-in-out;
-      height: 500px;
-    }
-    .mobileCardContent {
-      align-items: flex-start; 
-      padding-left: 10px;
-      padding-right: 10px;
-      padding-top: 0;
-      margin-bottom: 60px;
-      
-    }
-  
-    .subTextContainer {
-      display: none; /* Remove Product Designer and Lawal Jimoh */
-    }
-  
-    .iamContainer {
-      flex-direction: column;
-      align-items: flex-start;
-      margin-top: 0; /* 👈 No top margin between HEY and IAM */
-      gap: 0; /* 👈 No gap between IAM and Logo */
-    }
-  
-    .iamText {
-      font-size: 80px;
-      font-weight: 500;
-
-      text-align: left;
-      margin: 0; /* 👈 Remove any default margin */
-    }
-  
-    .logoContainer {
-      margin-top: 0; /* 👈 No extra margin */
-    }
-  
-    .fakeLogo {
-      width: 123px;
-      height: 100px;
-      margin-top: 0; /* 👈 Also no margin here */
-    }
-    }
-
-
-@media (max-width: 480px) {
-  .heroContainer {
-    height: 40vh;
-  }
-
- .hola {
+       .hola {
       font-size: 80px;
       margin-top: 10px;
       margin-bottom: 0; /* 👈 Remove bottom margin between HEY and IAM */
       letter-spacing: 5%;
       text-align: left;
       font-weight: 500;
-      width: 140px;
+      width: 160px;
+     
     }
     .backgroundImage {
       transform: scale(0.8) translateX(30%); /* 👈 ZOOM IN */
       transform-origin: center; /* 👈 Zoom from center */
       transition: transform 0.5s ease-in-out;
-      height: 600px;
+      height: 80vh;
+      
     }
+
+  
+
+
+
     .mobileCardContent {
       align-items: flex-start; /* Move everything left */
       padding-left: 10px;
@@ -214,73 +161,147 @@
   
     .fakeLogo {
       width: 123px;
-      height: 100px;
+      height: 80px;
       margin-top: 0; /* 👈 Also no margin here */
     }
-      }
+   }
 
-@media (min-width: 780px) and (max-width: 1023px) { 
-    .heroContainer {
+    @media screen and (min-width: 768px)  and (max-width: 810px) {
+     .heroContainer {
+    position: relative;
+    width: 100%;
     height: 60vh;
-    width: 1000px;
+    padding-left: 10px;
+    
+  }
+       .hola {
+      font-size: 100px;
+      margin-top: 10px;
+      margin-bottom: 0; /* 👈 Remove bottom margin between HEY and IAM */
+      letter-spacing: 5%;
+      text-align: left;
+      font-weight: 500;
+      width: 210px;
+      
+    }
+    .backgroundImage {
+      transform: scale(0.8) translateX(25%); /* 👈 ZOOM IN */
+      transform-origin: center; /* 👈 Zoom from center */
+      transition: transform 0.5s ease-in-out;
+      height: 80vh;
+      width: 100%;
+       
+    }
+
+  
+
+
+
+    .mobileCardContent {
+      align-items: flex-start; /* Move everything left */
+      padding-left: 10px;
+      padding-right: 10px;
+      padding-top: 0;
+      margin-bottom: 60px;
+      
+    }
+  
+    .subTextContainer {
+      display: none; /* Remove Product Designer and Lawal Jimoh */
+    }
+  
+    .iamContainer {
+      flex-direction: column;
+      align-items: flex-start;
+      margin-top: 0; /* 👈 No top margin between HEY and IAM */
+      gap: 0; /* 👈 No gap between IAM and Logo */
+    }
+  
+    .iamText {
+      font-size: 100px;
+      font-weight: 500;
+
+      text-align: left;
+      margin: 0; /* 👈 Remove any default margin */
+    }
+  
+    .logoContainer {
+      margin-top: 0; /* 👈 No extra margin */
+    }
+  
+    .fakeLogo {
+      width: 163px;
+      height: 80px;
+      margin-top: 10px; /* 👈 Also no margin here */
+    }
+    }
+
+    @media screen and (min-width: 820px) and (max-width: 1430px){
+
+      .heroContainer {
+    position: relative;
+    width: 90%;
+    height: 60vh;
+    padding-left: 10px;
     margin: 0 auto;
   }
-
- .hola {
-      font-size: 110px;
+       .hola {
+      font-size: 150px;
       margin-top: 10px;
       margin-bottom: 0; /* 👈 Remove bottom margin between HEY and IAM */
       letter-spacing: 5%;
       text-align: left;
       font-weight: 500;
-      width: 740px;
+      width: 430px;
     }
     .backgroundImage {
-      transform: scale(0.8) translateX(30%); /* 👈 ZOOM IN */
+      transform: scale(0.81) translateX(1%); /* 👈 ZOOM IN */
       transform-origin: center; /* 👈 Zoom from center */
       transition: transform 0.5s ease-in-out;
-      height: 900px;
-      width: 900px;
+      height: 80vh;
+      width: 100%;
     }
+
+  
+
+
+
     .mobileCardContent {
-      align-items: flex-start; /* Move everything left */
+     align-items: flex-start; /* Move everything left */
       padding-left: 10px;
       padding-right: 10px;
       padding-top: 0;
       margin-bottom: 60px;
       
+      
     }
   
     .subTextContainer {
-      display: none; /* Remove Product Designer and Lawal Jimoh */
+       padding-bottom: 30px;/* Remove Product Designer and Lawal Jimoh */
     }
   
     .iamContainer {
-      flex-direction: column;
+      flex-direction: row;
       align-items: flex-start;
       margin-top: 0; /* 👈 No top margin between HEY and IAM */
       gap: 0; /* 👈 No gap between IAM and Logo */
-      width: 700px;
     }
   
     .iamText {
-      font-size: 110px;
+      font-size: 140px;
       font-weight: 500;
-
       text-align: left;
-      margin: 0; /* 👈 Remove any default margin */
     }
   
     .logoContainer {
-      margin-top: 0; /* 👈 No extra margin */
+      margin-top: 60px; 
+      margin-left: 40px;
     }
   
     .fakeLogo {
-      width: 180px;
-      height: 100px;
-      margin-top: 0; /* 👈 Also no margin here */
+      width: 133px;
+      height: 80px;
+      
     }
-      }
-  
-  
- 
+    
+     }
