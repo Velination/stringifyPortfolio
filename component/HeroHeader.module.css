@@ -11,7 +11,7 @@
   .backgroundImage {
     position: absolute;
   z-index: 1;
-  object-fit: cover; /* 👈 important */
+  object-fit: cover; 
   width: 100%;
   height: 100%;
   display: flex;
@@ -24,7 +24,7 @@
   }
   
   .cardContent {
-    position:absolute; /* 👈 VERY IMPORTANT */
+    position:absolute; 
     z-index: 1;
     display: flex;
     flex-direction:column;
@@ -39,8 +39,8 @@
     font-size: 280px;
     padding-top: 100px;
     padding-bottom: 1px;
-    margin-top: 200px; /* Increased the margin-top to push the text further down */
-    margin-bottom: 10px; /* Added margin-bottom to reduce the gap between HOLA and the next texts */
+    margin-top: 200px; 
+    margin-bottom: 10px; 
     letter-spacing: 100%;
     color: #fff;
     
@@ -54,7 +54,7 @@
     font-size: 24px;
     text-align: center;
     color: #fff;
-    margin-top: 1px; /* Reduced margin-top to bring Product Designer and Lawal Jimoh closer */
+    margin-top: 1px; 
   }
   
   .productDesigner,
@@ -69,12 +69,12 @@
     align-items: center;
     justify-content: center;
     gap: 3px;
-    margin-top: 1px; /* Reduced margin-top to bring IAM text closer to the others */
+    margin-top: 1px; 
   }
   
   .iamText {
     font-size: 280px;
-    margin-bottom: 10px; /* Ensures no extra space below the IAM text */
+    margin-bottom: 10px; 
     letter-spacing: 10%;
     color: #fff;
   }
@@ -108,7 +108,7 @@
        .hola {
       font-size: 80px;
       margin-top: 10px;
-      margin-bottom: 0; /* 👈 Remove bottom margin between HEY and IAM */
+      margin-bottom: 0; 
       letter-spacing: 5%;
       text-align: left;
       font-weight: 500;
@@ -116,8 +116,8 @@
      
     }
     .backgroundImage {
-      transform: scale(0.8) translateX(30%); /* 👈 ZOOM IN */
-      transform-origin: center; /* 👈 Zoom from center */
+      transform: scale(0.8) translateX(30%); 
+      transform-origin: center; 
       transition: transform 0.5s ease-in-out;
       height: 80vh;
       
@@ -128,7 +128,7 @@
 
 
     .mobileCardContent {
-      align-items: flex-start; /* Move everything left */
+      align-items: flex-start; 
       padding-left: 10px;
       padding-right: 10px;
       padding-top: 0;
@@ -137,14 +137,14 @@
     }
   
     .subTextContainer {
-      display: none; /* Remove Product Designer and Lawal Jimoh */
+      display: none;
     }
   
     .iamContainer {
       flex-direction: column;
       align-items: flex-start;
-      margin-top: 0; /* 👈 No top margin between HEY and IAM */
-      gap: 0; /* 👈 No gap between IAM and Logo */
+      margin-top: 0;
+      gap: 0; 
     }
   
     .iamText {
@@ -152,17 +152,17 @@
       font-weight: 500;
 
       text-align: left;
-      margin: 0; /* 👈 Remove any default margin */
+      margin: 0; 
     }
   
     .logoContainer {
-      margin-top: 0; /* 👈 No extra margin */
+      margin-top: 0; 
     }
   
     .fakeLogo {
       width: 123px;
       height: 80px;
-      margin-top: 0; /* 👈 Also no margin here */
+      margin-top: 0;
     }
    }
 
@@ -177,7 +177,7 @@
        .hola {
       font-size: 100px;
       margin-top: 10px;
-      margin-bottom: 0; /* 👈 Remove bottom margin between HEY and IAM */
+      margin-bottom: 0; 
       letter-spacing: 5%;
       text-align: left;
       font-weight: 500;
@@ -185,8 +185,8 @@
       
     }
     .backgroundImage {
-      transform: scale(0.8) translateX(25%); /* 👈 ZOOM IN */
-      transform-origin: center; /* 👈 Zoom from center */
+      transform: scale(0.8) translateX(25%); 
+      transform-origin: center; 
       transition: transform 0.5s ease-in-out;
       height: 80vh;
       width: 100%;
@@ -198,7 +198,7 @@
 
 
     .mobileCardContent {
-      align-items: flex-start; /* Move everything left */
+      align-items: flex-start; 
       padding-left: 10px;
       padding-right: 10px;
       padding-top: 0;
@@ -207,14 +207,14 @@
     }
   
     .subTextContainer {
-      display: none; /* Remove Product Designer and Lawal Jimoh */
+      display: none; 
     }
   
     .iamContainer {
       flex-direction: column;
       align-items: flex-start;
-      margin-top: 0; /* 👈 No top margin between HEY and IAM */
-      gap: 0; /* 👈 No gap between IAM and Logo */
+      margin-top: 0;
+      gap: 0; 
     }
   
     .iamText {
@@ -222,17 +222,17 @@
       font-weight: 500;
 
       text-align: left;
-      margin: 0; /* 👈 Remove any default margin */
+      margin: 0; 
     }
   
     .logoContainer {
-      margin-top: 0; /* 👈 No extra margin */
+      margin-top: 0; 
     }
   
     .fakeLogo {
       width: 163px;
       height: 80px;
-      margin-top: 10px; /* 👈 Also no margin here */
+      margin-top: 10px; 
     }
     }
 
@@ -248,15 +248,15 @@
        .hola {
       font-size: 150px;
       margin-top: 10px;
-      margin-bottom: 0; /* 👈 Remove bottom margin between HEY and IAM */
+      margin-bottom: 0;
       letter-spacing: 5%;
       text-align: left;
       font-weight: 500;
       width: 430px;
     }
     .backgroundImage {
-      transform: scale(0.81) translateX(1%); /* 👈 ZOOM IN */
-      transform-origin: center; /* 👈 Zoom from center */
+      transform: scale(0.81) translateX(1%); 
+      transform-origin: center; 
       transition: transform 0.5s ease-in-out;
       height: 80vh;
       width: 100%;
@@ -267,7 +267,7 @@
 
 
     .mobileCardContent {
-     align-items: flex-start; /* Move everything left */
+     align-items: flex-start; 
       padding-left: 10px;
       padding-right: 10px;
       padding-top: 0;
@@ -277,14 +277,14 @@
     }
   
     .subTextContainer {
-       padding-bottom: 30px;/* Remove Product Designer and Lawal Jimoh */
+       padding-bottom: 30px;
     }
   
     .iamContainer {
       flex-direction: row;
       align-items: flex-start;
-      margin-top: 0; /* 👈 No top margin between HEY and IAM */
-      gap: 0; /* 👈 No gap between IAM and Logo */
+      margin-top: 0; 
+      gap: 0; 
     }
   
     .iamText {
