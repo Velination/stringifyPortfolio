@@ -1,57 +1,11 @@
-.container {
-  background-color: black;
-  color: white;
-  padding: 2rem 1rem;
-  text-align: center;
-width: 1400px;
-margin: 0 auto;
-}
-
-.titleRow {
-  display: flex;
-  justify-content: center;
-  height: 15vh;
-}
-
-.recent {
-  font-weight: 800;
-  font-size: 131px;
-}
-
-.projects {
-  font-weight: 400;
-  font-style: italic;
-  font-size: 131px;
-}
-
-.subLinks {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 2rem;
-  margin-top: 10px;
-  font-size: 22px;
-  letter-spacing: 1px;
-}
-
-.subLinks span {
-  white-space: nowrap;
-}
-
-.line {
-  height: 1px;
-  width: 180px;
-  background-color: gray;
-}
-
 .projectGrid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive magic */
   gap: 1.5rem;
   padding: 1rem;
-  max-width: 1400px;
+  max-width: 1300px;
   margin: 0 auto;
-  margin-top: 30px;
+  margin-top: 50px;
   
 }
 
@@ -107,7 +61,7 @@ margin: 0 auto;
     border-radius: 8px;
     overflow: hidden;
     width: 100%;
-    height: 500px;
+    height: 490px;
     padding-top: 66.67%;
     border: 2px solid #2C2C2C;
   }
@@ -146,14 +100,85 @@ margin: 0 auto;
   .card:hover .subtitle {
     color: var(--hover-color);
   }
+
+  /* for the writer header */
+
+  .container {
+    color: white;
+    padding: 2rem 1rem;
+    text-align: center;
+    width: 1400px;
+    
+  }
   
+  .titleRow {
+    display: flex;
+    justify-content: center;
+    height: 15vh;
+    
+  }
   
-   /* ✅ Mobile Responsive */
-  @media (max-width: 768px) {
-   .projectGrid{
+  .recent {
+    font-weight: 800;
+    font-size: 141px;
+    
+  }
+  
+  .projects {
+    font-weight: 400;
+    font-style: italic;
+    font-size: 141px;
+  }
+  
+  .subLinks {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    margin-top: 10px;
+    font-size: 24px;
+    letter-spacing: 1px;
+   
+    
+  }
+  
+  .subLinks span {
+    white-space: nowrap;
+  }
+  
+  .line {
+    height: 1px;
+    width: 180px;
+    background-color: gray;
+  }
+  
+  @media screen and (max-width: 480px)  {
+    .imageWrapper{
+      height: 220px;
+    }
+
+    .projectName .year{
+      font-size: 0.8rem;
+    }
+
+    .card{
       padding: 0;
-      width: 300px; 
-      margin:0 auto;
+    }
+
+    .textOverlay {
+      padding: 0.5rem;
+    }
+  
+    .title {
+      font-size: 0.8rem;
+    }
+  
+    .subtitle {
+      font-size: 0.65rem;
+    }
+     .projectGrid{
+      padding: 0;
+      width: 90%;
       margin-top: 15px;
     }
 
@@ -162,51 +187,44 @@ margin: 0 auto;
     }
 
     .container {
-      background-color: black;
+      width: 400px;
       color: white;
-      padding: 1rem 0.5rem;
+      padding: 0.5rem 0rem;
       text-align: center;
-       width: 345px;
-       margin: 0;
       
-    }
-
-    .imageWrapper {
-      height: 320px;
-     
     }
 
     .titleRow {
        
-        height: 7vh;
+        height: 5vh;
         
       }
 
     .recent{
-        font-size: 35px;
+        font-size: 40px;
     }
 
     .projects{
-        font-size: 35px;
+        font-size: 40px;
     }
 
     .subLinks {
-        gap: 10px;
-        font-size: 6px;
+        gap: 3px;
+        font-size: 11px;
       }
 
       .line {
         height: 1px;
         width: 40px;
       }
-    }
+  }
 
-
-@media (max-width: 480px) {
- .projectGrid{
+  
+  
+  @media screen and (min-width: 768px)  and (max-width: 810px) {
+    .projectGrid{
       padding: 0;
-      width: 300px; 
-      margin:0 auto;
+      width: 700px;
       margin-top: 15px;
     }
 
@@ -215,50 +233,44 @@ margin: 0 auto;
     }
 
     .container {
-      background-color: black;
+      width: 100%;
       color: white;
-      padding: 1rem 0.5rem;
+      padding: 0.5rem 0rem;
       text-align: center;
-       width: 345px;
-       margin: 0;
       
-    }
-
-    .imageWrapper {
-      height: 320px;
-     
     }
 
     .titleRow {
        
-        height: 7vh;
+        height: 9vh;
         
       }
 
     .recent{
-        font-size: 35px;
+        font-size: 58px;
     }
 
     .projects{
-        font-size: 35px;
+        font-size: 58px;
     }
 
     .subLinks {
         gap: 10px;
-        font-size: 6px;
+        font-size: 17px;
       }
 
       .line {
         height: 1px;
         width: 40px;
       }
-      }
+  }
 
-      @media (min-width: 780px) and (max-width: 1023px) { 
-       .projectGrid{
+  
+ @media screen and (min-width: 820px) and (max-width: 1430px){
+
+     .projectGrid{
       padding: 0;
-      width: 800px; 
-      margin:0 auto;
+      width: 90%;
       margin-top: 15px;
     }
 
@@ -267,42 +279,48 @@ margin: 0 auto;
     }
 
     .container {
-      background-color: black;
+      width: 100%;
       color: white;
-      padding: 1rem 0.5rem;
+      padding: 0.5rem 0rem;
       text-align: center;
-       width: 900px;
-       margin: 0;
-      margin: 0 auto;
-    }
-
-    .imageWrapper {
-      height: 320px;
-     
+  margin: 0 auto;
     }
 
     .titleRow {
        
-        height: 8vh;
+        height: 9vh;
       }
 
     .recent{
-        font-size: 85px;
+        font-size: 88px;
     }
 
     .projects{
-        font-size: 85px;
+        font-size: 88px;
     }
 
     .subLinks {
-        gap: 10px;
-        font-size: 21px;
+        gap: 2rem;
+        font-size: 19px;
       }
 
       .line {
         height: 1px;
         width: 40px;
       }
-      }
+
+   
+   
+
+    
+
+     
+  }
   
+ 
+
+
+   @media screen and (min-width: 768px)  and (max-width: 810px) {}
+
+
   
