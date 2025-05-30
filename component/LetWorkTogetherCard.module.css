@@ -238,12 +238,12 @@
 
       .containers {
         padding: 0;
-        width: 350px;
+        width: 100%;
         margin: 0;
       }
       .titleRow {
          
-          height: 3vh;
+          height: 5vh;
           
         }
   
@@ -266,7 +266,7 @@
           width: 30px;
         }
         .container {
-      width: 100%;
+      width: 90%;
       height: auto;
       flex-direction: column;
       padding: 15px;
@@ -316,12 +316,12 @@
      @media screen and (min-width: 768px)  and (max-width: 810px) {
       .containers {
         padding: 0;
-        width: 700px;
+        width: 100%;
         margin-bottom: 0;
       }
       .titleRow {
          
-          height: 8vh;
+          height: 10vh;
           
         }
   
@@ -393,12 +393,12 @@
 
       .containers {
         padding: 0;
-        max-width: 800px;
+        width: 100%;
        
       }
       .titleRow {
          
-          height: 7.5vh;
+          height: 13vh;
           
         }
   
@@ -421,7 +421,7 @@
           width: 40px;
         }
         .container {
-      width: 93%;
+      width: 90%;
       height: auto;
       flex-direction: column;
       padding: 15px;
