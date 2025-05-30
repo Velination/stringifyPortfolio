@@ -12,13 +12,13 @@ export default function Home() {
         <title>Home Page</title>
       </Head>
 
-      <div className={styless.backgroundss}>
+      <div className={styless.backgrounds}>
         <div className={styless.overlay}>
           {/* SideBar */}
           <Sidebar />
 
-           <div className={styles.projectGrid}>
-      <Link href="/MyCare">
+          <div className={styles.projectGrid}>
+            <Link href="/MyCare">
               <div>
                 <ProjectCard
                   projectName="MyCard Assistant"
@@ -30,46 +30,46 @@ export default function Home() {
                 />
               </div>
             </Link>
-            <Link href="/tantalizer">
-              <div>
-                <ProjectCard
-                  projectName="Tantalizer"
-                  year="2023"
-                  imageSrc="/images/Scene 12 1 (4).png"
-                  title="Restaurant Website"
-                  subtitle="Redesign"
-                  hoverColor="#EA8B1B"
-                />
-              </div>
-            </Link>
-            <Link href="/RockRealty">
+
+            <Link href="/projects/real-realty">
               <div>
                 <ProjectCard
                   projectName="Real Realty Limited"
                   year="2024"
-                  imageSrc="/images/Scene 12 1 (5).png"
+                  imageSrc="/images/Shot.png"
                   title="Real Estate Website"
                   subtitle="Redesign"
                   hoverColor="#964B00"
                 />
               </div>
             </Link>
-            
-            <Link href="/kwats">
+
+            <Link href="/tantalizer">
+              <div>
+                <ProjectCard
+                  projectName="Tantalizer"
+                  year="2023"
+                  imageSrc="/images/Shot.png"
+                  title="Restaurant Website"
+                  subtitle="Redesign"
+                  hoverColor="#EA8B1B"
+                />
+              </div>
+            </Link>
+
+            <Link href="/projects/kwats">
               <div>
                 <ProjectCard
                   projectName="Kwats"
                   year="2024"
-                  imageSrc="/images/Scene 12 1 (6).png"
+                  imageSrc="/images/Shot.png"
                   title="Courier Service App for"
                   subtitle="Delivery Service"
                   hoverColor="#90EE90"
                 />
               </div>
             </Link>
-
-      
-    </div>
+          </div>
         </div>
       </div>
     </div>
