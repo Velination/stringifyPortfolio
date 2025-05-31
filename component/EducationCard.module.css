@@ -168,13 +168,14 @@
   
   }
   
-   @media screen and (min-width: 820px) and (max-width: 1430px){
+   @media screen and (min-width: 820px) and (max-width: 1440px){
 
     .container {
-      width: 100%; 
+      width: 80%; 
       padding: 15px;
       border-radius: 15px;
       margin-bottom: 0px;
+      margin: 0 auto;
       height: auto;
     }
   
