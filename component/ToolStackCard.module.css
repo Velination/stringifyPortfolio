@@ -117,7 +117,7 @@
   }
 }
 
-@media screen and (min-width: 820px) and (max-width: 1430px){
+@media screen and (min-width: 820px) and (max-width: 1440px){
 
   .container {
     width: 100%;
@@ -133,12 +133,14 @@
   }
 
   .tools {
+
     justify-content: center;
     margin-left: 0;
     margin-right: 0;
     gap: 12px;
     padding: 0;
     max-width: calc((120px + 10px) * 6);
+    margin: 0 auto;
   }
 
   .toolItem {
