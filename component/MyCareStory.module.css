@@ -1,11 +1,8 @@
-/* components/Storyboarding/Storyboarding.module.css */
-
 .container {
   background-color: #111;
   color: white;
   padding: 3rem;
-  font-family: Arial, sans-serif;
-  max-width: 1400px;
+  width: 1400px;
   margin: 0 auto;
   margin-top: 150px;
   border-radius: 24px;
@@ -44,15 +41,37 @@
   text-align: left;
 }
 
-/* Mobile Responsive Styles */
-@media (max-width: 768px) {
-.container{
+
+ @media screen and (max-width: 480px)  {
+
+  .container{
   margin: 0;
   padding: 1.5rem;
+  width: 90%;
+  margin: 0 auto;
 }
 
   .grid {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 0.8rem;
+  }
+
+   .text{
+    font-size: 12px;
+  }
+ }
+
+@media screen and (min-width: 768px)  and (max-width: 810px) {
+.container{
+  margin: 0;
+  padding: 1.5rem;
+  width: 90%;
+  margin: 0 auto;
+}
+
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.8rem;
   }
 
   .image {
@@ -69,36 +88,17 @@
   }
 }
 
-@media (min-width: 780px) and (max-width: 1023px) { 
-    .container{
-      margin: 0;
-  margin: 0 auto;
+@media screen and (min-width: 820px) and (max-width: 1440px){
+
+  .container{
+  margin: 0;
   padding: 1.5rem;
-  max-width: 900px;
-  margin-top: 25px;
-  margin-bottom: 25px;
+  width: 90%;
+  margin: 0 auto;
 }
 
   .grid {
-    grid-template-columns: repeat(2, 1fr);
-    
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.8rem;
   }
-
-  .image {
-    height: auto;
-  }
-
-  .card{
-    padding: 0;
-    padding-top: 1rem;
-  }
-
-  .text{
-    font-size: 20px;
-    
-    width: 400px;
-    padding-left: 27px;
-
-  }
-    }
-  
+}
