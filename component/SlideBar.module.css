@@ -42,7 +42,7 @@
 /* Each Icon */
 .icon {
   color: white;
-  font-size: 24px;
+  font-size: 18px;
   margin-bottom: 30px;
   display: flex;
   flex-direction: column;
@@ -56,7 +56,8 @@
 }
 
 /* Mobile Responsive */
-@media (max-width: 768px) {
+
+@media screen and (max-width: 480px)  {
   .sidebar {
     border: none;
     padding-top: 5px;
@@ -74,4 +75,52 @@
     display: block;
     margin-bottom: 0;
   }
+
+}
+
+@media screen and (min-width: 768px)  and (max-width: 810px) {
+  .sidebar {
+    border: none;
+    padding-top: 5px;
+  }
+
+  .line {
+    display: none;
+  }
+
+  .icons {
+    display: none;
+  }
+
+  .logo {
+    display: block;
+    margin-bottom: 0;
+  }
+}
+
+@media screen and (min-width: 820px) and (max-width: 1440px){
+    .sidebar {
+    height: 590px;
+    padding-top: 5px;
+     width: 30px;
+    
+  }
+
+  .line {
+    height: 95%;
+  }
+
+  .icons {
+     width: 24px;
+  }
+
+  .logo {
+    margin-bottom: 200px;
+    
+  }
+
+  .copyIcon {
+  margin-top: 0px;
+}
+
 }
