@@ -1,14 +1,9 @@
-/* components/TargetAudience/TargetAudience.module.css */
-
 .container {
-   
     color: white;
     padding: 2rem;
     margin-top: 100px;
     max-width: 1400px;
     margin: 0 auto;
-    
-    
   }
   
   
@@ -90,8 +85,8 @@
   
   .box ul {
     color: #bbb;
-    list-style-type: disc; /* Adds dot (•) */
-    padding-left: 1.5rem;  /* Adds space before the dot */
+    list-style-type: disc; 
+    padding-left: 1.5rem;  
     
   }
   
@@ -103,31 +98,35 @@
     line-height: 100%;
   }
   
-  /* Responsive */
-  @media (max-width: 768px) {
-    .container {
+  @media screen and (max-width: 480px)  {
+
+     .container {
       padding: 0;
-      max-width: 100%;
-      height: auto;
+      width: 90%;
+      height: 100vh;
       margin-bottom: 40px;
+      margin-top: 0px;
     }
   
     .content {
       flex-direction: column;
+      padding: 1rem;
       height: 600px;
       border-radius: 20px;
+      
     }
   
     .imageWrapper {
       width: 100%;
-      max-width: 100%;
       height: auto;
-      flex: 1 1 180px;
+      flex: 120px;
+    
+      margin: 0 auto;
     }
   
     .image {
       width: 100%;
-      height: 247px;
+      height: 297px;
       object-fit:contain;
       border-top-left-radius: 20px;
       border-top-right-radius: 20px;
@@ -161,13 +160,107 @@
     }
   
     .box {
-      padding: 8px;
+      padding: 18px;
       padding-bottom: 0;
       padding-right: 0;
       
       border-radius: 16px;
       height: 191px;
       width: 47%;
+      
+    }
+  
+    .box h4 {
+      font-size: 13px;
+      margin-bottom: 0.5rem;
+    }
+  
+    .box li {
+      font-size: 12px;
+      line-height: 12px;
+     
+     padding-right: 5px;
+    }
+
+    .box ul {
+      padding-left: 0.3rem;
+      color: #bbb;
+     
+      
+      
+    }
+  }
+
+
+  @media screen and (min-width: 768px)  and (max-width: 810px) {
+    .container {
+      padding: 0;
+      width: 90%;
+      height: auto;
+      margin-bottom: 40px;
+      margin-top: 0px;
+    }
+  
+    .content {
+      flex-direction: column;
+      padding: 1rem;
+      height: 600px;
+      border-radius: 20px;
+      
+    }
+  
+    .imageWrapper {
+      width: 100%;
+      height: auto;
+      flex: 120px;
+    
+      margin: 0 auto;
+    }
+  
+    .image {
+      width: 100%;
+      height: 297px;
+      object-fit:contain;
+      border-top-left-radius: 20px;
+      border-top-right-radius: 20px;
+    }
+  
+    .profile {
+      padding: 0;
+      margin: 0;
+    }
+  
+    .name {
+      font-size: 14px;
+      font-weight: 700;
+    }
+  
+    .role {
+      font-size: 12px;
+      margin-bottom: 0.5rem;
+    }
+  
+    .bio {
+      font-size: 12px;
+      line-height: 22px;
+      margin-bottom: 1rem;
+    }
+  
+    .boxes {
+      flex-direction: column;
+      gap: 1rem;
+      height: 150px;
+    }
+  
+    .box {
+      padding: 18px;
+      padding-bottom: 0;
+      padding-right: 0;
+      
+      border-radius: 16px;
+      height: 151px;
+      width: 47%;
+      
     }
   
     .box h4 {
@@ -179,12 +272,105 @@
       font-size: 12px;
       line-height: 15px;
      
+     padding-right: 5px;
     }
 
     .box ul {
       padding-left: 0.3rem;
       color: #bbb;
-      list-style-type: none; /* Adds dot (•) */
+     
+      
+      
+    }
+  }
+
+  @media screen and (min-width: 820px) and (max-width: 1440px){
+
+     .container {
+      padding: 0;
+      width: 90%;
+      height: auto;
+      margin-bottom: 40px;
+      margin-top: 0px;
+    }
+  
+    .content {
+      flex-direction: column;
+      padding: 1rem;
+      height: 600px;
+      border-radius: 20px;
+      
+    }
+  
+    .imageWrapper {
+      width: 100%;
+      height: auto;
+      flex: 120px;
+    
+      margin: 0 auto;
+    }
+  
+    .image {
+      width: 100%;
+      height: 297px;
+      object-fit:contain;
+      border-top-left-radius: 20px;
+      border-top-right-radius: 20px;
+    }
+  
+    .profile {
+      padding: 0;
+      margin: 0;
+    }
+  
+    .name {
+      font-size: 18px;
+      font-weight: 700;
+    }
+  
+    .role {
+      font-size: 16px;
+      margin-bottom: 0.5rem;
+    }
+  
+    .bio {
+      font-size: 16px;
+      line-height: 22px;
+      margin-bottom: 1rem;
+    }
+  
+    .boxes {
+      flex-direction: column;
+      gap: 1rem;
+      height: 150px;
+    }
+  
+    .box {
+      padding: 18px;
+      padding-bottom: 0;
+      padding-right: 0;
+      border-radius: 16px;
+      height: 151px;
+      width: 47%;
+      
+    }
+  
+    .box h4 {
+      font-size: 18px;
+      margin-bottom: 0.5rem;
+    }
+  
+    .box li {
+      font-size: 16px;
+      line-height: 15px;
+     
+     padding-right: 5px;
+    }
+
+    .box ul {
+      padding-left: 0.3rem;
+      color: #bbb;
+     
       
       
     }
