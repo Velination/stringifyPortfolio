@@ -1,6 +1,6 @@
 .projectGrid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive magic */
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
   gap: 1.5rem;
   padding: 1rem;
   max-width: 1300px;
@@ -266,7 +266,7 @@
   }
 
   
- @media screen and (min-width: 820px) and (max-width: 1430px){
+ @media screen and (min-width: 820px) and (max-width: 1440px){
 
      .projectGrid{
       padding: 0;
