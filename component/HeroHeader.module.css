@@ -18,7 +18,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  max-width: 1400px;
+  width: 1400px;
   border-radius: 1rem;
   overflow: hidden;
    
@@ -207,13 +207,13 @@
     }
   
     .subTextContainer {
-      display: none; 
+      display: none;
     }
   
     .iamContainer {
       flex-direction: column;
       align-items: flex-start;
-      margin-top: 0;
+      margin-top: 0; 
       gap: 0; 
     }
   
@@ -222,11 +222,11 @@
       font-weight: 500;
 
       text-align: left;
-      margin: 0; 
+      margin: 0;
     }
   
     .logoContainer {
-      margin-top: 0;
+      margin-top: 0; 
     }
   
     .fakeLogo {
@@ -236,7 +236,7 @@
     }
     }
 
-    @media screen and (min-width: 820px) and (max-width: 1430px){
+    @media screen and (min-width: 820px) and (max-width: 1440px){
 
       .heroContainer {
     position: relative;
@@ -256,11 +256,11 @@
       width: 430px;
     }
     .backgroundImage {
-      transform: scale(0.81) translateX(1%); 
+      transform: scale(0.9) translateX(1%);
       transform-origin: center; 
       transition: transform 0.5s ease-in-out;
-      height: 80vh;
-      width: 100%;
+      height: 100vh;
+      width: 79%;
     }
 
   
@@ -268,7 +268,7 @@
 
 
     .mobileCardContent {
-     align-items: flex-start; 
+     align-items: flex-start;
       padding-left: 10px;
       padding-right: 10px;
       padding-top: 0;
@@ -285,7 +285,7 @@
       flex-direction: row;
       align-items: flex-start;
       margin-top: 0; 
-      gap: 0;
+      gap: 0; 
     }
   
     .iamText {
