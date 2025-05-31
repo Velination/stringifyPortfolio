@@ -90,12 +90,13 @@
     }
    }
 
-   @media screen and (min-width: 820px) and (max-width: 1430px){
+   @media screen and (min-width: 820px) and (max-width: 1440px){
      .container {
-      width: 90%;
+      width: 80%;
       height: auto;
       padding: 1rem;
       margin-top: 0px;
+      margin: 0 auto;
     }
   
     .heading {
@@ -108,29 +109,8 @@
     }
 
     .logo{
-      margin-left: 690px;
+      margin-left: 790px;
     }
    }
 
-    @media screen and (max-width: 1440px){
-     .container {
-      width: 500px;
-      height: auto;
-      padding: 1rem;
-      margin-top: 0px;
-    }
-  
-    .heading {
-      font-size: 27px;
-    }
-  
-    .text, .section, .highlight, .subText {
-      font-size: 25px;
-      line-height: 44px;
-    }
-
-    .logo{
-      margin-left: 690px;
-    }
-   }
-  
+   
