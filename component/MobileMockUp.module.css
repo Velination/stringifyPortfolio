@@ -10,7 +10,7 @@
     width: 1400px;
     margin: 0 auto;
     margin-top: 80px;
-    flex-direction: row; /* Ensures image left, text right */
+    flex-direction: row;
   flex-wrap: wrap;
   }
   
@@ -48,16 +48,16 @@
   
   .infoList li {
     display: flex;
-    align-items: center; /* Vertically center number with text */
-    gap: 4.5rem;         /* Reduce gap to bring number closer */
-    margin-bottom: 1.2rem; /* Slightly tighter vertical spacing */
+    align-items: center; 
+    gap: 4.5rem;         
+    margin-bottom: 1.2rem; 
   }
   
   .number {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    width: 45px;   /* Slightly smaller circle */
+    width: 45px;   
     height: 45px;
     border-radius: 50%;
     background: white;
@@ -66,13 +66,14 @@
     font-size: 1.5rem;
     flex-shrink: 0;
   }
-  
-  @media (max-width: 768px) {
+
+  @media screen and (max-width: 480px)  {
+
     .wrapper {
         gap: 1rem;
         padding: 0.4rem;
-        width: 100%;
-        margin: 0;
+        width: 90%;
+        margin: 0 auto;
         margin-top: 30px;
     
       }
@@ -91,71 +92,7 @@
       }
       
       .icon{
-        display: none;
-      }
-    
-      .infoContainer {
-        flex: 1 1 auto;
-        width: 201px;
-        
-      }
-      
-      .infoList {
-        list-style: none;
-        counter-reset: step;
-        padding: 5px;
-        margin: 0;
-        font-size: 12px;
-      }
-      
-      .infoList li {
-        display: flex;
-        align-items: center; /* Vertically center number with text */
-        gap: 0.5rem;         /* Reduce gap to bring number closer */
-        margin-bottom: 1.2rem; /* Slightly tighter vertical spacing */
-      }
-      
-      .number {
-        display: inline-flex;
-        align-items: center;
-        justify-content: center;
-        width: 20px;   /* Slightly smaller circle */
-        height: 20px;
-        border-radius: 50%;
-        background: white;
-        color: #ff5f5f;
-        font-weight: bold;
-        font-size: 0.7rem;
-        flex-shrink: 0;
-      }
-}
-
-@media (min-width: 780px) and (max-width: 1023px) { 
-  .wrapper {
-        gap: 1rem;
-        padding: 0.4rem;
-        width: 900px;
-        margin: 0;
-        margin-top: 30px;
-        margin: 0 auto;
-        
-      }
-      
-      .mockupContainer {
-        flex: 0 0 auto;
-        display: flex;
-        justify-content:flex-start;
-        gap: 1rem;
-      }
-      
-      .phoneImage {
-        width: 100%;
-        max-width: 200px;
-        height: 365px;
-      }
-      
-      .icon{
-        display: none;
+      display: none;
       }
     
       .infoContainer {
@@ -177,20 +114,148 @@
         align-items: center; 
         gap: 0.5rem;         
         margin-bottom: 1.2rem; 
-        font-size: 20px;
       }
       
       .number {
         display: inline-flex;
         align-items: center;
         justify-content: center;
-        width: 30px;   /* Slightly smaller circle */
+        width: 20px;   
+        height: 20px;
+        border-radius: 50%;
+        background: white;
+        color: #ff5f5f;
+        font-weight: bold;
+        font-size: 0.7rem;
+        flex-shrink: 0;
+      }
+
+  }
+  
+  @media screen and (min-width: 768px)  and (max-width: 810px) {
+    .wrapper {
+        gap: 1rem;
+        padding: 0.4rem;
+        width: 90%;
+        margin: 0 auto;
+        margin-top: 30px;
+    
+      }
+      
+      .mockupContainer {
+        flex: 0 0 auto;
+        display: flex;
+        justify-content:flex-start;
+        gap: 1rem;
+      }
+      
+      .phoneImage {
+        width: 100%;
+        max-width: 180px;
+        height: 265px;
+      }
+      
+      .icon{
+        width: 85px;
+    height: 30px;
+      }
+    
+      .infoContainer {
+        flex: 1 1 auto;
+        width: 201px;
+        
+      }
+      
+      .infoList {
+        list-style: none;
+        counter-reset: step;
+        padding: 5px;
+        margin: 0;
+        font-size: 12px;
+      }
+      
+      .infoList li {
+        display: flex;
+        align-items: center; 
+        gap: 0.5rem;         
+        margin-bottom: 1.2rem; 
+      }
+      
+      .number {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: 20px;   
+        height: 20px;
+        border-radius: 50%;
+        background: white;
+        color: #ff5f5f;
+        font-weight: bold;
+        font-size: 0.7rem;
+        flex-shrink: 0;
+      }
+}
+
+@media screen and (min-width: 820px) and (max-width: 1440px){
+
+  .wrapper {
+        gap: 1rem;
+        padding: 0.4rem;
+        width: 90%;
+        margin: 0 auto;
+        margin-top: 30px;
+    
+      }
+      
+      .mockupContainer {
+        flex: 0 0 auto;
+        display: flex;
+        justify-content:flex-start;
+        gap: 1rem;
+      }
+      
+      .phoneImage {
+        width: 180px;
+        height: 315px;
+      }
+      
+      .icon{
+        width: 85px;
+    height: 30px;
+      }
+    
+      .infoContainer {
+        flex: 1 1 auto;
+        width: 201px;
+        
+      }
+      
+      .infoList {
+        list-style: none;
+        counter-reset: step;
+        padding: 5px;
+        margin: 0;
+        font-size: 16px;
+      }
+      
+      .infoList li {
+        display: flex;
+        align-items: center; 
+        gap: 0.5rem;         
+        margin-bottom: 1.2rem; 
+      }
+      
+      .number {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: 30px;   
         height: 30px;
         border-radius: 50%;
         background: white;
         color: #ff5f5f;
         font-weight: bold;
-        font-size: 1.7rem;
+        font-size: 1.0rem;
         flex-shrink: 0;
       }
-    }
+}
