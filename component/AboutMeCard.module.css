@@ -92,7 +92,7 @@
 
    @media screen and (min-width: 820px) and (max-width: 1430px){
      .container {
-      width: 100%;
+      width: 90%;
       height: auto;
       padding: 1rem;
       margin-top: 0px;
@@ -104,6 +104,28 @@
   
     .text, .section, .highlight, .subText {
       font-size: 30px;
+      line-height: 44px;
+    }
+
+    .logo{
+      margin-left: 690px;
+    }
+   }
+
+    @media screen and (max-width: 1440px){
+     .container {
+      width: 500px;
+      height: auto;
+      padding: 1rem;
+      margin-top: 0px;
+    }
+  
+    .heading {
+      font-size: 27px;
+    }
+  
+    .text, .section, .highlight, .subText {
+      font-size: 25px;
       line-height: 44px;
     }
 
