@@ -80,14 +80,14 @@
     .image {
       border-radius: 16px;
       object-fit:fill;
-      height: 100%;
+      height: auto;
     }
   }
 
-   @media screen and (min-width: 820px) and (max-width: 1430px){
+   @media screen and (min-width: 820px) and (max-width: 1440px){
   .sliderWrapper {
       width: 80%; 
-      height: auto; 
+      height: 100%; 
       aspect-ratio: 3/4; 
       margin: 0px auto; 
       border-radius: 16px;
@@ -97,25 +97,9 @@
       border-radius: 16px;
       object-fit:fill;
       height: 100%;
+      width: 100%;
     }
   
   }
 
-  @media screen and (max-width: 1440px){
-  .sliderWrapper {
-      width: 520px; 
-      height: 850px; 
-      aspect-ratio: 3/4; 
-      margin: 0px auto; 
-      border-radius: 16px;
-    }
-   .image {
-    width: 520px;
-    height: 850px;
-    object-fit:fill;
-    border-radius: 16px;
-  }
-   
   
-  
-}
