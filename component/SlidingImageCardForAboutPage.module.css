@@ -103,17 +103,17 @@
 
   @media screen and (max-width: 1440px){
   .sliderWrapper {
-      width: 500px; 
-      height: auto; 
+      width: 520px; 
+      height: 850px; 
       aspect-ratio: 3/4; 
       margin: 0px auto; 
       border-radius: 16px;
     }
    .image {
-    width: 500px;
-    height: auto;
+    width: 520px;
+    height: 850px;
     object-fit:fill;
-    border-radius: 20px;
+    border-radius: 16px;
   }
    
   
