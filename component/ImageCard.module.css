@@ -1,28 +1,11 @@
 .menuWrapper {
-    padding: 2rem;
-    text-align: center;
-    max-width: 1400px;
-    margin: 0 auto;
-    width: 100%;
-    box-sizing: border-box;
     margin-bottom: 100px;
   }
   
-  .menuHeader {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 1.5rem;
-    flex-wrap: nowrap;  /* Prevent wrap on zoom */
-  }
-  
-  
-  
   .imageWrapper {
-    width: 100%;
-    max-width: 1400px;
-    margin: 0 auto;
+    width: 1400px;
     position: relative;
+    margin: 0 auto;
   }
   
   .menuImage {
@@ -33,15 +16,44 @@
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.6);
   }
   
-  .imageTitle {
-    margin-top: 1rem;
-    font-size: 1.2rem;
-  }
+  
 
-  @media (max-width: 768px) {
-    .menuWrapperr{
-      margin-bottom: 10px;
-      padding: 0.5rem;
-    }
+   @media screen and (max-width: 480px)  {
+    .menuWrapper {
+    margin-bottom: 20px;
   }
   
+  .imageWrapper {
+    width: 90%;
+    position: relative;
+    margin: 0 auto;
+  }
+  
+   }
+  
+@media screen and (min-width: 768px)  and (max-width: 810px) {
+    .menuWrapper {
+    margin-bottom: 50px;
+  }
+  
+  .imageWrapper {
+    width: 90%;
+    position: relative;
+    margin: 0 auto;
+  }
+  
+ 
+  }
+  
+
+  @media screen and (min-width: 820px) and (max-width: 1440px){
+      .menuWrapper {
+    margin-bottom: 50px;
+  }
+  
+  .imageWrapper {
+    width: 90%;
+    position: relative;
+    margin: 0 auto;
+  }
+  }
