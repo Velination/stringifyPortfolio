@@ -1,6 +1,6 @@
 // components/CaseStudySection.tsx
 import React from 'react';
-import styles from '@/component/MyCareCaseStudySection2.module.css';
+import styles from '@/component/MyCareCaseStudySection.module.css';
 import { Poppins } from 'next/font/google';
 
 const poppins = Poppins({
