@@ -4,7 +4,6 @@
     padding: 2rem;
     max-width: 1400px;
     margin: 40px auto;
-    font-family: 'Arial', sans-serif;
   }
   
   .heading {
@@ -28,16 +27,17 @@
     color: white;
     font-weight: 600;
   }
-  
-  @media (max-width: 480px) {
-    .container {
-      padding: 1.5rem 1rem;
+
+   @media screen and (max-width: 480px)  {
+      .container {
+      padding: 1rem 0.5rem;
       margin-bottom: 10px;
-      width: 470px;
+      width: 90%;
+      
     }
   
     .heading {
-      font-size: 40px;
+      font-size: 20px;
       margin-bottom: 2rem;
     }
   
@@ -47,33 +47,35 @@
       font-size: 14px;
       line-height: 22px;
     }
-  }
-
-   @media (max-width: 768px) {
+   }
+  
+  @media screen and (min-width: 768px)  and (max-width: 810px) {
     .container {
-      padding: 1.5rem 1rem;
+      padding: 1rem 0.5rem;
       margin-bottom: 10px;
-      width: 758px;
+      width: 90%;
+      
     }
   
     .heading {
-      font-size: 40px;
+      font-size: 30px;
       margin-bottom: 2rem;
     }
   
     .paragraph {
       text-align: left;
       width: 100%;
-      font-size: 14px;
+      font-size: 16px;
       line-height: 22px;
     }
   }
 
-   @media (max-width: 780px) and (max-width: 1023px) {
-    .container {
-      padding: 1.5rem 1rem;
+  @media screen and (min-width: 820px) and (max-width: 1440px){
+     .container {
+      padding: 1rem 0.5rem;
       margin-bottom: 10px;
-      width: 900px;
+      width: 90%;
+      
     }
   
     .heading {
@@ -84,7 +86,7 @@
     .paragraph {
       text-align: left;
       width: 100%;
-      font-size: 14px;
+      font-size: 18px;
       line-height: 22px;
     }
   }
