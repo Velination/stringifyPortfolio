@@ -42,7 +42,7 @@
   text-align: center;
   font-size: 18px;
   color: #a4a4a4;
-  margin: 25px 0 35px;
+  margin: 0 auto;
 }
 
 .mainHeading {
@@ -77,7 +77,75 @@
   margin-top: 100px;
 }
 
-@media (max-width: 768px) {
+ @media screen and (max-width: 480px)  {
+
+  .container{
+    padding: 0px;
+  }
+
+  .rowContainer {
+    margin-bottom: 5px;
+  }
+
+  .leftspace {
+    width: 50px; 
+  }
+
+  .centerToggle {
+   margin-right: 3px;
+  }
+
+  .rightButton {
+    justify-content: flex-end;
+    
+  }
+  .logoContainer {
+    margin-top: 2px ;
+    padding-top: 2px;
+    width: 50px;
+    height: 50px;
+    margin: 0 auto;
+  }
+
+  .mainHeading {
+    font-size: 28px;
+    line-height: 48px;
+    padding: 0 10px;
+  }
+  .subHeading {
+    font-size: 25px;
+    line-height: 48px;
+    padding: 0 10px;
+    font-weight: 400;
+  }
+
+  .sectionTitle {
+    font-size: 40px;
+    line-height: 100%;
+    padding: 0 5px;
+    margin-top: 0px;
+  }
+
+  .sliderContainer {
+    margin: 30px auto 50px;
+  }
+
+  .projectYear {
+    font-size: 12px;
+    width: 80%;
+  
+  }
+
+  .projectCardContainer {
+    margin-top: 50px;
+  }
+  
+  .image-card {
+    margin-top: 10px !important;
+  }
+ }
+
+@media screen and (min-width: 768px)  and (max-width: 810px) {
   .container{
     padding: 0px;
   }
@@ -104,12 +172,12 @@
   }
 
   .mainHeading {
-    font-size: 24px;
+    font-size: 38px;
     line-height: 48px;
     padding: 0 10px;
   }
   .subHeading {
-    font-size: 21px;
+    font-size: 35px;
     line-height: 48px;
     padding: 0 10px;
     font-weight: 400;
@@ -128,13 +196,9 @@
 
   .projectYear {
     font-size: 14px;
-    margin: 15px 75px;
+   
     width: 60%;
   
-  }
-
-  .logoContainer {
-    margin: 30px 0;
   }
 
   .projectCardContainer {
@@ -148,8 +212,9 @@
 
 }
 
-@media (min-width: 780px) and (max-width: 1023px) { 
-   .container{
+@media screen and (min-width: 820px) and (max-width: 1440px){
+
+  .container{
     padding: 0px;
   }
 
@@ -170,31 +235,27 @@
     
   }
   .logoContainer {
-    margin-top: 2px ;
+    margin-top: 50px ;
     padding-top: 2px;
   }
 
   .mainHeading {
-    font-size: 30px;
+    font-size: 38px;
     line-height: 48px;
     padding: 0 10px;
   }
   .subHeading {
-    font-size: 30px;
+    font-size: 35px;
     line-height: 48px;
     padding: 0 10px;
     font-weight: 400;
   }
 
   .sectionTitle {
-    font-size: 70px;
+    font-size: 40px;
     line-height: 100%;
     padding: 0 5px;
     margin-top: 0px;
-    width: 900px;
-    margin: 0 auto;
-    margin-bottom: 20px;
-
   }
 
   .sliderContainer {
@@ -202,15 +263,10 @@
   }
 
   .projectYear {
-    font-size: 20px;
-    margin: 15px 75px;
+    font-size: 14px;
+   
     width: 60%;
-    
-    margin: 0 auto;
-  }
-
-  .logoContainer {
-    margin: 30px 0;
+  
   }
 
   .projectCardContainer {
@@ -220,5 +276,4 @@
   .image-card {
     margin-top: 10px !important;
   }
-
-    }
+}
