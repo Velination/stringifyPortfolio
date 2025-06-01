@@ -13,7 +13,7 @@ const SlidingImageComponent: React.FC<SlidingImageProps> = ({ images }) => {
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
-    }, 3000);
+    }, 4000);
     return () => clearInterval(interval);
   }, [images.length]);
 
@@ -21,10 +21,10 @@ const SlidingImageComponent: React.FC<SlidingImageProps> = ({ images }) => {
     <div className={styles.container}>
       <div
         className={styles.slider}
-        style={{ transform: `translateX(-${(currentIndex * 100) / images.length}%)` }}
+        style={{ transform: `translateX(-${(currentIndex * 80) / images.length}%)` }}
       >
         {images.map((image, index) => (
-          <div key={index} className={styles.slide} style={{ minWidth: '20%' }}>
+          <div key={index} className={styles.slide} style={{ minWidth: '15%' }}>
             <Image
               src={image.src}
               alt={image.alt}
