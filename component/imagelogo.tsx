@@ -1,4 +1,4 @@
-// component/ProjectBannerCard.tsx
+
 "use client";
 import styles from "@/component/imagelogo.module.css";
 import Image from "next/image";
@@ -13,8 +13,8 @@ type Props = {
 const ProjectBannerCard = ({
   imageSrc,
   altText,
-  width = 600,
-  height = 200,
+  width = 1400,
+  height = 240,
 }: Props) => {
   return (
     <div className={styles.card}>
