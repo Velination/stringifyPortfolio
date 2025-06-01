@@ -3,8 +3,9 @@
     justify-content: center;
     align-items: flex-start;
     gap: 50px;
-    padding: 50px 30px;
+    
     flex-wrap: wrap;
+   
   }
   
   .pageContainer {
@@ -12,8 +13,9 @@
     box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
     overflow: hidden;
     transition: transform 0.3s ease;
-    width: 600px;   /* Increased width */
-    height: auto;
+    width: 1200px;   
+    height:900px;
+    
   }
   
   .pageContainer:hover {
@@ -23,12 +25,13 @@
   .pageImage {
     width: 100%;
     height: auto;
-    object-fit: contain;
+    object-fit: cover;
     border-radius: 5px;
   }
   
   /* ✅ Mobile responsiveness */
-  @media (max-width: 768px) {
+
+   @media screen and (max-width: 480px)  {
     .homePageWrapper {
       flex-direction: column;
       align-items: center;
@@ -47,5 +50,43 @@
     .pageImage{
       height: 500;
     }
+   }
+
+ @media screen and (min-width: 768px)  and (max-width: 810px) {
+    .homePageWrapper {
+      flex-direction: column;
+      align-items: center;
+      padding-top: 20px;
+      padding-bottom: 20px;
+      padding-left: 10px;
+      padding-right: 10px;
+      margin-bottom: 40px;
+    }
+  
+    .pageContainer {
+      width: 95%;
+      height: 420px;
+    }
+
+   
+  }
+
+  @media screen and (min-width: 820px) and (max-width: 1440px){
+    .homePageWrapper {
+      flex-direction: column;
+      align-items: center;
+      padding-top: 20px;
+      padding-bottom: 20px;
+      padding-left: 10px;
+      padding-right: 10px;
+      margin-bottom: 40px;
+    }
+  
+    .pageContainer {
+      width: 90%;
+      height: 890px;
+    }
+
+    
   }
   
