@@ -14,11 +14,43 @@
 }
 
 /* ✅ Mobile responsiveness */
-@media (max-width: 768px) {
+
+@media screen and (max-width: 480px)  {
+   .heroWrapper {
+    padding: 1rem;
+    width: 90%;
+    margin-bottom: 40px;
+    margin: 0 auto;
+  }
+
+  .heroVideo {
+    height: auto;
+    max-height: 500px;
+    border-radius: 10px;
+  }
+}
+
+@media screen and (min-width: 768px)  and (max-width: 810px) {
   .heroWrapper {
     padding: 1rem;
-    width: 100%;
+    width: 90%;
+    margin-bottom: 0px;
+    margin: 0 auto;
+  }
+
+  .heroVideo {
+    height: auto;
+    max-height: 500px;
+    border-radius: 10px;
+  }
+}
+
+@media screen and (min-width: 820px) and (max-width: 1440px){
+   .heroWrapper {
+    padding: 1rem;
+    width: 90%;
     margin-bottom: 40px;
+    margin: 0 auto;
   }
 
   .heroVideo {
