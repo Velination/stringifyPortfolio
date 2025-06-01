@@ -1,23 +1,22 @@
-/* productcard.module.css */
-
 .container {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%;
+    width: 1400px;
     height: 450px;
     gap: 48px;
     position: relative;
     opacity: 0.9;
     flex-wrap: wrap;
-    margin-left: 0px;
-    margin-top: 0px;
+    margin: 0 auto;
+  
   }
   
   .textContainer {
     width: 25%;
     height: 295px;
     margin-left: 20px;
+  
   }
   
   .title {
@@ -31,7 +30,7 @@
   .projectTitle {
     font-size: 40px;
     font-weight: 700;
-    margin-top: 30px;
+    margin-top: 10px;
     line-height: 48px;
     color: #ffffff;
     letter-spacing: 2px;
@@ -62,22 +61,28 @@
   
   .image {
     width: 90%;
-    height: auto;
+    height: 300px;
     object-fit: cover;
   }
   
   /* Responsive Design for Mobile */
-  @media (max-width: 768px) {
-    .container {
+  @media screen and (max-width: 480px)  {
+
+     .container {
       margin-top: 10px;
       height: auto;
-      gap: 20px;
-     margin-left:20px;
+      gap: 0px;
+     margin-left:0px;
+     width: 90%;
+     margin: 0 auto ;
     }
+
+   
   
     .textContainer {
-      width: 95%;
-      height: auto;
+      width: 310px;
+      height: 150px;
+      margin-left: 0;
     }
 
     .title{
@@ -104,13 +109,8 @@
       align-items: center;
       justify-content: center;
       margin-top: 8px;
-    
+     padding-bottom: 0;
     }
-     
-      .arrow {
-        margin-left: 6px;
-        font-size: 12px;
-      }
       
   
     .imageContainer {
@@ -120,33 +120,32 @@
 
     .image {
         width: 100%;
-        height: 150px;
+        height: 180px;
         object-fit: cover;
         border-radius: 10px;
       }
   }
 
-  
-@media (min-width: 1024px) and (max-width: 1366px) { 
-     .container {
+  @media screen and (min-width: 768px)  and (max-width: 810px) {
+    .container {
       margin-top: 10px;
-      height: 700px;
+      height: auto;
       gap: 20px;
-     margin-left:20px;
-     width: 900px;
-     margin-bottom: 30px;
-     margin: 0 auto;
+     margin-left:0px;
+     width: 90%;
+     margin: 0 auto ;
     }
+
+   
   
     .textContainer {
-      width: 95%;
-      height: auto;
-      
+      width: 310px;
+      height: 150px;
+      margin-left: 0;
     }
 
-
     .title{
-        font-size: 26px;
+        font-size: 14px;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -154,7 +153,7 @@
     }
   
     .projectTitle {
-      font-size: 26px;
+      font-size: 16px;
       line-height: 20px;
       display: flex;
       align-items: center;
@@ -163,15 +162,77 @@
     }
   
     .description {
-      font-size: 30px;
+      font-size: 24px;
       line-height: 32px;
       display: flex;
       align-items: center;
       justify-content: center;
       margin-top: 8px;
-    
+     padding-bottom: 0;
+    }
+  
+    .imageContainer {
+      width: 95%;
+      
+    }
+
+    .image {
+        width: 100%;
+        height: 180px;
+        object-fit: cover;
+        border-radius: 10px;
+      }
+  }
+
+  @media screen and (min-width: 820px) and (max-width: 1440px){
+
+     .container {
+      margin-top: 10px;
+      height: auto;
+      gap: 20px;
+     margin-left:0px;
+     width: 80%;
+     margin: 0 auto ;
+    }
+
+   
+  
+    .textContainer {
+      width: 300px;
+      height: 150px;
+      margin-left: 0;
+    }
+
+    .title{
+        font-size: 14px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-bottom: 4px;
+    }
+  
+    .projectTitle {
+      font-size: 16px;
+      line-height: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: 8px;
+    }
+  
+    .description {
+      font-size: 24px;
+      line-height: 32px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: 8px;
+     padding-bottom: 0;
     }
      
+    
+    
+
       .arrow {
         margin-left: 6px;
         font-size: 12px;
@@ -185,9 +246,9 @@
 
     .image {
         width: 100%;
-        height: 350px;
+        height: 280px;
         object-fit: cover;
         border-radius: 10px;
       }
-    }
+  }
   
