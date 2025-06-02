@@ -1,4 +1,11 @@
+.background{
+
+  background-color: black;
+  background-image: url("/images/shineBackground.png");
+}
+
 .wrapper {
+
   height: auto;
 }
 
@@ -24,7 +31,6 @@
   justify-content: center;
   flex-grow: 1;
   width: 100px;
-  
   padding-left: 230px;
 }
 
@@ -90,6 +96,7 @@
 
   .centerToggle {
    margin-right: 3px;
+   padding-left: 60px;
   }
 
   .rightButton {
