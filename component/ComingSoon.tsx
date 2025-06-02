@@ -15,7 +15,7 @@ const ComingSoonComponent: React.FC = () => {
       {/* Left Side Image */}
       <div className={styles.imageContainer}>
         <Image 
-          src="/images/Memoji Component.png" // Update to your actual image path
+          src="/images/Memoji Component.png" 
           alt="Coming Soon Image"
           width={200}
           height={200}
