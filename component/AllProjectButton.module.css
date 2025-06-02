@@ -14,7 +14,6 @@
     box-sizing: border-box;
     text-align: center;
     cursor: pointer;
-    background-color: #000000; /* Solid black background */
     overflow: hidden;
     transition: transform 0.3s ease, filter 0.3s ease;
     font-size: 32px;
