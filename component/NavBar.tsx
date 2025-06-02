@@ -7,7 +7,7 @@ import NextProjectButton from '@/component/ArrowButton';
 import styles from '@/component/MyCareAssistants.module.css';
 import type { Dispatch, SetStateAction } from "react";
 
-// ✅ Prop types matching exactly the toggle state type
+
 type Props = {
   currentSection: "caseStudy" | "design";
   setCurrentSection: Dispatch<SetStateAction<"caseStudy" | "design">>;
@@ -15,7 +15,7 @@ type Props = {
 
 const HomePage: React.FC<Props> = ({ currentSection, setCurrentSection }) => {
   return (
-    <div style={{ backgroundColor: 'black' }}>
+    <div>
       <Sidebar />
       
       <div className={styles.rowContainer}>
