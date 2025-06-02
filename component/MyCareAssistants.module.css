@@ -18,15 +18,15 @@
   padding: 20px;
 }
 
-.leftspace {
- width: 250px; 
-}
+
 
 .centerToggle {
   display: flex;
   justify-content: center;
   flex-grow: 1;
   width: 100px;
+  
+  padding-left: 230px;
 }
 
 
@@ -87,9 +87,7 @@
     margin-bottom: 5px;
   }
 
-  .leftspace {
-    width: 50px; 
-  }
+ 
 
   .centerToggle {
    margin-right: 3px;
@@ -154,12 +152,11 @@
     margin-bottom: 5px;
   }
 
-  .leftspace {
-    width: 50px; 
-  }
+  
 
   .centerToggle {
    margin-right: 3px;
+   padding-left: 45px;
   }
 
   .rightButton {
@@ -222,12 +219,11 @@
     margin-bottom: 5px;
   }
 
-  .leftspace {
-    width: 50px; 
-  }
+ 
 
   .centerToggle {
    margin-right: 3px;
+   padding-left: 150px;
   }
 
   .rightButton {
