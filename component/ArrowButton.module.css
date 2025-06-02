@@ -1,126 +1,271 @@
-.dividerContainer {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: black;
-    padding: 20px 0;
-    position: relative;
-    width: 1600px;
-    margin: 0 auto;
+.container {
+  position: relative;
+  z-index: 10;
+  overflow: visible;
+}
+
+/* Mobile hamburger icon */
+.hamburger {
+  cursor: pointer;
+  font-size: 30px;
+  color: white;
+  padding: 15px;
+}
+
+/* Mobile dropdown menu */
+.mobileMenu {
+  position: absolute;
+  top: 50px;
+  left: 0;
+  background-color: transparent;
+  width: 100px;
+  padding: 10px ;
+  border-radius: 8px;
+  border: 2px solid white;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.mobileMenuItem {
+  padding: 10px;
+  color: white;
+}
+
+/* Desktop Next Project button with gradient */
+.nextProjectButton {
+  width: 275px;
+  height: 54px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 24px;
+  border-radius: 70px;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.3s ease, filter 0.3s ease;
+  z-index: 1;
+}
+
+/* Gradient ring */
+.nextProjectButton::before {
+  content: "";
+  position: absolute;
+  top: -4px;
+  left: -4px;
+  right: -4px;
+  bottom: -4px;
+  border-radius: 80px;
+  background: conic-gradient(
+    rgba(232, 172, 49, 1),
+    rgba(232, 172, 49, 1),
+    rgba(232, 172, 49, 1),
+    rgba(232, 172, 49, 1),
+    rgba(232, 172, 49, 1)
+  );
+  animation: rotateGradient 4s linear infinite;
+  z-index: -2;
+}
+
+/* Solid button background inside the ring */
+.nextProjectButton::after {
+  content: "";
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  right: 3px;
+  bottom: 3px;
+  border-radius: 67px;
+  background-color: rgba(68, 67, 67, 1);
+  z-index: -1;
+}
+
+/* Hover effect */
+.nextProjectButton:hover {
+  transform: scale(1.05);
+  filter: brightness(1.2);
+}
+
+/* Next Project text */
+.nextProjectText {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  font-size: 26px;
+  margin-right: 15px;
+  color: white;
+}
+
+/* Arrow icon */
+.arrowIcon {
+  width: 36px;
+  height: 36px;
+  color: #fff;
+  margin-left: 15px;
+}
+
+/* Force desktop margin if needed */
+.forceDesktopMargin {
+  margin-left: 18px;
+}
+
+/* Gradient Rotation Animation */
+@keyframes rotateGradient {
+  0% {
+    transform: rotate(0deg);
   }
-  
-  .line {
-    width: 100%;
-    height: 1px;
-    background-color: #666;
-    opacity: 0.8;
-    margin-left: 80px;
-    margin-right: 80px;
+  100% {
+    transform: rotate(360deg);
   }
-  
-  .centerIcon {
-    position: relative;
-    width: 50px;
-    height: 50px;
-    margin: 0 20px;
+}
+
+/* Mobile responsiveness */
+
+@media screen and (max-width: 480px)  {}
+
+@media screen and (min-width: 768px)  and (max-width: 810px) {
+  .nextProjectButton {
+    width: 220px;
+    height: 45px;
+    padding: 5px 18px;
+    border-radius: 50px;
+    margin-left: 45px;
   }
-  
-  .rotatingArc {
-    width: 500px;
-    height: 50px;
-    border: 2px solid #666;
-    border-radius: 50%;
-    border-top-color: transparent;
-    border-left-color: transparent;
-    position: absolute;
-    top: 0;
-    left: 0;
+
+  .nextProjectButton::before {
+    border-radius: 58px;
   }
-  
-  .arrowDown {
-    position: absolute;
-    top: 50%;
-    left: 50%;
+
+  .nextProjectButton::after {
+    border-radius: 46px;
+  }
+
+  .nextProjectText {
+    font-size: 20px;
+    margin-right: 10px;
+  }
+
+  .arrowIcon {
     width: 28px;
-    height: 12px;
-    border-left: 2px solid #666;
-    border-bottom: 2px solid #666;
-    transform: translate(-50%, -50%) rotate(-45deg);
-  }
-  
-  
-  
-  
-  @media (max-width: 786px) and (max-width: 834px)  {
-     .line {
-      margin-left: 10px;
-    margin-right: 10px;
-    }
-
-    .dividerContainer {
-     
-      padding: 10px 0;
-      width: 310px;
-      margin: 0;
-    }
-  
-    .icon-wrapper {
-      width: 30px;
-      height: 30px;
-      margin: 0 10px;
-    }
-  
-    .check {
-      font-size: 16px;
-    }
+    height: 28px;
+    margin-left: 10px;
   }
 
-
-@media (max-width: 486px) {
-  .line {
-      margin-left: 10px;
-    margin-right: 10px;
-    }
-
-    .dividerContainer {
-     
-      padding: 10px 0;
-      width: 310px;
-      margin: 0;
+  
+.mobileMenu {
+      position: fixed; 
+      top: 30%;
+      left: 70%;
+      transform: translate(-50%, -50%);
+      background-color: rgba(174, 174, 174, 0.1); 
+      width: 50%;
+      max-width: 150px;
+      padding: 20px;
+      border-radius: 12px;
+      border: 1px solid #9e9e9e;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      z-index: 100;
+      backdrop-filter: blur(10px); 
     }
   
-    .icon-wrapper {
-      width: 30px;
-      height: 30px;
-      margin: 0 10px;
-    }
-  
-    .check {
-      font-size: 16px;
-    }
-      }
 
-      @media (min-width: 1024px) and (max-width: 1366px) { 
-        .line {
-      margin-left: 10px;
-    margin-right: 10px;
+    .mobileMenuItem {
+      padding: 12px 0;
+      color: white;
+      font-size: 18px;
+      width: 100%;
+      text-align: left; 
+      border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+      
+      display: flex; 
+      align-items: center; 
+      gap: 8px; 
     }
-
-    .dividerContainer {
-     
-      padding: 10px 0;
-      width: 810px;
-      margin: 0;
-    }
-  
-    .icon-wrapper {
-      width: 30px;
-      height: 30px;
-      margin: 0 10px;
-    }
-  
-    .check {
-      font-size: 16px;
-    }
-      }
     
+    .mobileMenuItem:last-child {
+      border-bottom: none;
+    }
+    
+    
+
+  .mobileOnly{
+    margin-top: 130px;
+  }
+}
+
+@media screen and (min-width: 820px) and (max-width: 1440px){
+  .nextProjectButton {
+    width: 180px;
+    height: 45px;
+    padding: 5px 18px;
+    border-radius: 50px;
+    margin-left: 45px;
+  }
+
+  .nextProjectButton::before {
+    border-radius: 58px;
+  }
+
+  .nextProjectButton::after {
+    border-radius: 46px;
+  }
+
+  .nextProjectText {
+    font-size:17px;
+    margin-right: 10px;
+  }
+
+  .arrowIcon {
+    width: 20px;
+    height: 20px;
+    margin-left: 10px;
+  }
+
+  
+.mobileMenu {
+      position: fixed; 
+      top: 30%;
+      left: 70%;
+      transform: translate(-50%, -50%);
+      background-color: rgba(174, 174, 174, 0.1); 
+      width: 50%;
+      max-width: 150px;
+      padding: 20px;
+      border-radius: 12px;
+      border: 1px solid #9e9e9e;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      z-index: 100;
+      backdrop-filter: blur(10px); 
+    }
+  
+
+    .mobileMenuItem {
+      padding: 12px 0;
+      color: white;
+      font-size: 18px;
+      width: 100%;
+      text-align: left; 
+      border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+      
+      display: flex; 
+      align-items: center; 
+      gap: 8px; 
+    }
+    
+    .mobileMenuItem:last-child {
+      border-bottom: none;
+    }
+    
+    
+
+  .mobileOnly{
+    margin-top: 130px;
+  }
+}
