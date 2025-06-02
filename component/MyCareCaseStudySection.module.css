@@ -14,11 +14,11 @@
   }
   
   .paragraph {
-    font-size: 125px;
+    font-size: 25px;
     line-height:56px;
     color: #A2A2A2;
     width: 1300px;
-    
+    border: 2px solid red;
   }
   
   .paragraph strong {
