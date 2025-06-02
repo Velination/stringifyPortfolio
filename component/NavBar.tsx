@@ -15,7 +15,7 @@ type Props = {
 
 const HomePage: React.FC<Props> = ({ currentSection, setCurrentSection }) => {
   return (
-    <div>
+    <div className={styles.background}>
       <Sidebar />
       
       <div className={styles.rowContainer}>
