@@ -1,282 +1,395 @@
-.background{
+.containers {
+    
+    color: white;
+    padding: 3rem 1rem;
+    max-width: 1400px;
+    margin: 0 auto;
+    margin-top: 70px;
+  }
+  
+  .textSection {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 2rem;
+  }
+  
+  .title {
+    font-size: 80px;
+    font-weight: 900;
+    line-height: 1.2;
+    white-space: pre-line;
+    width: 640px;
+  }
+  
+  .description {
+    max-width: 560px;
+    font-size: 24px;
+    line-height: 1.6;
+    color: #AAAAAA;
+    font-weight: 400;
+  }
+  
+  .phoneSection {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+  }
+  
+  .phoneCard {
+    position: relative;
+    width: 300px;
+    height: 620px;
+    border-radius: 1rem;
+    overflow: hidden;
+  }
+  
+  .phoneImage {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 1rem;
+  }
+  
+  .cardOverlay {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    padding: 1rem;
+    text-align: center;
+  }
+  
+  .cardOverlay h4 {
+    color: #fff;
+    margin-bottom: 1rem;
+    font-size: 1rem;
+  }
+  
+  .buttons {
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+  }
+  
+ 
 
-  background-color: black;
-  background-image: url("/images/shineBackground.png");
-}
-
-.wrapper {
- background-color: black;
-  background-image: url("/images/shineBackground.png");
-  height: auto;
-}
+  .icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    height: 252px;
+    object-fit: fill;
+     margin-left: 700px;
+  }
 
 .container {
-  position: relative;
-  padding: 10px;
-  color: #fff;
-}
-
-
-
-.rowContainer {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 20px;
-}
-
-
-
-.centerToggle {
-  display: flex;
-  justify-content: center;
-  flex-grow: 1;
-  width: 100px;
-  padding-left: 230px;
-}
-
-
-.logoContainer {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 48px;
-  padding-top: 48px;
-}
-
-.projectYear {
-  text-align: center;
-  font-size: 18px;
-  color: #a4a4a4;
+  
+  color: white;
+  padding: 3rem 1rem;
+  font-family: Arial, sans-serif;
+  max-width: 1080px;
   margin: 0 auto;
 }
 
-.mainHeading {
-  font-size: 80px;
-  font-weight: 700;
-  text-align: center;
-  line-height: 100px;
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
 }
 
-.subHeading {
-  font-style: italic;
-  font-size: 80px;
+.item {
   display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  
+}
+
+.circle {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #ff605c;
+  color: white;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
   justify-content: center;
-  text-align: center;
-  line-height: 100px;
+  font-size: 1rem;
+  flex-shrink: 0;
+  
 }
 
-.sectionTitle {
-  font-size: 120px;
-  font-weight: 900;
-  text-align: center;
-  margin: 50px 0 15px;
+.text {
+  color: #ddd;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  max-width: 500px;
 }
 
-.sliderContainer {
-  margin: 50px  auto 10px;
-  max-width: 1580px;
-}
+@media screen and (max-width: 760px)  {
 
-.projectCardContainer {
-  margin-top: 100px;
-}
-
- @media screen and (max-width: 760px)  {
-
-  .container{
-    padding: 0px;
+    .textSection {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 2rem;
   }
 
-  .rowContainer {
-    margin-bottom: 5px;
-  }
-
- 
-
-  .centerToggle {
-   margin-right: 3px;
-   padding-left: 60px;
-  }
-
-  .rightButton {
-    justify-content: flex-end;
+  .title {
+      font-size: 30px;
+      line-height: 100%;
+      width: 100%;
+      margin-bottom: 20px;
+       
+    }
     
-  }
-  .logoContainer {
-    margin-top: 2px ;
-    padding-top: 2px;
-    width: 50px;
-    height: 50px;
+    .description {
+      max-width: 100%;
+      font-size: 12px;
+      line-height: 20px;
+      
+    }
+
+
+    
+
+    .containers {
+    padding: 3rem 1rem;
+    max-width: 90%;
     margin: 0 auto;
-  }
-
-  .mainHeading {
-    font-size: 28px;
-    line-height: 48px;
-    padding: 0 10px;
-  }
-  .subHeading {
-    font-size: 20px;
-    line-height: 48px;
-    padding: 0 10px;
-    font-weight: 400;
-  }
-
-  .sectionTitle {
-    font-size: 30px;
-    line-height: 100%;
-    padding: 0 5px;
-    margin-top: 0px;
-  }
-
-  .sliderContainer {
-    margin: 30px auto 50px;
-  }
-
-  .projectYear {
-    font-size: 12px;
-    width: 80%;
-  
-  }
-
-  .projectCardContainer {
-    margin-top: 50px;
-  }
-  
-  .image-card {
-    margin-top: 10px !important;
-  }
- }
-
-@media screen and (min-width: 768px)  and (max-width: 810px) {
-  .container{
-    padding: 0px;
-  }
-
-  .rowContainer {
-    margin-bottom: 5px;
-  }
-
-  
-
-  .centerToggle {
-   margin-right: 3px;
-   padding-left: 45px;
-  }
-
-  .rightButton {
-    justify-content: flex-end;
-    
-  }
-  .logoContainer {
-    margin-top: 2px ;
-    padding-top: 2px;
-  }
-
-  .mainHeading {
-    font-size: 38px;
-    line-height: 48px;
-    padding: 0 10px;
-  }
-  .subHeading {
-    font-size: 35px;
-    line-height: 48px;
-    padding: 0 10px;
-    font-weight: 400;
-  }
-
-  .sectionTitle {
-    font-size: 40px;
-    line-height: 100%;
-    padding: 0 5px;
-    margin-top: 0px;
-  }
-
-  .sliderContainer {
-    margin: 30px auto 50px;
-  }
-
-  .projectYear {
-    font-size: 14px;
+    margin-top: 40px;
    
-    width: 60%;
-  
-  }
+    }
 
-  .projectCardContainer {
-    margin-top: 50px;
-  }
-  
-  .image-card {
-    margin-top: 10px !important;
-  }
+    .container {
+      color: white;
+      padding: 1rem 0rem;
+      max-width: 100%;
+      margin: 0 ;
+      
+    }
 
+    .item {
+      display: grid;
+      align-items: flex-start;
+      gap: 1rem;
+    }
 
+    .grid {
+      
+      gap: 1rem;
+    }
+
+    .circle {
+      width: 20px;
+      height: 20px;
+      margin: 0 auto;
+    }
+
+    .text {
+     
+      font-size: 12px;
+      line-height: 20px;
+      max-width: 268px;
+      margin: 0 auto;
+    }
+    .icon{
+      
+      width: 34px;
+      height: 120px;
+      object-fit: fill;
+       margin: 0 auto;
+    }
+
+    .phoneSection {
+      display: grid;
+  grid-template-columns: repeat(4, 1fr);
+      gap: 0.4rem;
+      flex-wrap: wrap;
+      
+    }
+
+    .phoneCard {
+      position: relative;
+      width: 80px;
+      height: 185px;
+      border-radius: 1rem;
+      overflow: hidden;
+    }
 }
 
-@media screen and (min-width: 820px) and (max-width: 1440px){
-
-  .container{
-    padding: 0px;
-  }
-
-  .rowContainer {
-    margin-bottom: 5px;
-  }
-
- 
-
-  .centerToggle {
-   margin-right: 3px;
-   padding-left: 150px;
-  }
-
-  .rightButton {
-    justify-content: flex-end;
+  
+ @media screen and (min-width: 768px)  and (max-width: 810px) {
     
-  }
-  .logoContainer {
-    margin-top: 50px ;
-    padding-top: 2px;
-  }
+    .title {
+      font-size: 30px;
+      line-height: 100%;
+      width: 353px;
+      margin-bottom: 20px;
+       
+    }
+    
+    .description {
+      max-width: 253px;
+      font-size: 12px;
+      line-height: 20px;
+      
+    }
 
-  .mainHeading {
-    font-size: 38px;
-    line-height: 48px;
-    padding: 0 10px;
-  }
-  .subHeading {
-    font-size: 35px;
-    line-height: 48px;
-    padding: 0 10px;
-    font-weight: 400;
-  }
 
-  .sectionTitle {
-    font-size: 40px;
-    line-height: 100%;
-    padding: 0 5px;
-    margin-top: 0px;
-  }
+    
 
-  .sliderContainer {
-    margin: 30px auto 50px;
-  }
-
-  .projectYear {
-    font-size: 14px;
+    .containers {
+    padding: 3rem 1rem;
+    max-width: 90%;
+    margin: 0 auto;
+    margin-top: 40px;
    
-    width: 60%;
-  
+    }
+
+    .container {
+      color: white;
+      padding: 1rem 0rem;
+      max-width: 100%;
+      margin: 0 ;
+      
+    }
+
+    .item {
+      display: grid;
+      align-items: flex-start;
+      gap: 1rem;
+    }
+
+    .grid {
+      
+      gap: 1rem;
+    }
+
+    .circle {
+      width: 20px;
+      height: 20px;
+      margin: 0 auto;
+    }
+
+    .text {
+     
+      font-size: 12px;
+      line-height: 20px;
+      max-width: 268px;
+      margin: 0 auto;
+    }
+    .icon{
+      
+      width: 34px;
+      height: 120px;
+      object-fit: fill;
+       margin: 0 auto;
+    }
+
+    .phoneSection {
+      display: grid;
+  grid-template-columns: repeat(4, 1fr);
+      gap: 0.4rem;
+      flex-wrap: wrap;
+      
+    }
+
+    .phoneCard {
+      position: relative;
+      width: 8.8rem;
+      height: 17.8rem;
+      border-radius: 1rem;
+      overflow: hidden;
+    }
   }
 
-  .projectCardContainer {
-    margin-top: 50px;
+  @media screen and (min-width: 820px) and (max-width: 1440px){
+
+     .title {
+      font-size: 40px;
+      line-height: 100%;
+      width: 353px;
+      margin-bottom: 20px;
+       
+    }
+    
+    .description {
+      max-width: 353px;
+      font-size: 18px;
+      line-height: 20px;
+      
+    }
+
+
+    
+
+    .containers {
+    padding: 3rem 1rem;
+    max-width: 90%;
+    margin: 0 auto;
+    margin-top: 40px;
+   
+    }
+
+    .container {
+      color: white;
+      padding: 1rem 0rem;
+      max-width: 100%;
+      margin: 0 ;
+      
+    }
+
+    .item {
+      display: grid;
+      align-items: flex-start;
+      gap: 1rem;
+    }
+
+    .grid {
+      
+      gap: 1rem;
+    }
+
+    .circle {
+      width: 30px;
+      height: 30px;
+      margin: 0 auto;
+      font-size: 1.5rem;
+    }
+
+    .text {
+     
+      font-size: 16px;
+      line-height: 20px;
+      max-width: 368px;
+      margin: 0 auto;
+    }
+    .icon{
+      
+      width: 34px;
+      height: 120px;
+      object-fit: fill;
+       margin: 0 auto;
+    }
+
+    .phoneSection {
+      display: grid;
+  grid-template-columns: repeat(4, 1fr);
+      gap: 0.4rem;
+      flex-wrap: wrap;
+      
+    }
+
+    .phoneCard {
+      position: relative;
+      width: 12.8rem;
+      height: 25.8rem;
+      border-radius: 1rem;
+      overflow: hidden;
+    }
   }
   
-  .image-card {
-    margin-top: 10px !important;
-  }
-}
