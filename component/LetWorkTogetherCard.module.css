@@ -215,7 +215,7 @@
       background-color: gray;
     }
     
-    @media (max-width: 740px) {
+    @media (max-width: 760px) {
       .imageWrapper{
         height: 220px;
       }
