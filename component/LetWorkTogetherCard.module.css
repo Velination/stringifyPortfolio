@@ -215,7 +215,7 @@
       background-color: gray;
     }
     
-    @media (max-width: 480px) {
+    @media (max-width: 740px) {
       .imageWrapper{
         height: 220px;
       }
@@ -238,12 +238,12 @@
 
       .containers {
         padding: 0;
-        width: 100%;
-        margin: 0;
+        width: 90%;
+        margin: 0 auto;
       }
       .titleRow {
          
-          height: 5vh;
+          height: 5.5vh;
           
         }
   
@@ -257,7 +257,7 @@
   
       .subLinks {
           gap: 8px;
-          font-size: 10px;
+          font-size: 13px;
           margin-top: 10px;
         }
   
@@ -389,7 +389,7 @@
   
     }
     
-     @media screen and (min-width: 820px) and (max-width: 1440px){
+     @media screen and (min-width: 820px) and (max-width: 1430px){
 
       .containers {
         padding: 0;
