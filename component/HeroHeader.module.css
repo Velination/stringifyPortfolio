@@ -6,7 +6,7 @@
     align-items: center;
     justify-content: center;
     overflow: hidden;
-     
+    
   }
   
   .backgroundImage {
@@ -96,13 +96,14 @@
   
 
 
-   @media screen and (max-width: 480px)  {
+   @media screen and (max-width: 740px)  {
 
     .heroContainer {
     position: relative;
-    width: 97%;
+    width: 90%;
     height: 60vh;
     padding-left: 10px;
+    margin: 0 auto;
     
   }
        .hola {
@@ -116,7 +117,7 @@
      
     }
     .backgroundImage {
-      transform: scale(0.8) translateX(30%); 
+      transform: scale(0.8) translateX(10%); 
       transform-origin: center; 
       transition: transform 0.5s ease-in-out;
       height: 80vh;
