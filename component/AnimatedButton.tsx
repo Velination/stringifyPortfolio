@@ -8,7 +8,7 @@ const AnimatedDivider = () => {
     <div className={styles.dividerContainer}>
       <div className={styles.line} />
       <div>
-        <Link href="/RecentProjectCard">
+        <Link href='/ProjectPage'>
          
           <div style={{ cursor: 'pointer' }}>
             <AllProjectButton email="all projects" />
