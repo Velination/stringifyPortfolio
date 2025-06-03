@@ -51,19 +51,20 @@
     height: 10px;
   }
 
-   @media screen and (max-width: 480px)  {
+   @media screen and (max-width: 760px)  {
      .sliderWrapper {
-      width: 100%; 
+      width: 90%; 
       height: 490px; 
       aspect-ratio: 3/4; 
-      margin: 0px auto; 
+      margin: 0 auto; 
       border-radius: 16px;
     }
   
     .image {
       border-radius: 16px;
-      object-fit:fill;
-      height: 100%;
+      object-fit: fill;
+      height: 500px;
+      width: 100%;
     }
    }
   
