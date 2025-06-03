@@ -152,7 +152,7 @@
     background-color: gray;
   }
   
-  @media screen and (max-width: 740px)  {
+  @media screen and (max-width: 760px)  {
     .imageWrapper{
       height: 220px;
     }
@@ -163,7 +163,7 @@
 
     .card{
       padding: 0;
-      width: 80%;
+      width: 97%;
       margin: 0 auto;
     }
 
