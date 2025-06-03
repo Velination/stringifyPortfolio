@@ -54,12 +54,12 @@
   }
   
   
-  @media screen and (max-width: 480px)  {
+  @media screen and (max-width: 760px)  {
 
     .comingSoonWrapper {
       flex-direction: row;
       text-align: center;
-      padding: 1rem;
+      padding: 0;
       gap: 10px;
       width: 90%;
     }
@@ -101,7 +101,7 @@
       }
   }
 
-  @media (max-width: 768px) {
+  @media screen and (min-width: 768px)  and (max-width: 810px) {
     .comingSoonWrapper {
       flex-direction: row;
       text-align: center;
