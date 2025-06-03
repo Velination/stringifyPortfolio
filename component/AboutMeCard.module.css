@@ -2,11 +2,13 @@
     width: 400px;
     height: auto;
     margin-top: 115px;
+    background-color: #1a1a1a;
     border-radius: 20px;
     border: 2px solid #9e9e9e;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     padding: 1.5rem;
     z-index: 1;
+    
   }
   
   .heading {
@@ -36,7 +38,6 @@
   .section {
     font-size: 19px;
     margin-bottom: 1rem;
-    font-family: 'Poppins', sans-serif;
     color: #a2a2a2;
     line-height: 28px;
     font-weight: 400;
@@ -52,8 +53,8 @@
     margin-left: 320px;
   }
   
-  /* ✅ Responsive Mobile View */
-   @media screen and (max-width: 480px)  {
+
+   @media screen and (max-width: 760px)  {
     .container {
       width: 100%;
       height: auto;
