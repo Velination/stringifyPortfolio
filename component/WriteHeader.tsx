@@ -27,7 +27,7 @@ export default function RecentProjects() {
         <span>DESIGN PROCESS</span>
       </div>
       <div className={styles.projectGrid}>
-       <Link href="/MyCare">
+      <Link href="/MyCare">
               <div>
                 <ProjectCard
                   projectName="MyCard Assistant"
@@ -39,27 +39,27 @@ export default function RecentProjects() {
                 />
               </div>
             </Link>
-         <Link href="/projects/real-realty">
-              <div>
-                <ProjectCard
-                  projectName="Real Realty Limited"
-                  year="2024"
-                  imageSrc="/images/Shot.png"
-                  title="Real Estate Website"
-                  subtitle="Redesign"
-                  hoverColor="#964B00"
-                />
-              </div>
-            </Link>
-      <Link href="/tantalizer">
+         <Link href="/tantalizer">
               <div>
                 <ProjectCard
                   projectName="Tantalizer"
                   year="2023"
-                  imageSrc="/images/Shot.png"
+                  imageSrc="/images/Scene 12 1 (4).png"
                   title="Restaurant Website"
                   subtitle="Redesign"
                   hoverColor="#EA8B1B"
+                />
+              </div>
+            </Link>
+      <Link href="/RockRealty">
+              <div>
+                <ProjectCard
+                  projectName="Real Realty Limited"
+                  year="2024"
+                  imageSrc="/images/Scene 12 1 (5).png"
+                  title="Real Estate Website"
+                  subtitle="Redesign"
+                  hoverColor="#964B00"
                 />
               </div>
             </Link>
