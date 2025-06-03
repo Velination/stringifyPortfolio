@@ -33,6 +33,7 @@
     max-width: 1400px;
     width: 100%;
     border-radius: 1rem;
+   
     
   }
   
@@ -171,7 +172,7 @@
      .heroContainer {
     position: relative;
     width: 100%;
-    height: 80vh;
+    height: 100vh;
     padding-left: 10px;
     
   }
@@ -190,7 +191,7 @@
       transform-origin: center; 
       transition: transform 0.5s ease-in-out;
       height: 80vh;
-      width: 100%;
+      width: 80%;
        
     }
 
@@ -198,14 +199,15 @@
 
 
 
-    .mobileCardContent {
-      align-items: flex-start; 
-      padding-left: 10px;
-      padding-right: 10px;
-      padding-top: 0;
-      margin-bottom: 60px;
-      
-    }
+   .cardContent {
+   
+    align-items:flex-start;
+    max-width: 1400px;
+    width: 100%;
+    border-radius: 1rem;
+    
+    
+  }
   
     .subTextContainer {
       display: none;
