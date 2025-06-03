@@ -1,4 +1,5 @@
 .container {
+    background-color: #1a1a1a;
     border-radius: 25px;
     width: 400px;
     height: 420px;
@@ -67,9 +68,9 @@
     height: 45px;
   }
   
-  /* ✅ Mobile Responsive */
+  
 
-  @media screen and (max-width: 480px)  {
+  @media screen and (max-width: 760px)  {
 .container {
       width: 100%;
       height: auto;
