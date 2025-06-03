@@ -54,7 +54,7 @@
     color: #ffffff;
   }
 
-  @media screen and (max-width: 480px)  {
+  @media screen and (max-width: 760px)  {
 
     .container {
       flex-direction:column;
@@ -66,7 +66,7 @@
     .leftColumn
       {
         width: 100%;
-        font-size: 12px;
+        font-size: 14px;
         display: flex;
         align-items: center;
         justify-content: center;
