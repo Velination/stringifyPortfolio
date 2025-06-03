@@ -29,9 +29,9 @@
     border-radius: 5px;
   }
   
-  /* ✅ Mobile responsiveness */
+  
 
-   @media screen and (max-width: 480px)  {
+   @media screen and (max-width: 760px)  {
     .homePageWrapper {
       flex-direction: column;
       align-items: center;
