@@ -1,6 +1,6 @@
 .section {
     font-weight: 400;
-    
+    font-size: 32px;
     color: #ffffff;
     padding-top: 10px;
     width: 1200px;
@@ -36,7 +36,7 @@
     padding: 4rem 2rem;
   }
 
-  @media screen and (max-width: 480px)  {
+  @media screen and (max-width: 760px)  {
     .title{
         font-size: 24px;
         margin-bottom: 0.2rem;
@@ -57,7 +57,7 @@
     }
 
      .paragraph {
-        font-size: 12px;
+        font-size: 14px;
         line-height : 24px;
         width: 100%;
         padding: 1rem 0.5rem;
