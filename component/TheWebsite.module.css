@@ -4,6 +4,7 @@
     padding: 2rem;
     width: 1400px;
     margin: 100px auto;
+    
   }
   
   .heading {
@@ -57,7 +58,7 @@
     font-weight: 400;
   }
 
-  @media screen and (max-width: 480px)  {
+  @media screen and (max-width: 760px)  {
 
       .container {
       width: 90%;
