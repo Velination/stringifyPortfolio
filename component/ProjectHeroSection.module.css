@@ -73,7 +73,7 @@
     display: inline;
   }
   
-  /* 📱 MOBILE RESPONSIVE */
+
   @media screen and (min-width: 768px)  and (max-width: 810px) {
     .aboutContainer {
        width: 100%;
@@ -125,12 +125,18 @@
       }
 }
 
-@media screen and (max-width: 480px)  {
+@media screen and (max-width: 760px)  {
   .aboutContainer {
         width: 90%;
         height: 50vh;
         margin: 0 auto;
       }
+
+        .aboutBackground {
+    width: 100%;
+    left: 50%;
+    
+  }
 
        .aboutTitle {
         font-size: 44px; 
