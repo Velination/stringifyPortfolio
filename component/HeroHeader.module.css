@@ -226,7 +226,7 @@
     .iamText {
       font-size: 100px;
       font-weight: 500;
-
+ border: 2px solid red;
       text-align: left;
       margin: 0;
     }
