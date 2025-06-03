@@ -138,17 +138,17 @@
     }
   
     .name {
-      font-size: 14px;
+      font-size: 16px;
       font-weight: 700;
     }
   
     .role {
-      font-size: 12px;
+      font-size: 14px;
       margin-bottom: 0.5rem;
     }
   
     .bio {
-      font-size: 12px;
+      font-size: 14px;
       line-height: 22px;
       margin-bottom: 1rem;
     }
@@ -171,12 +171,12 @@
     }
   
     .box h4 {
-      font-size: 13px;
+      font-size: 15px;
       margin-bottom: 0.5rem;
     }
   
     .box li {
-      font-size: 12px;
+      font-size: 14px;
       line-height: 12px;
      
      padding-right: 5px;
