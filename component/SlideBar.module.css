@@ -57,7 +57,7 @@
 
 /* Mobile Responsive */
 
-@media screen and (max-width: 480px)  {
+@media screen and (max-width: 760px)  {
   .sidebar {
     border: none;
     padding-top: 5px;
