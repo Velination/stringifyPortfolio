@@ -45,7 +45,7 @@ const menuItems = [
     title: 'CHECKOUT',
   },
   {
-    src: '/images/success page.png',
+    src: '/images/Success page.png',
     alt: 'Another Menu',
     title: 'SUCCESS PAGE',
   },
