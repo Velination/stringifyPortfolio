@@ -4,17 +4,20 @@ import styles from "@/component/AnimatedDivider.module.css";
 
 const AnimatedDivider = () => {
   const handleScrollDown = () => {
-    // Scrolls down by the height of the window
-    window.scrollBy({
-      top: window.innerHeight,
-      behavior: "smooth",
-    });
+    const element = document.getElementById("connect");
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth" });
+    }
   };
 
   return (
     <div className={styles.dividerContainer}>
       <div className={styles.line} />
-      <div className={styles.centerIcon} onClick={handleScrollDown} style={{ cursor: "pointer" }}>
+      <div
+        className={styles.centerIcon}
+        onClick={handleScrollDown}
+        style={{ cursor: "pointer" }}
+      >
         <motion.div
           className={styles.rotatingArc}
           animate={{ rotate: 360 }}
