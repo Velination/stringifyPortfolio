@@ -8,7 +8,7 @@
   width: 40px;
   z-index: 1;
   background-color: transparent;
-
+  align-items: center;
 }
 
 /* Vertical Line */
@@ -42,7 +42,6 @@
 /* Each Icon */
 .icon {
   color: white;
-  font-size: 18px;
   margin-bottom: 30px;
   display: flex;
   flex-direction: column;
@@ -115,12 +114,16 @@
   }
 
   .logo {
-    margin-bottom: 200px;
+    margin-bottom: 150px;
     
   }
 
   .copyIcon {
   margin-top: 0px;
+}
+
+.mobileMenuItem{
+  margin-top: 170px;
 }
 
 }
