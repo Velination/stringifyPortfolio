@@ -17,7 +17,7 @@ const brunoAce = Bruno_Ace({
 
 const WorkTogether: React.FC = () => {
   return (
-    <section className={styles.containers}>
+    <section id="connect" className={styles.containers}>
       <div className={styles.titleRow}>
         <h2 className={`${styles.recent} ${figtree.className}`}>GET</h2>
         <h2 className={`${styles.projects} ${figtree.className}`}>&nbsp;CONNECTED</h2>
