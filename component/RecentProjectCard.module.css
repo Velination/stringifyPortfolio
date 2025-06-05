@@ -114,20 +114,19 @@
   .titleRow {
     display: flex;
     justify-content: center;
-    height: 15vh;
+    height: 13vh;
     
   }
   
   .recent {
     font-weight: 800;
-    font-size: 141px;
-    
+    font-size: 121px;
   }
   
   .projects {
     font-weight: 400;
     font-style: italic;
-    font-size: 141px;
+    font-size: 121px;
   }
   
   .subLinks {
@@ -136,7 +135,7 @@
     align-items: center;
     gap: 3rem;
     margin-top: 10px;
-    font-size: 24px;
+    font-size: 20px;
     letter-spacing: 1px;
    
     
@@ -246,7 +245,7 @@
 
     .titleRow {
        
-        height: 16vh;
+        height: 9vh;
         
       }
 
