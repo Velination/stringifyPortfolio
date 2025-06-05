@@ -63,19 +63,19 @@
 .titleRow {
   display: flex;
   justify-content: center;
-  height: 15vh;
+  height: 11vh;
   
 }
 
 .recent {
   font-weight: 400;
   font-style: italic;
-  font-size: 8.8rem;
+  font-size: 6.8rem;
 }
 
 .projects {
   font-weight: 800;
-  font-size: 8.8rem;
+  font-size: 6.8rem;
 }
 
 .subLinks {
@@ -84,7 +84,7 @@
   align-items: center;
   gap: 2rem;
   margin-top: 10px;
-  font-size: 24px;
+  font-size: 20px;
   letter-spacing: 1px;
 }
 
@@ -94,7 +94,7 @@
 
 .line {
   height: 1px;
-  width: 380px;
+  width: 300px;
   background-color: gray;
 }
 
@@ -206,7 +206,7 @@
 
   .titleRow {
      
-      height: 16vh;
+      height: 10vh;
       
     }
 
