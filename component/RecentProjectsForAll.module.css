@@ -40,7 +40,6 @@
     background-color: #2C2C2C;
     padding: 0.5rem 1rem;
     border-radius: 8px;
-    font-family: 'Segoe UI', sans-serif;
     transition: background-color 0.3s ease;
   }
   
@@ -112,20 +111,20 @@
   .titleRow {
     display: flex;
     justify-content: center;
-    height: 15vh;
+    height: 12vh;
     
   }
   
   .recent {
     font-weight: 800;
-    font-size: 141px;
+    font-size: 121px;
     
   }
   
   .projects {
     font-weight: 400;
     font-style: italic;
-    font-size: 141px;
+    font-size: 121px;
   }
   
   .subLinks {
@@ -134,7 +133,7 @@
     align-items: center;
     gap: 3rem;
     margin-top: 10px;
-    font-size: 24px;
+    font-size: 20px;
     letter-spacing: 1px;
    
     
@@ -146,7 +145,7 @@
   
   .line {
     height: 1px;
-    width: 180px;
+    width: 140px;
     background-color: gray;
   }
   
